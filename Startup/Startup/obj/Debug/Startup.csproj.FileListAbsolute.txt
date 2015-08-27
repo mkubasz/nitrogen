@@ -1,0 +1,6 @@
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\Startup.dll
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\Startup.pdb
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\obj\Debug\Startup.dll
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\obj\Debug\Startup.pdb
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\itextsharp.dll
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\itextsharp.xml
