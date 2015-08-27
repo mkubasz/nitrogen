@@ -96,7 +96,7 @@ namespace Startup.TrainingOneHomeworks.GroupMati.Pesel
                     controlSum += pesel[i] * peselWeights[i];
                 }
                 if (controlSum % 10 != 0) throw new InvalidPeselExeptions("Wrong cotrol sum in Pesel");
-
+                
 
                 return true;
             }

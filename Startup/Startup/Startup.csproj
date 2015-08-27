@@ -76,16 +76,42 @@
     <Compile Include="TrainingOneHomeworks\Erloon\BankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\IIdentificationBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\Erloon\TheInternationalBankAccountNumber.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\AliorTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BgzTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CitibankTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CreditTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\EuroTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\IngTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MBankTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MillenniumTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\PekaoTransactionBank.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\WesternUnionTransactionBank.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\AliorBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BankMilenniumBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BankPocztowyBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BankPolskiejSpoldzielczosciBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BgkBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BGZBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BnpParibasFortisBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BosBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BphBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BzwbkBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CitybankHandlowyBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\CreditAgricoleBankPolskaBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\DeutscheBankPolskaBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\DnBNordBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\EuroBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\FceBankPolskaBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\FiatBankPolskaBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\FmBankPBPBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\GettinNobleBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\HsbcBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\IdeaBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\IngBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\mBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MercedesBenzBankPolskaBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\MeritumBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\NarodowyBankPolskiBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\NordeaBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\PekaoBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\PkobpBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\RabobankPolskaBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\RaiffeisenBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\RbsBankPolskaBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\SantanderConsumerBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\SGBBankBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\SocieteGeneraleBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\ToyotaBankBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ClientTransaction.cs" />
@@ -116,7 +142,7 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\AliorMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\Interface\IMailMessages.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Messages\MailMessages.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\IPdfCreator.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\Interface\IPdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
@@ -129,6 +155,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />
+    <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\BanksLists.txt" />
+    <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\Generator.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -6,7 +6,7 @@ using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SQLlib.SQL;
 using Startup.TrainingOneHomeworks.GroupMati.Bank.Factory;
-using Startup.TrainingOneHomeworks.GroupMati.Banks;
+
 using Startup.TrainingOneHomeworks.Mati;
 using Startup.TrainingOneHomeworks.Mati.Banks;
 using Startup.TrainingOneHomeworks.Mati.GeneratorClass;
@@ -36,16 +36,16 @@ namespace Toci.Startup.Test.MatiUnitTest
             public void GetListTransaction()
             {
                 ClientTransaction transaction = new ClientTransaction();
-                Assert.IsInstanceOfType(new AliorTransactionBank(), transaction.GetTransactions()[0].GetType());
+              //  Assert.IsInstanceOfType(new AliorTransactionBank(), transaction.GetTransactions()[0].GetType());
                 //  Assert.IsInstanceOfType(new BgzTransactionBank(), transaction.GetTransactions()[1].GetType());
             }
 
             [TestMethod]
             public void IsCreatedDocumentXml()
             {
-                BankTransaction bank1 = new AliorTransactionBank();
+              //  BankTransaction bank1 = new AliorTransactionBank();
 
-                bank1.DescriptionTransaction();
+               // bank1.DescriptionTransaction();
             }
 
             [TestMethod]
