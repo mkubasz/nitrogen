@@ -1,11 +1,13 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Collections.Generic;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.InterfaceBanks;
 
-namespace Startup.TrainingOneHomeworks.Mati.InterfaceBanks
+namespace Startup.TrainingOneHomeworks.GroupMati.Bank
 {
     public interface IBankTransactionMenager
     {
-        IClientTransaction ClientTranstaction { get; set; }
-        IBankTransaction BankTransaction { get; set; }
-        bool VerifyTransfer();
+        List<IClientTransaction> ClientTransactions { get; }
+        List<List<BankTransaction>> VerifiedClientTransactions { get; }
+        void VerifyTransfer();
+        BankTransaction SearchAccount(string number);
     }
 }

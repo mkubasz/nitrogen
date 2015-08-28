@@ -1,4 +1,4 @@
-namespace Startup.TrainingOneHomeworks.Mati.Messages
+namespace Startup.TrainingOneHomeworks.GroupMati.Bank.Messages.Interface
 {
     public interface IMailMessages
     {

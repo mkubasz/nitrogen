@@ -1,7 +1,7 @@
 ﻿using System.Net.Mail;
-using System.Security;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.Messages.Interface;
 
-namespace Startup.TrainingOneHomeworks.Mati.Messages
+namespace Startup.TrainingOneHomeworks.GroupMati.Bank.Messages
 {
     public abstract class MailMessages : IMailMessages
     {

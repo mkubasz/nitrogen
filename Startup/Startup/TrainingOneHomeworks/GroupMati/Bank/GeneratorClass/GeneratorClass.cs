@@ -1,14 +1,11 @@
 ﻿using System;
 using System.IO;
-using System.Text;
-using iTextSharp.text.pdf.parser.clipper;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.GeneratorClass.InterfaceGenerator;
 
-namespace Startup.TrainingOneHomeworks.Mati.GeneratorClass
+namespace Startup.TrainingOneHomeworks.GroupMati.Bank.GeneratorClass
 {
-
     public class GeneratorClass : IGeneratorClass
     {
-
         public GeneratorClass()
         {
             CreateClass();
@@ -19,7 +16,6 @@ namespace Startup.TrainingOneHomeworks.Mati.GeneratorClass
             StreamWriter fileOut;
             StreamReader fileIn;
             StreamReader fileBanksLists = new StreamReader(@"../../../Startup\TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\BanksLists.txt");
-
 
             while (!fileBanksLists.EndOfStream)
             {
@@ -33,13 +29,10 @@ namespace Startup.TrainingOneHomeworks.Mati.GeneratorClass
                          if (tmp.Contains("{0}"))
                             tmp = String.Format(tmp, nameBank);
                     fileOut.WriteLine(tmp);
-
                 }
                 fileOut.Close();
                 fileIn.Close();
             }
-
         }
-
     }
 }

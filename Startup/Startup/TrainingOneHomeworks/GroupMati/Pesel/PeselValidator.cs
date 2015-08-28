@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Startup.TrainingOneHomeworks.GroupMati.Pesel
 {
@@ -59,13 +56,9 @@ namespace Startup.TrainingOneHomeworks.GroupMati.Pesel
         {
             if (pesel.Length == 11)
             {
-                foreach (char i in pesel)
+                if (pesel.Any(i => !Char.IsNumber(i)))
                 {
-                    if (!Char.IsNumber(i))
-                    {
-                        return false;
-                        throw new InvalidPeselExeptions("You put into PESEL char");
-                    }
+                    return false;
                 }
                 DateTime time;
 
@@ -108,7 +101,6 @@ namespace Startup.TrainingOneHomeworks.GroupMati.Pesel
             {
                 throw new InvalidPeselExeptions("Your PESEL is too long ");
             }
-            //return false;
         }
     }
 }

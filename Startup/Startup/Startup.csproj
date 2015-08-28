@@ -116,9 +116,9 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\BankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ClientTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\BankTransactionFactory.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\IBankTransactionFactory.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\Interface\IBankTransactionFactory.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransactionMenager.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IClientTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\AliorBank.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankTransaction.cs" />

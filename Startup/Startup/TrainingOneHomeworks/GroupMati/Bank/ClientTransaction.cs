@@ -1,54 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Xml.Serialization;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
-using Startup.TrainingOneHomeworks.Mati.Banks;
-using Startup.TrainingOneHomeworks.Mati.InterfaceBanks;
+﻿using System.Collections.Generic;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.InterfaceBanks;
+using Startup.TrainingOneHomeworks.Mati;
 
-namespace Startup.TrainingOneHomeworks.Mati
+namespace Startup.TrainingOneHomeworks.GroupMati.Bank
 {
     public class ClientTransaction :IClientTransaction
     {
-
+        /// <summary>
+        ///  Client Ania
+        /// swoj numer 13214124
+        /// numer do wysalania 323412423
+        /// </summary>
         public string IncomingNumber { get; set; }
         public string OutcomingNumber { get; set; }
+        private List<BankTransaction> transactions;
 
-        public List<BankTransaction> GetTransactions()
+        public ClientTransaction()
         {
-            List<BankTransaction> temporaryBanks = new List<BankTransaction>();
-            temporaryBanks.Add(SearchAccount(GetNrbNumber(IncomingNumber),new Dictionary<string, BankTransaction>()));
-            temporaryBanks.Add(SearchAccount(GetNrbNumber(OutcomingNumber), new Dictionary<string, BankTransaction>()));
-            if (temporaryBanks.Count == 2 
-                || ValidationNumber.Validation(OutcomingNumber) 
-                || ValidationNumber.Validation(IncomingNumber))
+            transactions = new List<BankTransaction>();
+
+        }
+        public List<BankTransaction> GetTransactions(BankTransaction bankTransaction)
+        {
+             if(bankTransaction != null)
+            transactions.Add(bankTransaction);
+
+            if (transactions.Count == 2 )
             {
-                return null;
+                return transactions;
             }
 
-            return temporaryBanks;
-              
-        }
-        public string GetNrbNumber(string number)
-        {   if(number != null)
-                return number.Substring(2, 4);
             return null;
         }
-
-        public BankTransaction SearchAccount(string number, Dictionary<string, BankTransaction> bankList)
-        {
-            if (number == null)
-                return null;
-            BankTransaction bank;
-            foreach (var item in bankList)
-            {
-                if (bankList.TryGetValue(number, out bank))
-                    return bank;
-            }
-            return null;
-
-        }
-
     }
 }

@@ -1,6 +1,6 @@
     using System;
     using Startup.TrainingOneHomeworks.Mati;
-    namespace Startup.TrainingOneHomeworks.GroupMati.Banks
+    namespace Startup.TrainingOneHomeworks.GroupMati.Bank.Banks
     {
         public sealed class IngTransactionBank : BankTransaction
         {

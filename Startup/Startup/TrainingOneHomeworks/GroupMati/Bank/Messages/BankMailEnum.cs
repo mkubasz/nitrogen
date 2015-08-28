@@ -1,8 +1,8 @@
-﻿namespace Startup.TrainingOneHomeworks.Mati.Messages
+﻿namespace Startup.TrainingOneHomeworks.GroupMati.Bank.Messages
 {
     public enum BankMailEnum
     {
-        INCOMINGTRANSFER,
-        OUTCOMINGTRANSFER
+        Incomingtransfer,
+        Outcomingtransfer
     }
 }
