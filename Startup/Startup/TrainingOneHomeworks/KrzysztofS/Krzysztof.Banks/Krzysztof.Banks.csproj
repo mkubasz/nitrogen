@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21D45145-D1BC-4B38-ADC4-62210629C1AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Krzysztof.Banks</RootNamespace>
+    <AssemblyName>Krzysztof.Banks</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Account.cs" />
+    <Compile Include="Account\Address.cs" />
+    <Compile Include="Account\Owner.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="Banks\Bank_Alior.cs" />
+    <Compile Include="Banks\Bank_BGZ.cs" />
+    <Compile Include="Banks\Bank_BNP.cs" />
+    <Compile Include="Banks\Bank_BOS.cs" />
+    <Compile Include="Banks\Bank_BPS.cs" />
+    <Compile Include="Banks\Bank_Credit.cs" />
+    <Compile Include="Banks\Bank_DB.cs" />
+    <Compile Include="Banks\Bank_DnB.cs" />
+    <Compile Include="Banks\Bank_Euro.cs" />
+    <Compile Include="Banks\Bank_Fiat.cs" />
+    <Compile Include="Banks\Bank_FCE.cs" />
+    <Compile Include="Banks\Bank_FM.cs" />
+    <Compile Include="Banks\Bank_Getin.cs" />
+    <Compile Include="Banks\Bank_HSBC.cs" />
+    <Compile Include="Banks\Bank_BGK.cs" />
+    <Compile Include="Banks\Bank_BPH.cs" />
+    <Compile Include="Banks\Bank_BZWBK.cs" />
+    <Compile Include="Banks\Bank_Citi.cs" />
+    <Compile Include="Banks\Bank_Idea.cs" />
+    <Compile Include="Banks\Bank_ING.cs" />
+    <Compile Include="Banks\Bank_MBank.cs" />
+    <Compile Include="Banks\Bank_Mercedes.cs" />
+    <Compile Include="Banks\Bank_Meritum.cs" />
+    <Compile Include="Banks\Bank_Millenium.cs" />
+    <Compile Include="Banks\Bank_Nordea.cs" />
+    <Compile Include="Banks\Bank_Pekao.cs" />
+    <Compile Include="Banks\Bank_Pocztowy.cs" />
+    <Compile Include="Banks\Bank_Rabobank.cs" />
+    <Compile Include="Banks\Bank_Raiffeisen.cs" />
+    <Compile Include="Banks\Bank_RBS.cs" />
+    <Compile Include="Banks\Bank_Plus.cs" />
+    <Compile Include="Banks\Bank_Santander.cs" />
+    <Compile Include="Banks\Bank_SGB.cs" />
+    <Compile Include="Banks\Bank_Societe.cs" />
+    <Compile Include="Banks\Bank_Toyota.cs" />
+    <Compile Include="Banks\Bank_VW.cs" />
+    <Compile Include="ManageBanks.cs" />
+    <Compile Include="Banks\Bank_NBP.cs" />
+    <Compile Include="Banks\Bank_PKOBP.cs" />
+    <Compile Include="IBank.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

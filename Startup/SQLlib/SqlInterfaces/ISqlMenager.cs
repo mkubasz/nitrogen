@@ -1,4 +1,4 @@
-﻿namespace SQLlib.SQL
+﻿namespace SQLlib.SqlInterfaces
 {
     internal interface ISqlMenager
     {

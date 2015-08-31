@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Krzysztof.Banks.Banks
+{
+    class Bank_BOS: Bank
+    {
+        public override string BankName()
+        {
+            return "BOŚ";
+        }
+
+        protected override bool MyAccount(string ABankNumber)
+        {
+            return ABankNumber == "1540";
+        }
+    }
+}

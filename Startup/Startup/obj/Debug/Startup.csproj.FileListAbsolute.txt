@@ -1,6 +1,11 @@
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\obj\Debug\Startup.csprojResolveAssemblyReference.cache
 M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\Startup.dll
 M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\Startup.pdb
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\itextsharp.dll
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\SQLlib.dll
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\Npgsql.dll
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\SQLlib.pdb
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\itextsharp.xml
+M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\Npgsql.xml
 M:\Projects\Toci\training\PraireDog\one\Startup\Startup\obj\Debug\Startup.dll
 M:\Projects\Toci\training\PraireDog\one\Startup\Startup\obj\Debug\Startup.pdb
-M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\itextsharp.dll
-M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\itextsharp.xml

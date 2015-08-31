@@ -10,6 +10,16 @@ namespace SQLlib
 {
     public class SqlConnection : ISqlConnection
     {
+
+        /// <summary>
+        /// Fabryka switch(cassandra/postrgres)
+        /// return SqlBase new cassandra  : SqlBase
+        /// case
+        /// return new postrgres
+        /// Cluster 
+        /// ISession
+        /// Install-Package CassandraCSharpDriver
+        /// </summary>
         private NpgsqlConnection connection;
         public SqlConnection()
         {

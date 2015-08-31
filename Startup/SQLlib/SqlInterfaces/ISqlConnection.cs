@@ -1,12 +1,12 @@
 using Npgsql;
 
-namespace SQLlib
+namespace SQLlib.SqlInterfaces
 {
-    public interface ISqlConnection
+    public interface ISqlConnection<T>
     {
         void SetConnection(string host,string user,string password,string dBname);
 
-        NpgsqlConnection GetConnection();
+        T GetConnection() ;
 
         bool CheckConnection();
         void CloseConnection();

@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<banks>
+  <bank>
+    <id>1010</id>
+    <name>Narodowy Bank Polski</name>
+  </bank>
+  <bank>
+    <id>1020</id>
+    <name>Powszechna Kasa Oszczędności Bank Polski SA</name>
+  </bank>
+  <bank>
+    <id>1030</id>
+    <name>Bank Handlowy w Warszawie SA</name>
+  </bank>
+  <bank>
+    <id>1050</id>
+    <name>ING Bank Śląski SA</name>
+  </bank>
+  <bank>
+    <id>1060</id>
+    <name>Bank BPH SA</name>
+  </bank>
+  <bank>
+    <id>1090</id>
+    <name>Bank Zachodni WBK SA</name>
+  </bank>
+  <bank>
+    <id>1130</id>
+    <name>Bank Gospodarstwa Krajowego</name>
+  </bank>
+  <bank>
+    <id>1140</id>
+    <name>BRE Bank SA</name>
+  </bank>
+  <bank>
+    <id>1160</id>
+    <name>Bank Millennium SA</name>
+  </bank>
+  <bank>
+    <id>1240</id>
+    <name>Bank Polska Kasa Opieki SA</name>
+  </bank>
+  <bank>
+    <id>1280</id>
+    <name>HSBC Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>1300</id>
+    <name>Meritum Bank ICB SA</name>
+  </bank>
+  <bank>
+    <id>1320</id>
+    <name>Bank Pocztowy SA</name>
+  </bank>
+  <bank>
+    <id>1440</id>
+    <name>NORDEA BANK POLSKA SA</name>
+  </bank>
+  <bank>
+    <id>1470</id>
+    <name>Euro Bank SA</name>
+  </bank>
+  <bank>
+    <id>1500</id>
+    <name>Kredyt Bank SA</name>
+  </bank>
+  <bank>
+    <id>1540</id>
+    <name>Bank Ochrony Środowiska SA</name>
+  </bank>
+  <bank>
+    <id>1580</id>
+    <name>Mercedes-Benz Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>1600</id>
+    <name>BNP PARIBAS BANK POLSKA SA</name>
+  </bank>
+  <bank>
+    <id>1610</id>
+    <name>SGB-Bank SA</name>
+  </bank>
+  <bank>
+    <id>1670</id>
+    <name>RBS Bank (Polska) SA</name>
+  </bank>
+  <bank>
+    <id>1680</id>
+    <name>INVEST - BANK SA</name>
+  </bank>
+  <bank>
+    <id>1740</id>
+    <name>DZ BANK Polska SA</name>
+  </bank>
+  <bank>
+    <id>1750</id>
+    <name>Raiffeisen Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>1840</id>
+    <name>Societe Generale SA Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>1870</id>
+    <name>Polski Bank Przedsiębiorczości SA</name>
+  </bank>
+  <bank>
+    <id>1880</id>
+    <name>Deutsche Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>1890</id>
+    <name>Pekao Bank Hipoteczny SA</name>
+  </bank>
+  <bank>
+    <id>1910</id>
+    <name>Deutsche Bank PBC SA</name>
+  </bank>
+  <bank>
+    <id>1930</id>
+    <name>BANK POLSKIEJ SPÓŁDZIELCZOŚCI SA</name>
+  </bank>
+  <bank>
+    <id>1940</id>
+    <name>Credit Agricole Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>1950</id>
+    <name>Idea Bank SA</name>
+  </bank>
+  <bank>
+    <id>2000</id>
+    <name>Rabobank Polska SA</name>
+  </bank>
+  <bank>
+    <id>2030</id>
+    <name>Bank Gospodarki Żywnościowej SA</name>
+  </bank>
+  <bank>
+    <id>2070</id>
+    <name>FCE Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>2120</id>
+    <name>Santander Consumer Bank SA</name>
+  </bank>
+  <bank>
+    <id>2130</id>
+    <name>VOLKSWAGEN BANK POLSKA SA</name>
+  </bank>
+  <bank>
+    <id>2140</id>
+    <name>Fiat Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>2150</id>
+    <name>BRE Bank Hipoteczny SA</name>
+  </bank>
+  <bank>
+    <id>2160</id>
+    <name>Toyota Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>2190</id>
+    <name>Bank DnB NORD Polska SA</name>
+  </bank>
+  <bank>
+    <id>2210</id>
+    <name>Bank of Tokyo-Mitsubishi UFJ (Polska) SA</name>
+  </bank>
+  <bank>
+    <id>2240</id>
+    <name>Banque PSA Finance SA Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2250</id>
+    <name>Svenska Handelsbanken AB SA Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2260</id>
+    <name>RCI Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>2270</id>
+    <name>Sygma Banque Societe Anonyme (SA) Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2290</id>
+    <name>Dexia Kommunalkredit Bank Polska SA</name>
+  </bank>
+  <bank>
+    <id>2320</id>
+    <name>Nykredit Realkredit A/S SA - Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2330</id>
+    <name>Credit Agricole Corporate and Investment Bank SA Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2340</id>
+    <name>Polbank EFG SA</name>
+  </bank>
+  <bank>
+    <id>2350</id>
+    <name>BNP PARIBAS SA Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2360</id>
+    <name>Danske Bank A/S SA Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2370</id>
+    <name>Skandinaviska Enskilda Banken AB (SA) - Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2380</id>
+    <name>Banco Mais S.A. (SA) Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2390</id>
+    <name>CAIXABANK, S.A. (SPÓŁKA AKCYJNA)ODDZIAŁ W POLSCE</name>
+  </bank>
+  <bank>
+    <id>2410</id>
+    <name>Elavon Financial Services Limited Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2430</id>
+    <name>BNP Paribas Securities Services SKA Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2470</id>
+    <name>Banco Espirito Santo de Investimento, S.A. Spółka Akcyjna Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2480</id>
+    <name>Getin Noble Bank SA</name>
+  </bank>
+  <bank>
+    <id>2490</id>
+    <name>Alior Bank SA</name>
+  </bank>
+  <bank>
+    <id>2510</id>
+    <name>Aareal Bank Aktiengesellschaft (Spółka Akcyjna) - Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2520</id>
+    <name>CREDIT SUISSE (LUXEMBOURG) S.A. Spółka Akcyjna, Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2530</id>
+    <name>FM Bank SA</name>
+  </bank>
+  <bank>
+    <id>2540</id>
+    <name>Citibank Europe plc (Publiczna Spółka Akcyjna) Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2550</id>
+    <name>Ikano Bank GmbH (Sp. z o.o.) Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2560</id>
+    <name>Nordea Bank AB SA Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2570</id>
+    <name>UBS Limited (spółka z ograniczonł odpowiedzialnością) Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2580</id>
+    <name>J.P. Morgan Europe Limited Sp. z o.o. Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2600</id>
+    <name>Bank of China (Luxembourg)S.A. Spółka Akcyjna Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2610</id>
+    <name>Vanquis Bank Limited (spółka z ograniczoną odpowiedzialnością) Oddział w Polsce</name>
+  </bank>
+  <bank>
+    <id>2630</id>
+    <name>Saxo Bank A/S Spółka Akcyjna Oddział w Polsce</name>
+  </bank>
+</banks>

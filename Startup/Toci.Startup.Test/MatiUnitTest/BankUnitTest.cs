@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SQLlib.SQL;
+using SQLlib;
 using Startup.TrainingOneHomeworks.GroupMati.Bank;
 using Startup.TrainingOneHomeworks.GroupMati.Bank.GeneratorClass;
 using Startup.TrainingOneHomeworks.GroupMati.Bank.Messages;

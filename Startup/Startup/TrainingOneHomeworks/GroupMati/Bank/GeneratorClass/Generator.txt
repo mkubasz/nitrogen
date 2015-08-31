@@ -4,7 +4,7 @@
     {
         public sealed class {0}TransactionBank : BankTransaction
         {
-            public {0}TransactionBank() : base("{0} Bank")
+            public {0}T      ransactionBank() : base("{0} Bank")
             {
             }
             public void DescriptionTransaction()

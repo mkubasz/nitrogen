@@ -11,6 +11,7 @@
     <AssemblyName>Startup</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,6 +37,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -117,9 +119,58 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ClientTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\BankTransactionFactory.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Factory\Interface\IBankTransactionFactory.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IBankTransactionMenager.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\InterfaceBanks\IClientTransaction.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\DateOfBirthd.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Exeption\InvalidPeselExeptions.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Gender.cs" />
+    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\Interface\IPeselValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_AliorBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_BankMillennium.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_Bank_Pocztowy.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_BGK.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_BGZ.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_BNP_ParibasFortis.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_Bos.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_BPH.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_BZ_WBK.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_CitybankHandlowy.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_CreditAgrecoleBankPolska.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_DeutscheBankPolska.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_DnB_Nord.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_EuroBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_FCE_BankPolska.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_FiatBankPolska.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_FM_BankPBP.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_GetinNobleBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_HSBC.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_IdeaBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_ING.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_mBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_MercedesBenzBankPolska.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_MeritumBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_NarodowyBankPolski.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_NordeaBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_Pekao.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_PKO_BP.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_PlusBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_PolskiejSpoldzielczosci.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_RaiffeisenBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_RBS_BankPolska.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_RobobankPolska.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_SantanderConsumerBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_SGB_Bank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_SocieteGenerale.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_ToyotaBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Banks\Bank_VolkswagenBank.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\ClientClass\Client.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\ClientClass\Transaction.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Interfaces\IBanks.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Transactions\PayIn.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Transactions\PayOut.cs" />
+    <Compile Include="TrainingOneHomeworks\Igor\Transactions\Transfer.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\AliorBank.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\IwonaM\Banks\BankListTransaction\BankGospodarstwaHandlowego.cs" />
@@ -145,13 +196,13 @@
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\Interface\IPdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\PdfCreator\PdfCreator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\ValidationNumber.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\InvalidPeselExeptions.cs" />
-    <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\IPeselValidator.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Pesel\PeselValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\Kuster\KkPeselValidator.cs" />
+    <Compile Include="TrainingOneHomeworks\lucass3231\Banks\BankIdentifier.cs" />
+    <Compile Include="TrainingOneHomeworks\wojteko22\AccountNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrainingOneHomeworks\AndzejC\Banki\Interface\" />
-    <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />
@@ -160,6 +211,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQLlib\SQLlib.csproj">
+      <Project>{cfb7f22e-8393-4a44-af3c-475ad855aa59}</Project>
+      <Name>SQLlib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
