@@ -55,7 +55,6 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AndzejC\UnitTest1.cs" />
-    <Compile Include="ErloonTest\BankTest.cs" />
     <Compile Include="IwonaM\UnitTestPesel.cs" />
     <Compile Include="MatiUnitTest\PdfUnitTest.cs" />
     <Compile Include="MatiUnitTest\BankUnitTest.cs" />
