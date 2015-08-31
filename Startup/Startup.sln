@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Startup", "Startup\Startup.csproj", "{28EE9570-EFA9-46B2-8A43-AE67CC334CB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.Startup.Test", "Toci.Startup.Test\Toci.Startup.Test.csproj", "{0ECE992A-F153-4F81-92D2-52B3A8FE1D05}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLlib", "SQLlib\SQLlib.csproj", "{CFB7F22E-8393-4A44-AF3C-475AD855AA59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogWindows", "DialogWindows\DialogWindows.csproj", "{682639C7-E5B5-46AE-9BDF-ACBA6ABE1D22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{CFB7F22E-8393-4A44-AF3C-475AD855AA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFB7F22E-8393-4A44-AF3C-475AD855AA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFB7F22E-8393-4A44-AF3C-475AD855AA59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682639C7-E5B5-46AE-9BDF-ACBA6ABE1D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682639C7-E5B5-46AE-9BDF-ACBA6ABE1D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682639C7-E5B5-46AE-9BDF-ACBA6ABE1D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682639C7-E5B5-46AE-9BDF-ACBA6ABE1D22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

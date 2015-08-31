@@ -4,3 +4,9 @@ M:\Projects\Toci\training\PraireDog\one\Startup\Startup\obj\Debug\Startup.dll
 M:\Projects\Toci\training\PraireDog\one\Startup\Startup\obj\Debug\Startup.pdb
 M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\itextsharp.dll
 M:\Projects\Toci\training\PraireDog\one\Startup\Startup\bin\Debug\itextsharp.xml
+F:\TOCI\nitrogen\Startup\Startup\obj\Debug\Startup.dll
+F:\TOCI\nitrogen\Startup\Startup\obj\Debug\Startup.pdb
+F:\TOCI\nitrogen\Startup\Startup\bin\Debug\Startup.dll
+F:\TOCI\nitrogen\Startup\Startup\bin\Debug\Startup.pdb
+F:\TOCI\nitrogen\Startup\Startup\bin\Debug\itextsharp.dll
+F:\TOCI\nitrogen\Startup\Startup\bin\Debug\itextsharp.xml

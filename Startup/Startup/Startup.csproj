@@ -70,12 +70,6 @@
     <Compile Include="TrainingOneHomeworks\Bolec\TransferManager.cs" />
     <Compile Include="TrainingOneHomeworks\Bolec\transferTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\Bolec\UserAccount.cs" />
-    <Compile Include="TrainingOneHomeworks\Erloon\AccountNumber.cs" />
-    <Compile Include="TrainingOneHomeworks\Erloon\BamkList.cs" />
-    <Compile Include="TrainingOneHomeworks\Erloon\Bank.cs" />
-    <Compile Include="TrainingOneHomeworks\Erloon\BankAccountNumber.cs" />
-    <Compile Include="TrainingOneHomeworks\Erloon\IIdentificationBankAccountNumber.cs" />
-    <Compile Include="TrainingOneHomeworks\Erloon\TheInternationalBankAccountNumber.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\AliorBankBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BankMilenniumBankTransaction.cs" />
     <Compile Include="TrainingOneHomeworks\GroupMati\Bank\Banks\BankPocztowyBankTransaction.cs" />
@@ -154,7 +148,6 @@
     <Folder Include="TrainingOneHomeworks\wojteko22\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TrainingOneHomeworks\Erloon\NbpList.txt" />
     <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\BanksLists.txt" />
     <Content Include="TrainingOneHomeworks\GroupMati\Bank\GeneratorClass\Generator.txt" />
   </ItemGroup>

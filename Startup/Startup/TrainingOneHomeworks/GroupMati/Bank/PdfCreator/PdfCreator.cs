@@ -3,6 +3,9 @@ using iTextSharp;
 using  iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using Microsoft.Win32;
+using Microsoft.Win32.SafeHandles;
+
 namespace Startup.TrainingOneHomeworks.Mati.PdfCreator
 {
 
@@ -11,8 +14,11 @@ namespace Startup.TrainingOneHomeworks.Mati.PdfCreator
         private string path = @"M:\{0}.pdf";
         private const string _przelewBlad = "Przelew nie zostal wykonany";
         private const string _przelew = "Przelew zostal wykonany";
+       
+      
 
         public PdfCreator(string nameBank)
+
         {
             TryCreatePdf("Alior");
 
