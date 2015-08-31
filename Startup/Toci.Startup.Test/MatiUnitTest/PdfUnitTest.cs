@@ -1,8 +1,6 @@
-﻿using System;
-using System.IO;
-using System.Reflection;
+﻿using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Startup.TrainingOneHomeworks.Mati.PdfCreator;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.PdfCreator;
 
 namespace Toci.Startup.Test.MatiUnitTest
 {

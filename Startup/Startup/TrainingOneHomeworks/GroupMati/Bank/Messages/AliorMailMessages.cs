@@ -1,6 +1,4 @@
-﻿using System.Net.Mail;
-
-namespace Startup.TrainingOneHomeworks.Mati.Messages
+﻿namespace Startup.TrainingOneHomeworks.GroupMati.Bank.Messages
 {
     public class AliorMailMessages : MailMessages
     {

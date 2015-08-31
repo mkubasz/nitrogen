@@ -1,18 +1,73 @@
-﻿using Startup.TrainingOneHomeworks.Mati.InterfaceBanks;
+﻿using System;
+using System.CodeDom.Compiler;
+using System.Linq;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.InterfaceBanks;
+using System.Collections.Generic;
+using System.Runtime.Remoting.Messaging;
+using Startup.TrainingOneHomeworks.GroupMati.Bank.Factory;
 
-namespace Startup.TrainingOneHomeworks.Mati
+namespace Startup.TrainingOneHomeworks.GroupMati.Bank
 {
     public class BankTransactionMenager : IBankTransactionMenager
     {
-        public string incomingBank;
-        public string outcomingBank;
 
+        private FactoryTransactionBank factory = new FactoryTransactionBank();
 
-        public IClientTransaction ClientTranstaction { get; set; }
-        public IBankTransaction BankTransaction { get; set; }
-        public bool VerifyTransfer()
+        private List<IClientTransaction> _clientTransactions; 
+        public List<IClientTransaction> ClientTransactions => _clientTransactions;
+        private List<List<BankTransaction>> _verifiedClientTransactions;
+        public List<List<BankTransaction>> VerifiedClientTransactions
         {
-            throw new System.NotImplementedException();
+            get {
+                VerifyTransfer();
+                return _verifiedClientTransactions;
+                }
         }
+        public BankTransactionMenager()
+        {
+            _clientTransactions = new List<IClientTransaction>();
+        }
+        public BankTransactionMenager(IClientTransaction client)
+        {
+            _clientTransactions = new List<IClientTransaction>();
+            ClientTransactions.Add(client);
+        }
+
+        // GetNrbNumber -> SearchNumber -> VerifyTransfer
+        public void VerifyTransfer()
+        {
+            BankTransaction bank;
+            _verifiedClientTransactions = new List<List<BankTransaction>>();
+            foreach (var client in _clientTransactions)
+            {
+                if ((bank = SearchAccount(client.OutcomingNumber))!=null )
+                {
+                    client.GetTransactions(bank);
+                    if ((bank = SearchAccount(client.IncomingNumber)) != null)
+                    {
+                        VerifiedClientTransactions.Add(client.GetTransactions(bank));
+                    }
+                }
+               
+            }
+        }
+
+        private string GetNrbNumber(string number)
+        {
+                return number.Substring(2, 4);
+        }
+
+        public BankTransaction SearchAccount(string number)
+        {
+            if (!ValidationNumber.Validation(number))
+            {
+                return null;
+            }
+            BankTransaction tmp;
+            string shortNumber = GetNrbNumber(number);
+            tmp = factory.GetItem(shortNumber);
+            return tmp;
+        }
+
     }
 }

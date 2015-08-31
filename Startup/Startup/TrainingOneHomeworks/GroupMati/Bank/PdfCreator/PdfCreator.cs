@@ -1,12 +1,17 @@
 ﻿using System;
-using iTextSharp;
-using  iTextSharp.text;
-using iTextSharp.text.pdf;
 using System.IO;
+<<<<<<< HEAD
 using Microsoft.Win32;
 using Microsoft.Win32.SafeHandles;
 
 namespace Startup.TrainingOneHomeworks.Mati.PdfCreator
+=======
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Startup.TrainingOneHomeworks.Mati.PdfCreator;
+
+namespace Startup.TrainingOneHomeworks.GroupMati.Bank.PdfCreator
+>>>>>>> 7aacb4d8130345bb1c616fa5fecf6cc7378ce9e8
 {
 
     public class PdfCreator : IPdfCreator
@@ -23,7 +28,6 @@ namespace Startup.TrainingOneHomeworks.Mati.PdfCreator
             TryCreatePdf("Alior");
 
         }
-
         public bool TryCreatePdf(string nameBank)
         {
             try
@@ -32,6 +36,7 @@ namespace Startup.TrainingOneHomeworks.Mati.PdfCreator
                 {
                     Document document = new Document(PageSize.A7);
                     PdfWriter writer = PdfWriter.GetInstance(document, file);
+
                     /// Create metadate pdf file
                     document.AddAuthor("");
                     document.AddLanguage("pl");
@@ -52,8 +57,6 @@ namespace Startup.TrainingOneHomeworks.Mati.PdfCreator
             {
                 return false;
             }
-
         }
-
     }
 }
