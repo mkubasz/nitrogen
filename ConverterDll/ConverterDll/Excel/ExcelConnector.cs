@@ -4,20 +4,24 @@ namespace ConverterDll.Excel
 {
     public class ExcelConnector
     {
-        private Application _excelApp; 
+        private Application _excelApp;
+        protected Workbook ExcelFile;
+
         public ExcelConnector()
         {
-            _excelApp = new ApplicationClass();
+            _excelApp = new Application();
         }
 
         public void OpenFile(string pathFile)
         {
             try
             {
-                Workbook workFile = _excelApp.Workbooks.Open(pathFile, Type.Missing, Type.Missing, Type.Missing,
+                ExcelFile = _excelApp.Workbooks.Open(pathFile, Type.Missing, Type.Missing, Type.Missing,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-                ExcelScanInternal(workFile);
+                ExcelScanInternal(ExcelFile);
+
+                
             }
             catch (ConverterException ex)
             {
