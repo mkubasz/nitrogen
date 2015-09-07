@@ -6,15 +6,25 @@
         xmlns:local="clr-namespace:Converter"
         mc:Ignorable="d"
         Title="Converter" Height="350" Width="525">
-    <Grid>
-        <Label Content="File path: " HorizontalAlignment="Left" Margin="38,21,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Margin="99,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="292" TextChanged="txtPath_TextChanged" IsReadOnly="True"/>
-        <Button x:Name="btnOpen" Content="Open" Click="BtnOpen_OnClick" HorizontalAlignment="Left" Margin="408,27,0,0" VerticalAlignment="Top" Width="75"/>
+    <Grid Margin="0,0,0.4,-0.2">
+        <Label Content="File path: " HorizontalAlignment="Left" Margin="27,27,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Margin="104,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="292" TextChanged="txtPath_TextChanged" IsReadOnly="True"/>
+        <Button x:Name="btnOpen" Content="Open" Click="BtnOpen_OnClick" Margin="408,27,35,0" VerticalAlignment="Top"/>
         <Button Content="Convert" HorizontalAlignment="Left" Margin="169,114,0,0" VerticalAlignment="Top" Width="145" Height="51" Click="Button_Click_1"/>
         <Label Content="Save path:" HorizontalAlignment="Left" Margin="56,200,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtSave" HorizontalAlignment="Left" Margin="120,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" TextChanged="txtSave_TextChanged" IsReadOnly="True"/>
-        <Button x:Name="btnSaveAs" Content="Save as.." HorizontalAlignment="Left" Margin="408,206,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveAs_Click"/>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="408,245,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnSaveAs" Content="Save as.." Margin="408,206,35,0" VerticalAlignment="Top" Click="btnSaveAs_Click"/>
+        <Button x:Name="btnSave" Content="Save" Margin="408,245,35,0" VerticalAlignment="Top"/>
+        <Menu x:Name="menu" Height="22" VerticalAlignment="Top">
+            <MenuItem Header="File" Height="22" Width="46">
+                <MenuItem x:Name="menuExit" Header="Exit" HorizontalAlignment="Left" Width="139.2" Cursor="Arrow" Click="menuExit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Help" >
+                <MenuItem Header="About" Click="MenuItem_OnClick" HorizontalAlignment="Left" Width="139.2"/>
+            </MenuItem>
+        </Menu>
+        <RadioButton x:Name="rdbJson" Content="To Json" HorizontalAlignment="Left" Margin="351,110,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdbXml" Content="To Xml" HorizontalAlignment="Left" Margin="351,132,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

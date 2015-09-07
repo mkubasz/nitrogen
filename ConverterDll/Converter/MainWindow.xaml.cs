@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -40,8 +41,6 @@ namespace Converter
                 txtPath.Text = name;
 	           
 	        }
-
-
 	    }
 
         private void txtPath_TextChanged(object sender, TextChangedEventArgs e)
@@ -79,7 +78,19 @@ namespace Converter
             
         }
 
-        
-        
+		private void menuExit_Click(object sender, RoutedEventArgs e)
+		{
+			this.Close();
+		}
+
+		protected override void OnClosed(EventArgs e)
+		{
+			base.OnClosed(e);
+		}
+
+		private void MenuItem_OnClick(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("Zrobione przez genialnych programistów xD Widmo");
+		}
 	}
 }

@@ -11,10 +11,9 @@ namespace ConnectionTest
         [TestMethod]
         public void ReadFileTest()
         {
-            ExcelConnector connector = new ExcelConnector();
-            connector.OpenFile(@"d:\aaa.xls");
+			ExcelConnector connector = new ExcelConnector();
+			connector.OpenFile(@"d:\aaa.xls");
+		}
 
-            connector.ToString();
-        }
-    }
+	}
 }
