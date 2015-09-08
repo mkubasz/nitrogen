@@ -1,0 +1,9 @@
+M:\Projects\nitrogen\ConverterDll\ConnectionTest\bin\Debug\ConnectionTest.dll
+M:\Projects\nitrogen\ConverterDll\ConnectionTest\bin\Debug\ConnectionTest.pdb
+M:\Projects\nitrogen\ConverterDll\ConnectionTest\bin\Debug\ConverterDll.dll
+M:\Projects\nitrogen\ConverterDll\ConnectionTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+M:\Projects\nitrogen\ConverterDll\ConnectionTest\bin\Debug\ConverterDll.pdb
+M:\Projects\nitrogen\ConverterDll\ConnectionTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+M:\Projects\nitrogen\ConverterDll\ConnectionTest\obj\Debug\ExcelTests.csprojResolveAssemblyReference.cache
+M:\Projects\nitrogen\ConverterDll\ConnectionTest\obj\Debug\ConnectionTest.dll
+M:\Projects\nitrogen\ConverterDll\ConnectionTest\obj\Debug\ConnectionTest.pdb
