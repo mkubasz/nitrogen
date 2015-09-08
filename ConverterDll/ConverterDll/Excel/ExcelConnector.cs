@@ -5,23 +5,22 @@ namespace ConverterDll.Excel
     public class ExcelConnector
     {
         private Application _excelApp;
-        protected Workbook ExcelFile;
 
         public ExcelConnector()
         {
             _excelApp = new Application();
         }
 
-        public void OpenFile(string pathFile)
+       public Workbook OpenFile(string pathFile)
         {
             try
             {
-                ExcelFile = _excelApp.Workbooks.Open(pathFile, Type.Missing, Type.Missing, Type.Missing,
+                var excelFile = _excelApp.Workbooks.Open(pathFile, Type.Missing, Type.Missing, Type.Missing,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
                     Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-                ExcelScanInternal(ExcelFile);
+                ExcelScanInternal(excelFile);
 
-                
+                return excelFile;
             }
             catch (ConverterException ex)
             {
