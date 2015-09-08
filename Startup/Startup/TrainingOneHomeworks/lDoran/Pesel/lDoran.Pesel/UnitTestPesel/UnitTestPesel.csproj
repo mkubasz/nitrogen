@@ -53,12 +53,6 @@
     <Compile Include="UnitTestPeselValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\lDoran.Pesel\lDoran.Pesel.csproj">
-      <Project>{d10a72bb-909a-404a-aece-8555bf43643c}</Project>
-      <Name>lDoran.Pesel</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
