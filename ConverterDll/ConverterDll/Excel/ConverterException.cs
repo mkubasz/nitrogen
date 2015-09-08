@@ -9,7 +9,7 @@ namespace ConverterDll.Excel
     {
         public ConverterException(string message) : base(message)
         {
-            
+			Console.WriteLine("dsadas");	
         }
     }
 }
