@@ -1,4 +1,5 @@
-﻿using Tematy_kod.Widmo.Vertek;
+﻿using System;
+using Tematy_kod.Widmo.Vertek;
 
 namespace Tematy_kod
 {
@@ -6,9 +7,17 @@ namespace Tematy_kod
     {
         public void Paint(Farba farba)
         {
+            Wall2 wall = new Wall2();
+            wall.Paint("sad");
+            this.Paint("bialy");
             farba.Paint("niebieski");
-            _cost = "3000";
+            cost = "3000";
             getValue();
+        }
+
+        public void Show()
+        {
+            Console.WriteLine("sada_wall2");
         }
     }
 }

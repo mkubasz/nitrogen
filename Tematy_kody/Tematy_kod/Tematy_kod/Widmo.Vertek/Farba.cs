@@ -7,16 +7,16 @@ namespace Tematy_kod.Widmo.Vertek
 {
     public class Farba
     {
-        private string _company;
-        protected string _cost;
+        private string _companyCost;
+        protected string cost;
 
-        private void setValue(string _company)
+        private void setValue(string _companyCost)
         {
-            _cost = _company;
+            cost = _companyCost;
         }
         protected void getValue()
         {
-           Console.WriteLine(_cost);
+           Console.WriteLine(cost);
         }
 
         public void Paint(string color)

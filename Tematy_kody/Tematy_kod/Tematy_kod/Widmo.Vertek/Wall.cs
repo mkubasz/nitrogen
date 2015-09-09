@@ -1,15 +1,22 @@
-﻿using Tematy_kod.Widmo.Vertek;
+﻿using System;
+using Tematy_kod.Widmo.Vertek;
 namespace Tematy_kod
 {
-    public class Wall : Farba, IWall
+    public class Wall : Farba, IWall 
     {
         
         public void Paint(Farba farba)
         {
             farba.Paint("czerwony");
-            _cost = "1000";
+            cost = "1000";
             getValue();
             
+            
+        }
+
+        public void Show()
+        {
+           Console.WriteLine("dada_wall1");
         }
     }
 }
