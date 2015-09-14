@@ -23,7 +23,7 @@ namespace TestUnit
         {
             PropertyClass propertyClass = new PropertyClass();
             propertyClass.Property = 5;
-            propertyClass.TestPropertyPrivate = 7;
+            propertyClass.TestPropertyPrivate =7;
             propertyClass.TestPropertyOld = 9;
 
         }

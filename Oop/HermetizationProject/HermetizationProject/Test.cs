@@ -6,7 +6,25 @@
 
         public Test()
         {
+           
+        }
+    }
+
+    public class Gotuje
+    {
+
+        void Pieke()
+        {
             
         }
+    }
+
+    public class Spanie
+    {
+        void Spie()
+        {
+
+        }
+
     }
 }

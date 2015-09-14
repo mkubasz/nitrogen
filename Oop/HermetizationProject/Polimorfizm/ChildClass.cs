@@ -12,6 +12,7 @@
         public override int Ania(int a)
         {
             a = value;
+            base.Ania(a);
             return a;
         }
 

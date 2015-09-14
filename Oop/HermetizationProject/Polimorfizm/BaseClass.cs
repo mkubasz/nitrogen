@@ -14,7 +14,7 @@ namespace Polimorfizm
         }
         public virtual bool methodTest()
         {
-
+            return true;
         }
 
         public virtual int Ania(int a)

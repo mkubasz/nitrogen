@@ -1,6 +1,6 @@
 ﻿namespace Polimorfizm
 {
-#if true
+#if false
     public class ThirdClass : ChildClass
     {
         public override bool methodTest()
@@ -14,10 +14,10 @@
 #if false
     public class ThirdClass : SealdedClass
     {
-        //public override bool methodTest()
-        //{
-        //    return true;
-        //}
+        public override bool methodTest()
+        {
+            return true;
+        }
 
     }
 #endif

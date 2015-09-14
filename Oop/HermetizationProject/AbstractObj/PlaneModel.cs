@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace AbstractObj
 {
@@ -16,8 +17,23 @@ namespace AbstractObj
 
         public override string Steady()
         {
+
             return "Szzzzzzzzzzzzzz";
         }
 
+        public override void spij()
+        {
+            Console.WriteLine("nie spie");
+        }
+
+        public override void jedz()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void zle()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
