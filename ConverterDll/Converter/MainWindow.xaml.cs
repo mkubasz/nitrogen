@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,22 @@ namespace Converter
 
 	    private void BtnOpen_OnClick(object sender, RoutedEventArgs e)
 	    {
-	       
+	        FileStream myStream = null;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+
+	        openFileDialog.DefaultExt = ".xls|.xlsx";
+	        openFileDialog.Filter = "Excel Files|*.xls;*.xlsx";
+	        Nullable<bool> result = openFileDialog.ShowDialog();
+
+	        if (result == true)
+	        {
+	            string name = openFileDialog.FileName;
+	            txtPath.Text = name;
+                OpenFile open = new OpenFile();
+	            open.Create(true, name);
+                open.Save();
+	        }
 	    }
 
         private void txtPath_TextChanged(object sender, TextChangedEventArgs e)
