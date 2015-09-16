@@ -72,5 +72,12 @@ namespace Converter
 		{
 			
 		}
+
+		private void BtnEdit_OnClick(object sender, RoutedEventArgs e)
+		{
+			this.Hide();
+			Editor editor = new Editor(this);
+			editor.Show();
+		}
 	}
 }

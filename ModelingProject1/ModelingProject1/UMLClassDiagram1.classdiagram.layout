@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLClassDiagram1">
+  <logicalClassDesignerModelMoniker Id="25d4a6ab-a06c-4841-9423-c07ba3bc98e4" />
+  <nestedChildShapes>
+    <classShape Id="f4e909d4-96f3-411b-85a1-2713063c11f4" absoluteBounds="2.125, 1.25, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="8118f6a2-7aee-4f0a-8221-07effed6b7ec" LastKnownName="AbstractWidok" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="c6af3f6b-d575-483b-8fb3-311e62e54b3a" absoluteBounds="2.14, 1.6400000000000001, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="51e11d80-a565-469d-bf6c-86f573205aeb" absoluteBounds="2.14, 2.0113281125823654, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="195518b8-3f48-4fe7-b6eb-c94d44f36730" absoluteBounds="5.25, 1.25, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="96436797-6dab-4884-8f42-6997e9dd6849" LastKnownName="WidokForum" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="edc0bd82-cf74-43ac-abfc-3c1514aff325" absoluteBounds="5.265, 1.6400000000000001, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="d7376a29-c00d-4969-9dce-4716a52434c4" absoluteBounds="5.265, 1.8511718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(5.25 : 1.70117186754942); (3.625 : 1.70117186754942)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="cd5e0502-01de-470b-9396-6936c1d54067" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="195518b8-3f48-4fe7-b6eb-c94d44f36730" />
+        <classShapeMoniker Id="f4e909d4-96f3-411b-85a1-2713063c11f4" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="f5e4923b-b298-4abe-bf4d-c89458461c6b" absoluteBounds="3.875, 3.25, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="96a80fa6-7bc7-4a29-801d-c1e02aad8280" LastKnownName="WdiokPierwszaStrona" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="695d8821-a024-4647-ad31-4dc08c8b3b92" absoluteBounds="3.89, 3.64, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="a10b98da-fd44-4e83-bf27-d0151e59085d" absoluteBounds="3.89, 3.8511718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(4.625 : 3.25); (4.625 : 2.84765622516473); (2.875 : 2.84765622516473); (2.875 : 2.47265622516473)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="0c8bc694-8cfd-409e-8ae3-50ca259d84f9" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="f5e4923b-b298-4abe-bf4d-c89458461c6b" />
+        <classShapeMoniker Id="f4e909d4-96f3-411b-85a1-2713063c11f4" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
