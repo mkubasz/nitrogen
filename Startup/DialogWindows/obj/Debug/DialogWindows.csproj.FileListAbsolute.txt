@@ -2,3 +2,4 @@ F:\TOCI\nitrogen\Startup\DialogWindows\obj\Debug\DialogWindows.csprojResolveAsse
 F:\TOCI\nitrogen\Startup\DialogWindows\obj\Debug\DialogWindows.Form1.resources
 F:\TOCI\nitrogen\Startup\DialogWindows\obj\Debug\DialogWindows.Properties.Resources.resources
 F:\TOCI\nitrogen\Startup\DialogWindows\obj\Debug\DialogWindows.csproj.GenerateResource.Cache
+C:\Users\Igor\Documents\nitrogen\Startup\DialogWindows\bin\Debug\DialogWindows.exe.config
