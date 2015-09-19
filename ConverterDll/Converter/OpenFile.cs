@@ -2,14 +2,14 @@
 using System.IO;
 using Microsoft.Win32;
 using Spire.Xls;
-using Excel = Microsoft.Office.Interop.Excel;
+
 
 
 
 
 namespace Converter
 {
-    public class OpenFile
+    /*public class OpenFile
     {
         private Excel.Application app = null;
         private Excel.Application _excel;
@@ -57,5 +57,5 @@ namespace Converter
             this._workbook.Save();
         }
 
-    }
+    }*/
 }

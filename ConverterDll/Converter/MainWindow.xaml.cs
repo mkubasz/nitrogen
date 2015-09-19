@@ -41,10 +41,10 @@ namespace Converter
 	        if (result == true)
 	        {
 	            string name = openFileDialog.FileName;
-	            txtPath.Text = name;
-                OpenFile open = new OpenFile();
-	            open.Create(true, name);
-                open.Save();
+	            //txtPath.Text = name; nie istnieje jeszcze
+                //OpenFile open = new OpenFile(); nie istnieje jeszcze
+	            //open.Create(true, name);
+                //open.Save();
 	        }
 	    }
 
