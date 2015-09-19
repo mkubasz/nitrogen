@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ExceptionTranslator
 {
-    public class ExceptionTranslator : Exception // Logika - przyjmuje enuma, zwraca string message
+    public enum ExceptionsPack
     {
-
+        Test,
+        Test2
     }
 }
