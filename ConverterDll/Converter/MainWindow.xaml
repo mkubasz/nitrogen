@@ -49,7 +49,11 @@
             <ComboBoxItem Content="XML"/>
             <ComboBoxItem Content="JSON"/>
         </ComboBox>
+<<<<<<< HEAD
         <Button x:Name="btnShow" Grid.ColumnSpan="3" Content="Show file" Grid.Column="2" HorizontalAlignment="Left" Margin="6.8,10.2,0,0" Grid.Row="8" VerticalAlignment="Top" Width="75" Click="btnShow_Click"/>
+=======
+        <Button x:Name="btnPreview" Content="Preview" Grid.Column="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Height="21" Click="btnPreview_Click" Margin="0,30,0,0" Grid.RowSpan="2"/>
+>>>>>>> 3b2b39147e151db3005b61d78a6e4992d45893ef
 
     </Grid>
 </Window>

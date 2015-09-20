@@ -96,9 +96,18 @@ namespace Converter
 			editor.Show();
 		}
 
+<<<<<<< HEAD
 		private void btnShow_Click(object sender, RoutedEventArgs e)
 		{
 
 		}
 	}
+=======
+        private void btnPreview_Click(object sender, RoutedEventArgs e)
+        {
+            Preview windowPreview = new Preview();
+            windowPreview.Show();
+        }
+    }
+>>>>>>> 3b2b39147e151db3005b61d78a6e4992d45893ef
 }

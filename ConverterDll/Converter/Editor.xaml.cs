@@ -35,7 +35,11 @@ namespace Converter
 
 		private void btnOpen_Click(object sender, RoutedEventArgs e)
 		{
+<<<<<<< HEAD
 			
+=======
+			//dataGrid.
+>>>>>>> 3b2b39147e151db3005b61d78a6e4992d45893ef
 		}
 	}
 }
