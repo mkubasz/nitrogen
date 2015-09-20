@@ -40,9 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractFactory.cs" />
-    <Compile Include="ExceptionFactory.cs" />
+    <Compile Include="ExceptionFactoryXml.cs" />
     <Compile Include="ExceptionsPack.cs" />
-    <Compile Include="ExceptionTranslator.cs" />
+    <Compile Include="ExceptionTran.cs" />
     <Compile Include="OpenSys\OpenSystem.cs" />
     <Compile Include="OpenSys\XmlOpenerSys.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,15 +8,11 @@ namespace ExceptionTranslator
 {
     public class ExceptionTran : Exception // Logika - przyjmuje enuma, zwraca string message
     {
-        public string Message {get; protected set;}
-        protected ExceptionFactoryXml ExceptionList = new ExceptionFactoryXml();
+        protected static ExceptionFactoryXml ExceptionList = new ExceptionFactoryXml();
 
-        public ExceptionTran(ExceptionsPack entity)
-        {
-            this.Message = getMessage(entity);
-        }
+        public ExceptionTran(ExceptionsPack entity) : base(getMessage(entity)) { }
 
-        protected string getMessage(ExceptionsPack entity)
+        protected static string getMessage(ExceptionsPack entity)
         {
             return ExceptionList.getElement((int)entity);
         }
