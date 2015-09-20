@@ -13,7 +13,11 @@ namespace ExceptionTranslator
         public ExceptionFactoryXml()
         {
             var file = new XmlOpenerSys("C:\\Users\\Igor\\Documents\\nitrogen\\ConverterDll\\ExceptionTranslator\\XML_List\\ExceptionList.xml");
-            elements = file.getList();
+            elements = new Dictionary<int, Func<string>>();
+            foreach(var obj in file.getList())
+            {
+                elements.Add(obj.Key, () => obj.Value);
+            }
         }
     }
 }
