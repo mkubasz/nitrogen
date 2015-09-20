@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ExceptionList>
+  <Exception>test</Exception>
+  <Exception>test2</Exception>
+  <Exception3>test3</Exception3>
+</ExceptionList>

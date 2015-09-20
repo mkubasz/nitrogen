@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ExceptionTranslator.CHOR_MessageSys;
 
 namespace ExceptionTranslator
 {
@@ -16,12 +15,9 @@ namespace ExceptionTranslator
             this.Message = getMessage(entity);
         }
 
-        static string getMessage(ExceptionsPack entity)
+        protected string getMessage(ExceptionsPack entity)
         {
-            LinkedList<AbstractCHORHandler> Handlers = new LinkedList<AbstractCHORHandler>();
-            Handlers.AddFirst(new TestHandlerOne());
-            Handlers.AddFirst(new TestHandlerTwo(Handlers.ElementAt(0)));
-            return Handlers.ElementAt(Handlers.Count() - 1).getMessage(entity);
+            return "";
         }
     }
 }
