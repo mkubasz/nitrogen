@@ -8,7 +8,12 @@ namespace ExceptionTranslator
 {
     public enum ExceptionsPack
     {
-        Test,
-        Test2
+        FileNotFound,
+        StringIsEmpty,
+        FileNotExist,
+        NoReadFilePermission,
+        NoEditFilePermission,
+        NoCreateFileInFolderPremision,
+        DataReadOnly,
     }
 }

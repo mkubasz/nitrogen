@@ -39,14 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CHOR_MessageSys\AbstractCHORHandler.cs" />
-    <Compile Include="CHOR_MessageSys\TestHandlerOne.cs" />
-    <Compile Include="CHOR_MessageSys\TestHandlerTwo.cs" />
-    <Compile Include="ExceptionsPack.cs" />
-    <Compile Include="ExceptionTranslator.cs" />
+    <Compile Include="AbstractFactory.cs" />
+    <Compile Include="ExceptionFactoryXml.cs" />
+    <Compile Include="ExceptionPack.cs" />
+    <Compile Include="ExceptionTran.cs" />
+    <Compile Include="OpenSys\OpenSystem.cs" />
+    <Compile Include="OpenSys\XmlOpenerSys.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="XML_List\ExceptionList.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
