@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ExceptionList>
-  <Exception>test</Exception>
-  <Exception>test2</Exception>
-  <Exception3>test3</Exception3>
+  <Exception>Nie znaleziono pliku.</Exception>
+  <Exception>Ciąg nazwy pliku jest pusty.</Exception>
+  <Exception>Plik nie istnieje.</Exception>
+  <Exception>Brak uprawnień do odczytu pliku.</Exception>
+  <Exception>Brak uprawnień do edycji pliku.</Exception>
+  <Exception>Brak uprawnień do katalogu, w którym tworzony jest plik.</Exception>
+  <Exception>Nośnik, na którym dokonywany jest zapis jest tylko do odczytu.</Exception>
 </ExceptionList>

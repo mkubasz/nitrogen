@@ -43,6 +43,8 @@
     <Compile Include="ExceptionFactory.cs" />
     <Compile Include="ExceptionsPack.cs" />
     <Compile Include="ExceptionTranslator.cs" />
+    <Compile Include="OpenSys\OpenSystem.cs" />
+    <Compile Include="OpenSys\XmlOpenerSys.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace ExceptionTranslator
 {
-    public class ExceptionTranslator : Exception // Logika - przyjmuje enuma, zwraca string message
+    public class ExceptionTran : Exception // Logika - przyjmuje enuma, zwraca string message
     {
         public string Message {get; protected set;}
+        protected ExceptionFactoryXml ExceptionList = new ExceptionFactoryXml();
 
-        public ExceptionTranslator(ExceptionsPack entity)
+        public ExceptionTran(ExceptionsPack entity)
         {
             this.Message = getMessage(entity);
         }
 
         protected string getMessage(ExceptionsPack entity)
         {
-            return "";
+            return ExceptionList.getElement((int)entity);
         }
     }
 }

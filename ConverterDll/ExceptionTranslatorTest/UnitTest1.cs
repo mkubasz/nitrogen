@@ -10,8 +10,8 @@ namespace ExceptionTranslatorTest
         [TestMethod]
         public void TestMethod1()
         {
-            var test = new ExceptionFactory();
-            Assert.IsTrue(test.getElement(0) != null ? true : false);
+            ExceptionTran tran = new ExceptionTran(ExceptionsPack.FileNotExist);
+            Assert.IsTrue(tran.Message=="Plik nie istnieje." ? true : false);
         }
     }
 }
