@@ -34,7 +34,7 @@ namespace Converter
 
 		private void btnOpen_Click(object sender, RoutedEventArgs e)
 		{
-			dataGrid.
+			//dataGrid.
 		}
 	}
 }
