@@ -48,7 +48,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="XML_List\ExceptionList.txt" />
     <Content Include="XML_List\ExceptionList.xml">
       <SubType>Designer</SubType>
     </Content>

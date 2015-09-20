@@ -54,8 +54,6 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XmlDocument.cs" />
-    <Compile Include="XmlNodeList.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExceptionTranslator\ExceptionTranslator.csproj">
