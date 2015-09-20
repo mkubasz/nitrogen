@@ -18,7 +18,7 @@ namespace Converter
 		private Excel.Range range;
 
 
-		public bool Create(bool visible, string path,out Worksheet )
+		public bool Create(bool visible, string path)
 		{
 			try
 			{

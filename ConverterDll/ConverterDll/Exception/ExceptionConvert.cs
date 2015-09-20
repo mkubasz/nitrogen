@@ -13,7 +13,7 @@ namespace ConverterDll.Exception
 		 {
 			 StreamReader a;
 
-			 a.Open(enume.ToString());
+			// a.Open(enume.ToString());
 			 return null;
 		 }
 	}
