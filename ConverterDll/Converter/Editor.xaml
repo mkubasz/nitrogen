@@ -16,7 +16,7 @@
         <Expander x:Name="expander" Header="Expander" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top">
             <Grid Background="#FFE5E5E5"/>
         </Expander>
-        <Button x:Name="btnOpen" Content="Open" Grid.Column="1" HorizontalAlignment="Left" Margin="10.4,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnOpen" Content="Open" Grid.Column="1" HorizontalAlignment="Left" Margin="10.4,10,0,0" VerticalAlignment="Top" Width="75" Click="btnOpen_Click"/>
 
     </Grid>
 </Window>

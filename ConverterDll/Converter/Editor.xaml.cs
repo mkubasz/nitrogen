@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace Converter
 {
@@ -34,7 +35,7 @@ namespace Converter
 
 		private void btnOpen_Click(object sender, RoutedEventArgs e)
 		{
-			dataGrid.
+			
 		}
 	}
 }

@@ -49,6 +49,7 @@
             <ComboBoxItem Content="XML"/>
             <ComboBoxItem Content="JSON"/>
         </ComboBox>
+        <Button x:Name="btnShow" Grid.ColumnSpan="3" Content="Show file" Grid.Column="2" HorizontalAlignment="Left" Margin="6.8,10.2,0,0" Grid.Row="8" VerticalAlignment="Top" Width="75" Click="btnShow_Click"/>
 
     </Grid>
 </Window>

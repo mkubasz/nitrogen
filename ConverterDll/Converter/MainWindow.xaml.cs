@@ -95,5 +95,10 @@ namespace Converter
 			Editor editor = new Editor(this);
 			editor.Show();
 		}
+
+		private void btnShow_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }
