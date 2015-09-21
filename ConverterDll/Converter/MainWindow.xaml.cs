@@ -41,7 +41,7 @@ namespace Converter
 	        if (result == true)
 	        {
 	            string name = openFileDialog.FileName;
-	            txtPath.Text = name;
+	            //txtPath.Text = name;
                 OpenFile open = new OpenFile();
 	            open.Create(true, name);
                 open.Save();

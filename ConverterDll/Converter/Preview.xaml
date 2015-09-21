@@ -6,13 +6,13 @@
         xmlns:local="clr-namespace:Converter"
         mc:Ignorable="d"
         Title="Preview" Height="300" Width="300">
-    <Grid>
+    <Grid PreviewDrop="Grid_PreviewDrop">
         <Grid.RowDefinitions>
             <RowDefinition Height="37*"/>
             <RowDefinition Height="232*"/>
         </Grid.RowDefinitions>
         <Button x:Name="btnClosePreview" Content="Go back" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Width="75" Height="27" Click="btnClosePreview_Click"/>
-        <Button x:Name="btnSaveFile" Content="Save as..." HorizontalAlignment="Left" Margin="178,11,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
+        <Button x:Name="btnSaveFile" Content="Save as..." HorizontalAlignment="Left" Margin="178,11,0,0" VerticalAlignment="Top" Width="75" Height="27" Click="btnSaveFile_Click"/>
 
     </Grid>
 </Window>
