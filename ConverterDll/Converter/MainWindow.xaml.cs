@@ -96,10 +96,17 @@ namespace Converter
 			editor.Show();
 		}
 
-        private void btnPreview_Click(object sender, RoutedEventArgs e)
-        {
-            Preview windowPreview = new Preview();
-            windowPreview.Show();
-        }
+
+		private void btnShow_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void btnPreview_Click(object sender, RoutedEventArgs e)
+		{
+			Preview windowPreview = new Preview();
+			windowPreview.Show();
+		}
+	
     }
 }
