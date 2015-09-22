@@ -19,6 +19,8 @@ namespace Converter
     /// </summary>
     public partial class Preview : Window
     {
+
+
         public Preview()
         {
             InitializeComponent();
@@ -26,7 +28,17 @@ namespace Converter
 
         private void btnClosePreview_Click(object sender, RoutedEventArgs e)
         {
-            
+            Close();
+        }
+
+        private void btnSaveFile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CreatePrintPreviewControl()
+        {
+
         }
     }
 }
