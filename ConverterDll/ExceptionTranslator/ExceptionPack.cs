@@ -8,6 +8,8 @@ namespace ExceptionTranslator
 {
     public enum ExceptionsPack
     {
+        JustError,
+
         FileNotFound,
         StringIsEmpty,
         FileNotExist,
@@ -15,5 +17,10 @@ namespace ExceptionTranslator
         NoEditFilePermission,
         NoCreateFileInFolderPremision,
         DataReadOnly,
+
+        InvalidSQLStatement,
+        CloseingQuoteMissing,
+        ExponentOutOfRange,
+        MissingFROMClause
     }
 }
