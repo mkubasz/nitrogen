@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Net;
+using ExceptionTranslator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Homeworks.Igor;
 using Homeworks.Igor.DataLoadSystem;
@@ -13,8 +14,19 @@ namespace IgorTest
         [TestMethod]
         public void TestMethod1()
         {
-            ClientOperator klient = new ClientOperator(new XMLDataLoader("C:\\Users\\Igor\\Documents\\nitrogen\\Homeworks\\Homeworks\\Igor\\XMLDocuments\\Cities.xml"));
-            HashSet<string> a = klient.GetResult(new RemoveRepeat());
+            try
+            {
+                var klient = new ClientOperator(new XmlDataLoader("C:\\Users\\Igor\\Documents\\nitrogen\\Homeworks\\Homeworks\\Igor\\XMLDocuments\\Cities.xml"));
+                var a = klient.GetList();
+                klient.AddData("Test4");
+                klient.AddData("");
+                klient.GetSetResult(new RemoveRepeat());
+                a.Add("SIEM");
+            }
+            catch (ExceptionTran e)
+            {
+                string m = e.Message;
+            }
         }
     }
 }

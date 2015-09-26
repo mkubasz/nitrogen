@@ -1,0 +1,128 @@
+﻿<html>
+<head>
+<title>Uml Element Link sample</title>
+  <style type="text/css">
+a { color: #0D76C2; text-decoration: none; }
+h1 { display: inline; font-size: medium; }
+  </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; font-size: small">
+<h1>Link UML Elements to Diagrams in Visual Studio Ultimate</h1>
+<p><a href="http://code.msdn.microsoft.com/Link-UML-elements-to-0adbf5a8">Distributed on MSDN Code Samples Gallery</a></p>
+<p>
+  UML elements such as use cases or classes can be linked to another element, UML 
+  diagram, or any other file by using this extension of Visual Studio Ultimate. 
+  Users create links by dragging, and can later open the link target by 
+  double-clicking.</p>
+<p>
+  When the user double-clicks a linked element, if the link target is:</p>
+<ul>
+  <li>A UML diagram in the same Visual Studio solution: the diagram will open and 
+    come to the front in Visual Studio. </li>
+  <li>A specific UML element: it will be selected. </li>
+  <li>A word or phrase in a Word doc: the document will open with the phrase 
+    selected.</li>
+  <li>A slide in PowerPoint.</li>
+  <li>Any other type of file: it will open in the appropriate application. </li>
+</ul>
+<p>
+  Links are stored as relative file paths, so that they will work for other team 
+  members if the target files are part of the same Visual Studio solution.</p>
+<p>
+  A small icon is displayed on items that have a link.</p>
+<p>
+  You can easily adapt the sample code to your own needs. For example, you could 
+  add rules that make the name or other attributes of the linked element reflect 
+  features of the linked element. The UML tools in Visual Studio Ultimate are 
+  implemented on Visualization and Modeling SDK.</p>
+<p>
+  The source code demonstrates a number of techniques:</p>
+<ul>
+  <li><a href="http://msdn.microsoft.com/library/ee534032.aspx" target="_blank">How 
+    to associate data with any UML element by using References</a>. </li>
+  <li>How to add <a href="http://msdn.microsoft.com/library/gg593806.aspx" 
+      target="_blank">decorators </a>to UML elements </li>
+  <li><a href="http://msdn.microsoft.com/library/gg616043.aspx" target="_blank">How 
+    to add rules to respond to changes in a UML model </a></li>
+  <li><a href="http://msdn.microsoft.com/library/ee329481.aspx" target="_blank">How 
+    to define menu commands for UML</a> </li>
+  <li><a href="http://msdn.microsoft.com/library/ee534033.aspx" target="_blank">How 
+    to handle the user dragging</a> various kinds of object onto a UML diagram:
+    <ul>
+      <li>Project Items from Solution Explorer </li>
+      <li>Files from Windows Explorer </li>
+      <li>Bookmarks from Word</li>
+      <li>Shapes from other UML diagrams </li>
+    </ul>
+  </li>
+</ul>
+<h1>
+  How to run the sample</h1>
+<ol>
+  <li>You need:
+    <ul>
+      <li>Visual Studio 2010 Ultimate (or SP1) </li>
+      <li>
+        <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=47305cf4-2bea-43c0-91cd-1b853602dcc5&amp;displaylang=en" 
+          target="_blank">Visual Studio SDK</a> </li>
+      <li>
+        <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0def949d-2933-49c3-ac50-e884e0ff08a7&amp;displaylang=en" 
+          target="_blank">Visualization and Modeling SDK</a> ( = DSL Tools) </li>
+    </ul>
+  </li>
+  <li>Download, unzip, open UmlElementLink.sln </li>
+  <li>Press F5 to build and run the sample.
+    <ul>
+      <li>The sample includes a test model, which will open in an experimental instance 
+        of Visual Studio. </li>
+    </ul>
+  </li>
+  <li>In any diagram in the test model, drag any of the following items onto any 
+    shape on the diagram:
+    <ul>
+      <li>Any file from Solution Explorer, in the same project or another project.
+      </li>
+      <li>Any file from Windows Explorer.
+        <ul>
+          <li>Note that the link will stop working if you later move the solution and the 
+            target file into different relative locations. If you use source control, this 
+            means that it is advisable to link to files that are in source control; and even 
+            better to link to files in the same Visual Studio solution. </li>
+        </ul>
+      </li>
+      <li>Any element from another UML diagram, in the same UML model (project) or 
+        another one. To do this, either display the diagrams side by side; or drag the 
+        element up to the tabs, across to the tab of the diagram where you want to drop, 
+        and then down to the shape you want to drop onto. </li>
+    </ul>
+  </li>
+</ol>
+<h1>
+  How to install the sample on other computers for demonstration purposes</h1>
+<p>
+  To install the extension on other computers:</p>
+<ol>
+  <li>The target computer must have Visual Studio Ultimate. It does not need VSSDK 
+    or VMSDK. </li>
+  <li>Copy the VSIX file from bin\Debug to the target computer. </li>
+  <li>Double-click the VSIX. </li>
+</ol>
+<p>
+  To uninstall it, use Tools&gt;Extension Manager in Visual Studio.</p>
+<p>
+  You can work with models that contain links on computers where the extension is 
+  not installed. The links should not be lost.</p>
+<h1>
+  Scope of the sample and License</h1>
+<p>
+  This sample is provided solely for demonstrating techniques that you could use 
+  in your own programs. It has not been thoroughly tested.</p>
+  <p>This sample is distributed under the terms of the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a>. Please take a look.</p>
+<h1>
+  Discussion and Feedback</h1>
+<p>
+  Please post suggestions and questions in the Visual Studio
+  <a href="http://social.msdn.microsoft.com/Forums/en-US/dslvsarchx/threads" 
+    target="_blank">Visualization and Modeling SDK Forum</a>.</p>
+    </body>
+    </html>

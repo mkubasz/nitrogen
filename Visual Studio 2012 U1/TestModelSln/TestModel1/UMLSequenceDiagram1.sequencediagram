@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="d020e706-7708-461d-9e5e-cc4421440bfd" name="Sequence1" linkedPackageId="49e29628-1dac-4d01-841d-9704930f8666" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="63d709c0-35ca-4fd4-bd7c-425292c381f2" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <referencesInternal>
+          <reference Id="1e0e0528-5655-43a1-8a1e-7225e280ee93" handle="doc:myspecdoc.docx#OLE_LINK12" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="3a52c7ad-e166-4e2e-bcf8-b1a50b061b31" />
+          </reference>
+          <reference Id="b5a3afc0-2e6f-420f-a7c4-7cc32b7487d5" handle="doc:myspecdoc.docx#OLE_LINK13" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="1af91336-46e1-4e5f-a625-1d57ded53628" />
+          </reference>
+          <reference Id="e064757c-3821-4de9-b13b-8a134816e64b" handle="doc:myspecdoc.docx#OLE_LINK14" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="8bb97585-d5f5-4042-9a1c-aecc17cfa3d8" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="2b3c276f-5504-4aa6-abd2-97dd518cf901" />
+        <lifelines>
+          <lifeline Id="a85df30b-9639-486e-a147-d9e558b86e34" name="Lifeline1" isActor="false" lifelineDisplayName="Lifeline1">
+            <elementDefinition Id="ec71bbf2-3ab3-4393-914a-04d7398d1bfd" />
+          </lifeline>
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="49e29628-1dac-4d01-841d-9704930f8666" name="TestModel">
+    <elementDefinition Id="ed9f3ae9-0f79-43f3-a1a5-2b68685552d0" />
+    <profileInstances>
+      <packageHasProfileInstances Id="97575012-ea39-41d3-b31c-61e22efff51f">
+        <profileInstance Id="2b1e2179-0e09-4b02-a42c-9404a4f8a024" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="70e86eef-bf85-494a-b44e-2cbcfcf7f88f">
+        <profileInstance Id="f37e6066-d81f-4512-af03-cc30aede5676" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</SequenceDesignerModel>

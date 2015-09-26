@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Homeworks.Igor.OperationSystem
 {
     public interface IOperation
     {
-        HashSet<string> getResult(HashSet<string> DataSet);
+        List<string> GetResult(List<string> dataSet);
     }
 }

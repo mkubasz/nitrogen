@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="ed9f3ae9-0f79-43f3-a1a5-2b68685552d0"
+  name="TestModel" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="267f6bf7-7aad-4fa4-a372-8f1eeb754f14">
+      <body>Select one element, right-click , and then click Add Linked Diagram</body>
+    </comment>
+    <comment
+      Id="21649d12-fffd-4f35-aecb-bf6f31b635be">
+      <body>Drag a diagram file from Solution Explorer or from Windows Explorer to a shape.</body>
+    </comment>
+    <comment
+      Id="74d97f68-e320-4299-8ea4-c938a4855d7d">
+      <body>The cornflower icon shows that an element is linked to another diagram.</body>
+    </comment>
+    <comment
+      Id="0daac75b-fef7-45f5-9389-0e946f546d79">
+      <body>You can also link an element to a specific element in another UML diagram. 
+It must be in the same solution (though it doesn't have to be in the same model).
+
+Drag the target element onto the source element.
+
+When you double-click the source, the target diagram will open and the element will be selected.</body>
+    </comment>
+    <comment
+      Id="de25ea06-8c0d-4a98-95c6-0aa370aa7eea">
+      <body>Double-click an element to see the diagram it's linked to.</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="97f05ea6-5a0f-4946-85ee-65b855a5767c"
+        name="Linked to UmlActivity21"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8f1ab2a6-b1d7-4003-a11a-0194970a6555"
+            handle="file:..\testmodel2\umlactivity21.activitydiagram"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="10f13c9d-914f-4c94-9d41-634748604db9"
+        name="Linked to UseCases"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="649d0a14-3407-46fa-acf0-9339a4e02036"
+            handle="umlusecasediagram1.usecasediagram"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7941cfe0-7cae-44d0-b48c-484a6369d4a7"
+        name="Class3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4626920d-c946-4fe2-a3ad-625a8af461ac"
+            isDerived="false"
+            sourceEndRoleName="Class3"
+            targetEndRoleName="Linked to UseCases"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="10f13c9d-914f-4c94-9d41-634748604db9"
+              LastKnownName="Linked to UseCases"
+              LastKnownLocation="TestModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e03a7a3-b039-4afe-a59d-ceabecadd328"
+                  name="Class3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7214c8de-cc91-433a-b84d-39458f16e74d"
+                  name="Linked to UseCases"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="558bdeb7-734c-488f-a50d-de939f8745e8"
+        name="Word link"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="b706f549-d7ad-4deb-9ee4-aaf356f74fae"
+            handle="file:myspecdoc.docx"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a7f0b31f-ffc3-4646-9492-85dee0fcb4fd"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9994fe68-7676-4610-bd62-bc228199c3c4"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="558bdeb7-734c-488f-a50d-de939f8745e8"
+              LastKnownName="Word link"
+              LastKnownLocation="TestModel.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c4857a70-a6b9-4e3b-ae8b-21b9ed9554eb"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7bea5f02-1217-4186-b53c-fcfac62843b1"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="301abfb7-bc61-419b-a281-2f7988195bd6"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7c2c5769-de07-4c60-be5f-1fee7034d933"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="137a2f05-5a83-414e-818b-98e8f69192bf"
+            handle="..\..\..\..\users\awills\documents\domestic\letter.docx"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="804e20ac-7f4f-43a1-961e-b6ec6979ddea"
+        name="Food1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f0483e2d-e8ed-4da9-9cc9-dff15b7d7723"
+        name="PPT link"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="36ebeab5-894a-410f-8f3c-944bcdfb6fbe"
+            handle="ppt:..\screenshots.pptx#2"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ca43a75d-bbc1-4a49-b09d-8a9fa2980e30"
+        name="Class diagram"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f1ddff32-83e6-4fae-8135-259a27a5263a"
+            handle="file:umlclassdiagram1.classdiagram"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="09a1bb3f-3afc-44cb-8d99-c655104e8c07"
+        name="Class element"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="7b883901-fd30-4d6e-a7d5-ca891185ecf7"
+            handle="uml:umlclassdiagram1.classdiagram#2c25ae32-ed0c-4744-8270-6fadd358923a"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cb9752d9-2d09-49b6-bd57-27fd52462382"
+        name="URL"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="1e0e8da8-ae2e-437f-86ac-7c5323a3bef3"
+            handle="http://blogs.msdn.com/b/camerons/archive/2010/02/06/custom-profile-properties.aspx"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b1f11775-5aac-440f-a20c-bc0f87dcd0e2"
+        name="User chooses amount"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="fd13238a-f1a5-4def-bd53-3407616138c9"
+            handle="doc:myspecdoc.docx#OLE_LINK7"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c6cecc0b-59ac-4621-bc6c-6a8a122d230e"
+        name="PIN"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cc1bc11d-2aa7-491a-b525-06bc0ef31d02"
+            handle="doc:myspecdoc.docx#OLE_LINK8"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="2b3c276f-5504-4aa6-abd2-97dd518cf901"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <referencesInternal>
+          <reference
+            Id="3a52c7ad-e166-4e2e-bcf8-b1a50b061b31"
+            handle="doc:myspecdoc.docx#OLE_LINK12"
+            tag="UmlModelLinkReferenceTag" />
+          <reference
+            Id="1af91336-46e1-4e5f-a625-1d57ded53628"
+            handle="doc:myspecdoc.docx#OLE_LINK13"
+            tag="UmlModelLinkReferenceTag" />
+          <reference
+            Id="8bb97585-d5f5-4042-9a1c-aecc17cfa3d8"
+            handle="doc:myspecdoc.docx#OLE_LINK14"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+        <lifelines>
+          <lifeline
+            Id="ec71bbf2-3ab3-4393-914a-04d7398d1bfd"
+            name="Lifeline1"
+            isActor="false"
+            lifelineDisplayName="Lifeline1" />
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b1d4086a-5192-4736-95ae-3cbf68a9d9ee"
+        name="Multi links"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a7d3f43e-db83-4c98-99cf-10a5920beed0"
+            handle="file:myspecdoc.docx"
+            tag="UmlModelLinkReferenceTag" />
+          <reference
+            Id="4bff5d38-a343-4331-9196-8a81d3d52344"
+            handle="file:screenshots.pptx"
+            tag="UmlModelLinkReferenceTag" />
+        </referencesInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="f7cdda55-2813-4168-853b-ee233229b88c"
+        name="screenshots.pptx"
+        isAbstract="false"
+        isLeaf="false"
+        fileName="screenshots.pptx" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="86b90100-91bc-429d-8e64-97fdf739ec70"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

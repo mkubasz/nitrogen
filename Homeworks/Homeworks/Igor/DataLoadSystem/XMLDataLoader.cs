@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Xml;
 using ExceptionTranslator;
 
 namespace Homeworks.Igor.DataLoadSystem
 {
-    public class XMLDataLoader : ILoadDataSys
+    public class XmlDataLoader : ILoadDataSys
     {
-        protected HashSet<string> DataSet = new HashSet<string>();
+        protected List<string> DataSet = new List<string>();
 
-        public XMLDataLoader(string path)
+        public XmlDataLoader(string path)
         {
             if (path != "")
             {
-                XmlDocument XmlDoc = new XmlDocument();
-                XmlDoc.Load(path);
+                var xmlDoc = new XmlDocument();
+                xmlDoc.Load(path);
 
-                XmlNodeList list = XmlDoc.SelectNodes("/Cities");
+                var list = xmlDoc.SelectNodes("/Cities");
 
                 foreach (XmlNode obj in list)
                 {
@@ -35,7 +31,7 @@ namespace Homeworks.Igor.DataLoadSystem
             else throw new ExceptionTran(ExceptionsPack.StringIsEmpty);
         }
 
-        public HashSet<string> GetData()
+        public List<string> GetData()
         {
             return this.DataSet;
         }

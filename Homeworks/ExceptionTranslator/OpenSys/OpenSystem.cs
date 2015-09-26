@@ -8,11 +8,11 @@ namespace ExceptionTranslator.OpenSys
 {
     public abstract class OpenSystem
     {
-        protected Dictionary<int, string> elements = new Dictionary<int, string>();
+        protected Dictionary<int, string> Elements = new Dictionary<int, string>();
 
-        public virtual Dictionary<int, string> getList()
+        public virtual Dictionary<int, string> GetList()
         {
-            return elements;
+            return Elements;
         }
     }
 }

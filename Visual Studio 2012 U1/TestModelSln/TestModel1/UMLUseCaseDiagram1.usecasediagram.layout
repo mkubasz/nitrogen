@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram1">
+  <useCaseModelRootMoniker Id="9672c78b-13d2-4fd5-a0de-5965e4ec8049" />
+  <nestedChildShapes>
+    <useCaseShape Id="70e55387-77d7-4bcf-b62c-0b0828be7162" absoluteBounds="3.5, 1.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="0f6d48f9-b740-4e12-bb8d-18023d593fb6" LastKnownName="Word link" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <actorShape Id="54efdf60-945a-4221-88bb-6f9da588eae0" absoluteBounds="0.875, 1.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="2c7ce9c7-4ef4-4895-b5fd-f7d4973cfc90" LastKnownName="Actor1" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.11413043478261); (3.50187970590216 : 2.02165740409121)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="c103dafd-0e1a-4aba-a355-c1d29e207420" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="54efdf60-945a-4221-88bb-6f9da588eae0" />
+        <useCaseShapeMoniker Id="70e55387-77d7-4bcf-b62c-0b0828be7162" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="b4a53f6c-6bec-443f-972a-729cc5b9ef3c" absoluteBounds="2.125, 2.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8dc2f7e7-bc84-476d-9840-6fb6d6d3b38d" LastKnownName="PPT link" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="71abbfb8-2660-4ecd-8573-6c2fd9ed876b" absoluteBounds="3.625, 2.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="6665ceac-91b6-41b7-a554-d27681fed36e" LastKnownName="Class diagram" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="71befba1-9029-45b0-8183-b028d9ef3f0d" absoluteBounds="0.875, 3.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="c0d7a734-147b-4350-ab73-269b38d31e8b" LastKnownName="Class element" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="ce1d6986-0ade-4acd-84eb-1cf1685589da" absoluteBounds="1.25, 4.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="9f5255ae-3090-4501-bcf4-df77c696c8bb" LastKnownName="URL" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="9e80f397-2843-480f-9ef2-5170a1229b8f" absoluteBounds="2.5, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8b5e035b-0b55-4a47-b887-1c2e23e2207a" LastKnownName="User chooses amount" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="72f19185-ae89-4d02-80b7-125ad87b26ed" absoluteBounds="4.125, 3.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e86432f0-5bce-40eb-b9ff-bf28ac4d8886" LastKnownName="Multi links" />
+      <relativeChildShapes />
+    </useCaseShape>
+  </nestedChildShapes>
+</useCaseDiagram>

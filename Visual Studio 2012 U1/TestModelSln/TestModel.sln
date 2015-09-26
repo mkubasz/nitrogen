@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TestModel1", "TestModel1\TestModel1.modelproj", "{6545859D-AC99-4171-B74E-E15DF500047B}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TestModel2", "TestModel2\TestModel2.modelproj", "{E11BE391-BE78-41D7-A363-A04BB4D5D93B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6545859D-AC99-4171-B74E-E15DF500047B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6545859D-AC99-4171-B74E-E15DF500047B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6545859D-AC99-4171-B74E-E15DF500047B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6545859D-AC99-4171-B74E-E15DF500047B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E11BE391-BE78-41D7-A363-A04BB4D5D93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11BE391-BE78-41D7-A363-A04BB4D5D93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11BE391-BE78-41D7-A363-A04BB4D5D93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11BE391-BE78-41D7-A363-A04BB4D5D93B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

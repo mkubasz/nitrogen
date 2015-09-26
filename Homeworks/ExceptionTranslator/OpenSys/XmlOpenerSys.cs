@@ -11,22 +11,23 @@ namespace ExceptionTranslator.OpenSys
     {
         public XmlOpenerSys(string path)
         {
-            XmlDocument XmlDoc = new XmlDocument();
-            XmlDoc.Load(path);
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(path);
 
-            XmlNodeList list = XmlDoc.SelectNodes("/ExceptionList");
+            XmlNodeList list = xmlDoc.SelectNodes("/ExceptionList");
 
             int a = 0;
-            foreach (XmlNode obj in list)
-            {
-                foreach (XmlNode data in obj.ChildNodes)
+            if (list != null)
+                foreach (XmlNode obj in list)
                 {
-                    if (data.Name == "Exception")
+                    foreach (XmlNode data in obj.ChildNodes)
                     {
-                        elements.Add(a++, data.InnerText);
+                        if (data.Name == "Exception")
+                        {
+                            Elements.Add(a++, data.InnerText);
+                        }
                     }
                 }
-            }
         }
     }
 }

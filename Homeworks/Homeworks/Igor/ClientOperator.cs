@@ -1,30 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Homeworks.Igor.DataLoadSystem;
 using Homeworks.Igor.OperationSystem;
+using ExceptionTranslator;
 
 namespace Homeworks.Igor
 {
     public class ClientOperator
     {
-        protected HashSet<string> DataSet = new HashSet<string>();
+        protected List<string> DataSet;
 
-        public ClientOperator(ILoadDataSys LoadSys)
+        public ClientOperator(ILoadDataSys loadSys)
         {
-            DataSet = LoadSys.GetData();
+            DataSet = new List<string>();
+            DataSet = loadSys.GetData();
         }
 
-        public HashSet<string> GetResult(IOperation operation)
+        public void AddData(string obj)
         {
-            return operation.getResult(DataSet);
+            if(obj!="")
+            {
+                DataSet.Add(obj);
+            }
+            else throw new ExceptionTran(ExceptionsPack.StringIsEmpty);
         }
 
-        public HashSet<string> GetSetResult(IOperation operation)
+        public List<string> GetList()
         {
-            this.DataSet = operation.getResult(DataSet);
+            return DataSet.ToList();
+        }
+
+        public List<string> GetResult(IOperation operation)
+        {
+            return operation.GetResult(DataSet);
+        }
+
+        public List<string> GetSetResult(IOperation operation)
+        {
+            this.DataSet = operation.GetResult(DataSet);
             return this.DataSet;
         }
     }

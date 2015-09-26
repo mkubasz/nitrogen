@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ExceptionTranslator
+﻿namespace ExceptionTranslator
 {
     public enum ExceptionsPack
     {
@@ -21,6 +15,6 @@ namespace ExceptionTranslator
         InvalidSQLStatement,
         CloseingQuoteMissing,
         ExponentOutOfRange,
-        MissingFROMClause
+        MissingFromClause
     }
 }

@@ -8,11 +8,11 @@ namespace ExceptionTranslator
 {
     public abstract class AbstractFactory<T, T1>
     {
-        protected Dictionary<T, Func<T1>> elements = new Dictionary<T, Func<T1>>();
+        protected Dictionary<T, Func<T1>> Elements = new Dictionary<T, Func<T1>>();
 
-        public T1 getElement(T key)
+        public T1 GetElement(T key)
         {
-            return (elements.ContainsKey(key) ? elements[key]() : default(T1));
+            return (Elements.ContainsKey(key) ? Elements[key]() : default(T1));
         }
     }
 }

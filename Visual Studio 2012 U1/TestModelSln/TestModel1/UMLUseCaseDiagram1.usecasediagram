@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="9672c78b-13d2-4fd5-a0de-5965e4ec8049" name="UMLUseCaseDiagram1" linkedPackageId="507cdd62-5122-4157-bab5-4f220ade92be" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0f6d48f9-b740-4e12-bb8d-18023d593fb6" name="Word link" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="ebde628a-a338-4e11-9ea9-40f2751f02f5" handle="file:myspecdoc.docx" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="b706f549-d7ad-4deb-9ee4-aaf356f74fae" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="558bdeb7-734c-488f-a50d-de939f8745e8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2c7ce9c7-4ef4-4895-b5fd-f7d4973cfc90" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a7f0b31f-ffc3-4646-9492-85dee0fcb4fd" />
+        <targetEnds>
+          <association Id="c103dafd-0e1a-4aba-a355-c1d29e207420" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0f6d48f9-b740-4e12-bb8d-18023d593fb6" LastKnownName="Word link" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="efba236e-a211-45d9-b325-fc691ecefd87" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c4857a70-a6b9-4e3b-ae8b-21b9ed9554eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9d42ff0d-baea-4e90-af5b-3058df283cee" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7bea5f02-1217-4186-b53c-fcfac62843b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9994fe68-7676-4610-bd62-bc228199c3c4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8dc2f7e7-bc84-476d-9840-6fb6d6d3b38d" name="PPT link" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="3de95fad-02e5-45da-b9ed-db4e25e10c46" handle="ppt:..\screenshots.pptx#2" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="36ebeab5-894a-410f-8f3c-944bcdfb6fbe" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="f0483e2d-e8ed-4da9-9cc9-dff15b7d7723" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6665ceac-91b6-41b7-a554-d27681fed36e" name="Class diagram" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="75c1397c-65c4-4d0b-afec-c55643ebf81e" handle="file:umlclassdiagram1.classdiagram" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="f1ddff32-83e6-4fae-8135-259a27a5263a" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="ca43a75d-bbc1-4a49-b09d-8a9fa2980e30" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c0d7a734-147b-4350-ab73-269b38d31e8b" name="Class element" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="39da69e4-db30-405e-9399-50d02cd9ab1d" handle="uml:umlclassdiagram1.classdiagram#2c25ae32-ed0c-4744-8270-6fadd358923a" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="7b883901-fd30-4d6e-a7d5-ca891185ecf7" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="09a1bb3f-3afc-44cb-8d99-c655104e8c07" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9f5255ae-3090-4501-bcf4-df77c696c8bb" name="URL" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="00dbc001-0c6f-46e4-86c9-4774c035e3f5" handle="http://blogs.msdn.com/b/camerons/archive/2010/02/06/custom-profile-properties.aspx" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="1e0e8da8-ae2e-437f-86ac-7c5323a3bef3" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="cb9752d9-2d09-49b6-bd57-27fd52462382" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8b5e035b-0b55-4a47-b887-1c2e23e2207a" name="User chooses amount" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="6e3be8ca-e64d-4999-8998-6b6be7868d11" handle="doc:myspecdoc.docx#OLE_LINK7" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="fd13238a-f1a5-4def-bd53-3407616138c9" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="b1f11775-5aac-440f-a20c-bc0f87dcd0e2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e86432f0-5bce-40eb-b9ff-bf28ac4d8886" name="Multi links" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="f0d62900-0ea6-4eb8-9169-f0aa5611a6ff" handle="file:myspecdoc.docx" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="a7d3f43e-db83-4c98-99cf-10a5920beed0" />
+          </reference>
+          <reference Id="6bcc0d32-716f-442d-b65e-760d24e6f7e3" handle="file:screenshots.pptx" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="4bff5d38-a343-4331-9196-8a81d3d52344" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="b1d4086a-5192-4736-95ae-3cbf68a9d9ee" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="507cdd62-5122-4157-bab5-4f220ade92be" name="TestModel">
+    <elementDefinition Id="ed9f3ae9-0f79-43f3-a1a5-2b68685552d0" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ac3ea8b8-55c7-4f30-9d40-8d5aa5b83c5f">
+        <profileInstance Id="d429a13f-62ba-4468-97dc-5e19433c1ce8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1a5229cd-7857-469e-8185-7c50bf16f226">
+        <profileInstance Id="fbdbfee4-5b0c-4f93-8702-931c74f5e94c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

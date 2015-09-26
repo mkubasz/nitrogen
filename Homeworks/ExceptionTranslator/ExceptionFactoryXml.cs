@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Xml;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ExceptionTranslator.OpenSys;
 
 namespace ExceptionTranslator
@@ -12,11 +8,12 @@ namespace ExceptionTranslator
     {
         public ExceptionFactoryXml()
         {
-            var file = new XmlOpenerSys("C:\\Users\\Igor\\Documents\\nitrogen\\ConverterDll\\ExceptionTranslator\\XML_List\\ExceptionList.xml");
-            elements = new Dictionary<int, Func<string>>();
-            foreach(var obj in file.getList())
+            var file = new XmlOpenerSys("C:\\Users\\Igor\\Documents\\nitrogen\\Homeworks\\ExceptionTranslator\\XML_List\\ExceptionList.xml");
+            Elements = new Dictionary<int, Func<string>>();
+            foreach(var obj in file.GetList())
             {
-                elements.Add(obj.Key, () => obj.Value);
+                var obj1 = obj;
+                Elements.Add(obj.Key, () => obj1.Value);
             }
         }
     }

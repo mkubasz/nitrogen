@@ -54,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ExceptionTranslator\ExceptionTranslator.csproj">
+      <Project>{26f0a0d3-b7cb-4b6a-82fb-de11e85a3201}</Project>
+      <Name>ExceptionTranslator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Homeworks\Homeworks.csproj">
       <Project>{4e943f1f-8218-4468-abc4-48cf6acfbb3b}</Project>
       <Name>Homeworks</Name>

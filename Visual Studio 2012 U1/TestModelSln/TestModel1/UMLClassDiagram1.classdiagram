@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="7ded2e99-45f8-4f57-a9e4-13b5c6b63c37" name="UMLClassDiagram1" linkedPackageId="c927216b-b70f-4ba1-aa01-623522f3f7e0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="49134308-e61f-4bbe-bc50-ac59b2230a6d">
+      <elementDefinition Id="267f6bf7-7aad-4fa4-a372-8f1eeb754f14" />
+      <body>Select one element, right-click , and then click Add Linked Diagram</body>
+    </comment>
+    <comment Id="851c6620-cbaf-4991-9d13-d7e33d711368">
+      <elementDefinition Id="21649d12-fffd-4f35-aecb-bf6f31b635be" />
+      <body>Drag a diagram file from Solution Explorer or from Windows Explorer to a shape.</body>
+    </comment>
+    <comment Id="6239917e-f3c8-4b40-a3b5-bd58b5424383">
+      <elementDefinition Id="74d97f68-e320-4299-8ea4-c938a4855d7d" />
+      <body>The cornflower icon shows that an element is linked to another diagram.</body>
+    </comment>
+    <comment Id="422cfe90-810a-413f-ac5c-418f99d7222f">
+      <elementDefinition Id="0daac75b-fef7-45f5-9389-0e946f546d79" />
+      <body>You can also link an element to a specific element in another UML diagram. 
+It must be in the same solution (though it doesn't have to be in the same model).
+
+Drag the target element onto the source element.
+
+When you double-click the source, the target diagram will open and the element will be selected.</body>
+    </comment>
+    <comment Id="559fa4de-3cd5-4a80-be63-1eaae1a9cf58">
+      <elementDefinition Id="de25ea06-8c0d-4a98-95c6-0aa370aa7eea" />
+      <body>Double-click an element to see the diagram it's linked to.</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5a994755-0340-49e2-b4c7-01d6e064c06a" name="Linked to UmlActivity21" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="eb42437f-42c7-4383-b0c0-0a550d6e8d67" handle="file:..\testmodel2\umlactivity21.activitydiagram" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="8f1ab2a6-b1d7-4003-a11a-0194970a6555" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="97f05ea6-5a0f-4946-85ee-65b855a5767c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3655b523-ca03-4088-a205-ed745182f6d9" name="Linked to UseCases" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="86e8d314-67ed-4810-bab8-93f646f54a57" handle="umlusecasediagram1.usecasediagram" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="649d0a14-3407-46fa-acf0-9339a4e02036" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="10f13c9d-914f-4c94-9d41-634748604db9" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2c25ae32-ed0c-4744-8270-6fadd358923a" name="Class3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7941cfe0-7cae-44d0-b48c-484a6369d4a7" />
+        <targetEnds>
+          <association Id="1aac1b8d-20df-4285-b861-6c46bb6855fb" isDerived="false" sourceEndRoleName="Class3" targetEndRoleName="Linked to UseCases" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3655b523-ca03-4088-a205-ed745182f6d9" LastKnownName="Linked to UseCases" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c12a626f-87dd-4774-b160-c8f218b54526" name="Class3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5e03a7a3-b039-4afe-a59d-ceabecadd328" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3620cb26-4c58-4564-b318-6f1a4461bfba" name="Linked to UseCases" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7214c8de-cc91-433a-b84d-39458f16e74d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4626920d-c946-4fe2-a3ad-625a8af461ac" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ade23515-0fbb-488c-b1d4-0691e12d48ce" name="PIN" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="37ce69c2-f5a7-421e-aea2-8697ee7b982e" handle="doc:myspecdoc.docx#OLE_LINK8" tag="UmlModelLinkReferenceTag">
+            <elementDefinition Id="cc1bc11d-2aa7-491a-b525-06bc0ef31d02" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="c6cecc0b-59ac-4621-bc6c-6a8a122d230e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c927216b-b70f-4ba1-aa01-623522f3f7e0" name="TestModel">
+    <elementDefinition Id="ed9f3ae9-0f79-43f3-a1a5-2b68685552d0" />
+    <profileInstances>
+      <packageHasProfileInstances Id="80ba6268-46d2-47cd-8b7c-289b3e32aaff">
+        <profileInstance Id="4bc6275d-0e25-4eac-9c5d-a7d55a5afd25" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="55fad17a-493c-48c7-8166-e38c866bb5b8">
+        <profileInstance Id="c8dcce55-5df4-41c6-b7c2-7a8e97a24fea" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
