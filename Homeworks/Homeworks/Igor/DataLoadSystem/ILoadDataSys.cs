@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Homeworks.Igor.DataLoadSystem
 {
-    interface AbstractLoadDataSys
+    public interface ILoadDataSys
     {
         HashSet<string> GetData();
     }

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homeworks
+namespace Homeworks.Igor.OperationSystem
 {
-    public class Class1
+    public interface IOperation
     {
+        HashSet<string> getResult(HashSet<string> DataSet);
     }
 }
