@@ -30,15 +30,15 @@ namespace Homeworks.Igor
             return DataSet.ToList();
         }
 
-        public List<string> GetResult(IOperation operation)
+        public object GetResult(IOperation operation)
         {
             return operation.GetResult(DataSet);
         }
 
-        public List<string> GetSetResult(IOperation operation)
+        public object GetSetResult(IOperation operation)
         {
-            this.DataSet = operation.GetResult(DataSet);
-            return this.DataSet;
+            DataSet = (List<string>) operation.GetResult(GetList());
+            return DataSet;
         }
     }
 }

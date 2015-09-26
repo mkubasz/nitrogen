@@ -4,6 +4,6 @@ namespace Homeworks.Igor.OperationSystem
 {
     public interface IOperation
     {
-        List<string> GetResult(List<string> dataSet);
+        object GetResult(List<string> dataSet);
     }
 }

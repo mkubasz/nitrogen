@@ -1,8 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Cities>
-  <City>Test</City>
-  <City>Test2</City>
-  <City>Test2</City>
-  <City>Test3</City>
-  <City>Test</City>
+  <City>Szklarska Poręba</City>
+  <City>Zawidów</City>
+  <City>Zgorzelec</City>
+  <City>Pieszyce</City>
+  <City>Piechowice</City>
+  <City>Karpacz</City>
+  <City>Kamienna Góra</City>
+  <City>Kowary</City>
+  <City>Świeradów Zdrój</City>
+  <City>Jelenia Góra</City>
+  <City>Lidzbark Warmiński</City>
+  <City>Kłodzko</City>
+  <City>Srebrna Góra</City>
+  <City>Polanica-Zdrój</City>
+  <City>Wrocław</City>
+  <City>Opole</City>
+  <City>Lipsk</City>
+  <City>Warszawa</City>
+  <City>Kraków</City>
+  <City>Gdańsk</City>
+  <City>Bielawa</City>
+  <City>Dzierżoniów</City>
+  <City>Walim</City>
+  <City>Wałbrzych</City>
+  <City>Zielona Góra</City>
+  <City>Legnica</City>
+  <City>Malbork</City>
+  <City>Mirsk</City>
+  <City>Mirosławiec</City>
 </Cities>

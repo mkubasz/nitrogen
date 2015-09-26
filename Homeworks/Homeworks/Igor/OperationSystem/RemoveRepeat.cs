@@ -5,7 +5,7 @@ namespace Homeworks.Igor.OperationSystem
 {
     public class RemoveRepeat : IOperation
     {
-        public List<string> GetResult(List<string> dataSet)
+        public object GetResult(List<string> dataSet)
         {
             var ret = new HashSet<string>();
             foreach (var obj in dataSet)
