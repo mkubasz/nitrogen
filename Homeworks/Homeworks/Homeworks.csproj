@@ -42,9 +42,10 @@
     <Compile Include="Igor\City.cs" />
     <Compile Include="Igor\CityClientOperator.cs" />
     <Compile Include="Igor\ClientOperator.cs" />
+    <Compile Include="Igor\DataLoadSystem\FileLoader\FileLoader.cs" />
     <Compile Include="Igor\DataLoadSystem\ILoadDataSys.cs" />
-    <Compile Include="Igor\DataLoadSystem\TXTDataLoader.cs" />
-    <Compile Include="Igor\DataLoadSystem\XMLDataLoader.cs" />
+    <Compile Include="Igor\DataLoadSystem\FileLoader\TXTCityLoader\TXTCityLoader.cs" />
+    <Compile Include="Igor\DataLoadSystem\FileLoader\XMLCityLoader\XMLCityLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +58,7 @@
     <Content Include="Igor\TXTDocuments\Cities.txt" />
     <Content Include="Igor\XMLDocuments\Cities.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

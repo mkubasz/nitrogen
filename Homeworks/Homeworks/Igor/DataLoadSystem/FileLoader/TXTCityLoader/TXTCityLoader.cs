@@ -1,15 +1,13 @@
 ﻿using System.Collections.Generic;
-using ExceptionTranslator;
 using System.IO;
 using System.Linq;
+using ExceptionTranslator;
 
-namespace Homeworks.Igor.DataLoadSystem
+namespace Homeworks.Igor.DataLoadSystem.FileLoader.TXTCityLoader
 {
-    public class TxtDataLoader : ILoadDataSys<City>
+    public class TXTCityLoader : FileLoader<City>
     {
-        protected List<City> DataSet;
-
-        public TxtDataLoader(string path)
+        public TXTCityLoader(string path)
         {
             DataSet = new List<City>();
             if (path != "")
@@ -17,11 +15,6 @@ namespace Homeworks.Igor.DataLoadSystem
                 DataSet = (List<City>) File.ReadAllLines(path).ToList().Select(obj => new City(obj));
             }
             else throw new ExceptionTran(ExceptionsPack.StringIsEmpty);
-        }
-
-        public List<City> GetData()
-        {
-            return DataSet;
         }
     }
 }

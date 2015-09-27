@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Homeworks.Igor;
-using Homeworks.Igor.DataLoadSystem;
+using Homeworks.Igor.DataLoadSystem.FileLoader.XMLCityLoader;
 
 namespace IgorTest
 {
@@ -11,7 +11,7 @@ namespace IgorTest
         public void TestMethod1()
         {
             //var klient = new ClientOperator(new TxtDataLoader("C:\\Users\\Igor\\Documents\\nitrogen\\Homeworks\\Homeworks\\Igor\\TXTDocuments\\Cities.txt"));
-            var klient = new CityClientOperator(new XmlDataLoader("C:\\Users\\Igor\\Documents\\nitrogen\\Homeworks\\Homeworks\\Igor\\XMLDocuments\\Cities.xml"));
+            var klient = new CityClientOperator(new XMLCityLoader("C:\\Users\\Igor\\Documents\\nitrogen\\Homeworks\\Homeworks\\Igor\\XMLDocuments\\Cities.xml"));
             klient.RemoveRepeat();
             var t1 = klient.FindCity("Zielona Góra");
             var t2 = klient.FindOneCityAtLetter('M');

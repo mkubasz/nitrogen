@@ -1,14 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Xml;
+﻿using System.Xml;
 using ExceptionTranslator;
 
-namespace Homeworks.Igor.DataLoadSystem
+namespace Homeworks.Igor.DataLoadSystem.FileLoader.XMLCityLoader
 {
-    public class XmlDataLoader : ILoadDataSys<City>
+    public class XMLCityLoader : FileLoader<City>
     {
-        protected List<City> DataSet = new List<City>();
-
-        public XmlDataLoader(string path)
+        public XMLCityLoader(string path)
         {
             if (path != "")
             {
@@ -29,11 +26,6 @@ namespace Homeworks.Igor.DataLoadSystem
                 }
             }
             else throw new ExceptionTran(ExceptionsPack.StringIsEmpty);
-        }
-
-        public List<City> GetData()
-        {
-            return DataSet;
         }
     }
 }
