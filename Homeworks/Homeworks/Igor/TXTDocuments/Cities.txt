@@ -1,5 +1,6 @@
 ﻿Szklarska Poręba
 Zawidów
+Opole
 Zgorzelec
 Pieszyce
 Piechowice
@@ -27,3 +28,4 @@ Legnica
 Malbork
 Mirsk
 Mirosławiec
+Zielona Góra

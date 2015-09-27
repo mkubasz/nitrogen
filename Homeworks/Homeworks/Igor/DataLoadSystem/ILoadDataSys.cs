@@ -2,8 +2,8 @@
 
 namespace Homeworks.Igor.DataLoadSystem
 {
-    public interface ILoadDataSys
+    public interface ILoadDataSys<T>
     {
-        List<string> GetData();
+        List<T> GetData();
     }
 }

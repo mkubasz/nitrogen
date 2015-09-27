@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ExceptionList>
   <Exception>Po prostu błąd.</Exception>
+  <Exception>Obiekt jest pusty.</Exception>
   
   <Exception>Nie znaleziono pliku.</Exception>
   <Exception>Ciąg nazwy pliku jest pusty.</Exception>

@@ -3,6 +3,7 @@
     public enum ExceptionsPack
     {
         JustError,
+        ObjectIsNULL,
 
         FileNotFound,
         StringIsEmpty,

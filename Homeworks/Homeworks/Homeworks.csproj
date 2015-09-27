@@ -39,17 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Igor\City.cs" />
+    <Compile Include="Igor\CityClientOperator.cs" />
     <Compile Include="Igor\ClientOperator.cs" />
     <Compile Include="Igor\DataLoadSystem\ILoadDataSys.cs" />
     <Compile Include="Igor\DataLoadSystem\TXTDataLoader.cs" />
     <Compile Include="Igor\DataLoadSystem\XMLDataLoader.cs" />
-    <Compile Include="Igor\OperationSystem\ComputeCitiesAtLetter.cs" />
-    <Compile Include="Igor\OperationSystem\FindAllCitiesAtLetter.cs" />
-    <Compile Include="Igor\OperationSystem\FindCity.cs" />
-    <Compile Include="Igor\OperationSystem\FindCityAtMLetter.cs" />
-    <Compile Include="Igor\OperationSystem\IOperation.cs" />
-    <Compile Include="Igor\OperationSystem\RemoveAllCitiesAtName.cs" />
-    <Compile Include="Igor\OperationSystem\RemoveRepeat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

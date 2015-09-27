@@ -1,44 +1,23 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
-using Homeworks.Igor.DataLoadSystem;
-using Homeworks.Igor.OperationSystem;
-using ExceptionTranslator;
 
 namespace Homeworks.Igor
 {
-    public class ClientOperator
+    public abstract class ClientOperator<T>
     {
-        protected List<string> DataSet;
+        protected List<T> DataSet;
 
-        public ClientOperator(ILoadDataSys loadSys)
-        {
-            DataSet = new List<string>();
-            DataSet = loadSys.GetData();
-        }
+        public abstract void AddData(string obj);
 
-        public void AddData(string obj)
+        public virtual List<T> GetList()
         {
-            if(obj!="")
-            {
-                DataSet.Add(obj);
-            }
-            else throw new ExceptionTran(ExceptionsPack.StringIsEmpty);
-        }
-
-        public List<string> GetList()
-        {
-            return DataSet.ToList();
-        }
-
-        public object GetResult(IOperation operation)
-        {
-            return operation.GetResult(DataSet);
-        }
-
-        public object GetSetResult(IOperation operation)
-        {
-            DataSet = (List<string>) operation.GetResult(GetList());
             return DataSet;
         }
+
+        public abstract void RemoveRepeat();
+        public abstract void RemoveAllCitiesWithName(string name);
+        public abstract int FindCity(string name);
+        public abstract List<int> FindCitiesAtLetter(char letter);
+        public abstract int FindOneCityAtLetter(char letter);
+        public abstract int ComputeCitiesAtLetter(char letter);
     }
 }

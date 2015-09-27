@@ -4,9 +4,9 @@ using ExceptionTranslator;
 
 namespace Homeworks.Igor.DataLoadSystem
 {
-    public class XmlDataLoader : ILoadDataSys
+    public class XmlDataLoader : ILoadDataSys<City>
     {
-        protected List<string> DataSet = new List<string>();
+        protected List<City> DataSet = new List<City>();
 
         public XmlDataLoader(string path)
         {
@@ -23,7 +23,7 @@ namespace Homeworks.Igor.DataLoadSystem
                     {
                         if (data.Name == "City")
                         {
-                            DataSet.Add(data.InnerText);
+                            DataSet.Add(new City(data.InnerText));
                         }
                     }
                 }
@@ -31,9 +31,9 @@ namespace Homeworks.Igor.DataLoadSystem
             else throw new ExceptionTran(ExceptionsPack.StringIsEmpty);
         }
 
-        public List<string> GetData()
+        public List<City> GetData()
         {
-            return this.DataSet;
+            return DataSet;
         }
     }
 }
