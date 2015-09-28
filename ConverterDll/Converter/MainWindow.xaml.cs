@@ -15,6 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
+using Spire.Xls;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Converter
 {
@@ -40,11 +42,12 @@ namespace Converter
 
 	        if (result == true)
 	        {
+				Excel.Worksheet worksheet = new Excel.Worksheet();
 	            string name = openFileDialog.FileName;
 	            txtPath.Text = name;
-                OpenFile open = new OpenFile();
-	            open.Create(true, name);
-                open.Save();
+                FileExcel open = new FileExcel();
+	            open.OpenFile(true, name, out worksheet);
+                open.SaveFile();
 	        }
 	    }
 
