@@ -1,0 +1,5 @@
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

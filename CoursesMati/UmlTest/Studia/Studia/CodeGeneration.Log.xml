@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-09-26T17:23:28" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="ProjectPath = ..\StudiaLib\StudiaLib.csproj" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Medium" Text="Studia's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Studia::KierunkiStudiow' -  (Class), 'Studia::StudiaAbstrakcyjne' -  (Class) " />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="'Studia::KierunkiStudiow' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="'Studia::StudiaAbstrakcyjne' -  (Class): no file generated because the 'AppliesToElement' method of the template 'ClassTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="ProjectPath = ..\StudiaLib\StudiaLib.csproj" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Medium" Text="Studia's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Studia::KierunkiStudiow' -  (Class), 'Studia::StudiaAbstrakcyjne' -  (Class) " />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="'Studia::KierunkiStudiow' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="'Studia::StudiaAbstrakcyjne' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="The selection included 1 elements which were not bound to a template." />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="Diagnostic" Text="'a1866589-4c60-42ff-aa8b-22fb148ae596' -  (Generalization): no bound template." />
+  <Message Timestamp="2015-09-26T17:23:29" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

@@ -1,0 +1,9 @@
+M:\Projects\nitrogen\CoursesMati\ExceptionTest\bin\Debug\ExceptionTest.dll
+M:\Projects\nitrogen\CoursesMati\ExceptionTest\bin\Debug\ExceptionTest.pdb
+M:\Projects\nitrogen\CoursesMati\ExceptionTest\bin\Debug\CoursesMati.dll
+M:\Projects\nitrogen\CoursesMati\ExceptionTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+M:\Projects\nitrogen\CoursesMati\ExceptionTest\bin\Debug\CoursesMati.pdb
+M:\Projects\nitrogen\CoursesMati\ExceptionTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+M:\Projects\nitrogen\CoursesMati\ExceptionTest\obj\Debug\ExceptionTest.csprojResolveAssemblyReference.cache
+M:\Projects\nitrogen\CoursesMati\ExceptionTest\obj\Debug\ExceptionTest.dll
+M:\Projects\nitrogen\CoursesMati\ExceptionTest\obj\Debug\ExceptionTest.pdb

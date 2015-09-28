@@ -1,0 +1,13 @@
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\ConverterDll.dll
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\ConverterDll.pdb
+M:\Projects\nitrogen\ConverterDll\ConverterDll\obj\Debug\ConverterDll.csprojResolveAssemblyReference.cache
+M:\Projects\nitrogen\ConverterDll\ConverterDll\obj\Debug\ConverterDll.dll
+M:\Projects\nitrogen\ConverterDll\ConverterDll\obj\Debug\ConverterDll.pdb
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\Spire.Common.dll
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\Spire.License.dll
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\Spire.Pdf.dll
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\Spire.XLS.dll
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\Microsoft.mshtml.dll
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\Spire.Common.xml
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\Spire.Pdf.xml
+M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\Spire.XLS.xml

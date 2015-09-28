@@ -1,0 +1,6 @@
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+M:\Projects\nitrogen\CoursesMati\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache

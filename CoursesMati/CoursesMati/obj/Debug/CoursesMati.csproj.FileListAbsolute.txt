@@ -1,0 +1,5 @@
+M:\Projects\nitrogen\CoursesMati\CoursesMati\bin\Debug\CoursesMati.dll
+M:\Projects\nitrogen\CoursesMati\CoursesMati\bin\Debug\CoursesMati.pdb
+M:\Projects\nitrogen\CoursesMati\CoursesMati\obj\Debug\CoursesMati.csprojResolveAssemblyReference.cache
+M:\Projects\nitrogen\CoursesMati\CoursesMati\obj\Debug\CoursesMati.dll
+M:\Projects\nitrogen\CoursesMati\CoursesMati\obj\Debug\CoursesMati.pdb
