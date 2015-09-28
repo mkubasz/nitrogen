@@ -5,26 +5,59 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Converter"
         mc:Ignorable="d"
-        Title="Converter" Height="350" Width="525">
-    <Grid Margin="0,0,0.4,-0.2">
-        <Label Content="File path: " HorizontalAlignment="Left" Margin="27,27,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Margin="104,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="292" TextChanged="txtPath_TextChanged" IsReadOnly="True"/>
-        <Button x:Name="btnOpen" Content="Open" Click="BtnOpen_OnClick" Margin="408,27,35,0" VerticalAlignment="Top"/>
-        <Button Content="Convert" HorizontalAlignment="Left" Margin="169,114,0,0" VerticalAlignment="Top" Width="145" Height="51" Click="Button_Click_1"/>
-        <Label Content="Save path:" HorizontalAlignment="Left" Margin="56,200,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtSave" HorizontalAlignment="Left" Margin="120,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" TextChanged="txtSave_TextChanged" IsReadOnly="True"/>
-        <Button x:Name="btnSaveAs" Content="Save as.." Margin="408,206,35,0" VerticalAlignment="Top" Click="btnSaveAs_Click"/>
-        <Button x:Name="btnSave" Content="Save" Margin="408,245,35,0" VerticalAlignment="Top"/>
-        <Menu x:Name="menu" Height="22" VerticalAlignment="Top">
+        Title="Converter" Height="247.6" Width="391.4" ResizeMode="NoResize">
+    <Grid Margin="0,0,3.8,-0.6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="102*"/>
+            <ColumnDefinition Width="36*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="File path:" HorizontalAlignment="Left" Margin="27,27,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="26" Width="58"/>
+        <Button x:Name="btnOpen" Content="Open" Click="BtnOpen_OnClick" Margin="111,31,0,0.6" HorizontalAlignment="Left" Width="74" Grid.ColumnSpan="4" Grid.RowSpan="2" Grid.Column="1"/>
+        <Button Content="Convert" VerticalAlignment="Top" Height="53" Click="Button_Click_1" Grid.Row="6" Grid.Column="1" Grid.RowSpan="3" Margin="0,0,0.2,0"/>
+        <Label Content="Save path:" HorizontalAlignment="Left" Margin="27,1.8,0,0" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="2" Height="26" Width="64"/>
+        <Button x:Name="btnSave" Content="Save" Margin="111,6.8,0,1" HorizontalAlignment="Left" Width="74" Grid.ColumnSpan="4" Grid.Row="3" Grid.Column="1"/>
+        <Menu x:Name="menu" Height="22" VerticalAlignment="Top" Grid.ColumnSpan="8" Margin="0,0,-0.2,0">
             <MenuItem Header="File" Height="22" Width="46">
-                <MenuItem x:Name="menuExit" Header="Exit" HorizontalAlignment="Left" Width="139.2" Cursor="Arrow" Click="menuExit_Click"/>
+                <MenuItem x:Name="menuOpen" Header="Open" HorizontalAlignment="Left" Width="139"/>
+                <MenuItem x:Name="menuSave" Header="Save" HorizontalAlignment="Left" Width="139.2"/>
+                <MenuItem x:Name="menuSaveAs" Header="Save As.." HorizontalAlignment="Left" Width="139.2"/>
+                <MenuItem x:Name="menuExit" Header="Exit" Cursor="Arrow" Click="menuExit_Click" Margin="0,0,0.2,0"/>
             </MenuItem>
             <MenuItem Header="Help" >
                 <MenuItem Header="About" Click="MenuItem_OnClick" HorizontalAlignment="Left" Width="139.2"/>
             </MenuItem>
         </Menu>
-        <RadioButton x:Name="rdbJson" Content="To Json" HorizontalAlignment="Left" Margin="351,110,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdbXml" Content="To Xml" HorizontalAlignment="Left" Margin="351,132,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnEdit" Content="Edit" Click="BtnEdit_OnClick" HorizontalAlignment="Left" Margin="16.8,1,0,9.8" Width="102" Grid.Column="5" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <ComboBox x:Name="cmbFormats" Grid.ColumnSpan="3" Grid.Column="2" Margin="6.8,14,2.4,0" Grid.Row="6" VerticalAlignment="Top" SelectedIndex="0" IsSynchronizedWithCurrentItem="True">
+            <ComboBoxItem Content="XML"/>
+            <ComboBoxItem Content="JSON"/>
+        </ComboBox>
+<<<<<<< HEAD
+        <Button x:Name="btnPreview" Content="Preview" Grid.Column="6" HorizontalAlignment="Left" Width="102" Height="21" Click="btnPreview_Click" Margin="0,30,0,0" Grid.RowSpan="2"/>
+=======
+
+        <Button x:Name="btnShow" Grid.ColumnSpan="3" Content="Show file" Grid.Column="2" HorizontalAlignment="Left" Margin="6.8,10.2,0,0" Grid.Row="8" VerticalAlignment="Top" Width="75" Click="btnShow_Click"/>
+
+        <Button x:Name="btnPreview" Content="Preview" Grid.Column="5" HorizontalAlignment="Left" Width="102" Click="btnPreview_Click" Margin="16.6,30,0,0" Grid.RowSpan="3" Grid.ColumnSpan="3" Height="24" VerticalAlignment="Top"/>
+
+>>>>>>> 38a29d31ae2ef2d9a756a4eed074717775b4987b
 
     </Grid>
 </Window>

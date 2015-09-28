@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="baa45c62-fd11-45fd-9dc0-b08602b78e43" name="UMLUseCaseDiagram1" linkedPackageId="b167c9e2-fee8-43b5-baeb-33c83cf12bf1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="e4a07c74-996e-40ae-8d97-7de5b8b74dbe" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="4aeca4c4-9304-4cb6-9774-a042e881c32e" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ee8dc3c4-441a-451a-a190-160561ccc0d4">
+          <propertyInstance Id="fd764784-61c2-4ef3-a42f-0ba78130d973" name="BaseName">
+            <elementDefinition Id="49213201-91f3-4a8d-8b41-450a79f5ff29" />
+          </propertyInstance>
+          <elementDefinition Id="9d09dde5-d706-4b32-b572-eed7c66aaf88" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c3d3c449-893d-4763-8d87-07266a741ea6">
+          <propertyInstance Id="f4233a20-c90b-4469-94a0-6b4118ce2440" name="ClrAttributes">
+            <elementDefinition Id="ed07c223-adef-4eac-b99e-afe832415234" />
+          </propertyInstance>
+          <elementDefinition Id="cd5c8ec7-8904-403c-8b86-1ea56dc24852" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6953dfa5-a196-497c-88cf-c38c4c6761db">
+          <propertyInstance Id="aadc6b05-d155-43ae-af12-55142f7d9927" name="Usings">
+            <elementDefinition Id="3cf95847-24d6-447d-a13c-6deecfe31e69" />
+          </propertyInstance>
+          <elementDefinition Id="892e6957-d10b-4405-9084-863d0ec4fdb9" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="7cac293d-1ffc-46c7-ae13-c8f0bbb17e24" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="a24595d9-ba98-468e-9c7c-f83a25ecf07a" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f67b4840-e15b-4870-94f1-f84ea72e10c7">
+          <propertyInstance Id="b1c8dec4-d364-4468-973c-95ed7239f627" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="e07d7d41-0a41-437b-8edf-936dd93a0384" />
+          </propertyInstance>
+          <elementDefinition Id="77484228-da4d-439a-a286-f27a9952dcde" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="34274591-09c1-442f-b075-a681aa81a8dd">
+          <propertyInstance Id="6931f8c4-3423-4e57-ba63-db4b111ad588" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="4e9d575c-6400-461a-ac95-59e181db60c5" />
+          </propertyInstance>
+          <elementDefinition Id="ae0df120-f04d-4f0f-a63f-ee835a44ad90" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d1b028ac-50e9-4ffe-a713-0155192f5daf">
+          <propertyInstance Id="da411e49-d81e-496e-bc86-b7d3f46bf4f7" name="ProjectPath" value="ClassTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|EnumTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|InterfaceTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj|StructTemplate=..\ModelingProject1Lib\ModelingProject1Lib.csproj">
+            <elementDefinition Id="97e0c63b-ae4f-4aa0-b47a-fa6ee007a98b" />
+          </propertyInstance>
+          <elementDefinition Id="b5c7c48c-3789-466f-b950-2f50b8348f8b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="25189fc8-af48-4f2d-b75b-4f265823a11e">
+          <propertyInstance Id="868a82c5-557b-4b7e-8388-f8d0cc7e4eff" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="b746a818-8110-438a-bcdc-40260d392c9c" />
+          </propertyInstance>
+          <elementDefinition Id="543ba0ea-5ca4-40e3-b675-a38c28e11640" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2767fa1e-3b74-4b7d-afe7-a1e67f48b352">
+          <propertyInstance Id="bd257185-4b8e-4c27-84a5-20cb74894df8" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="914e6cc6-c4af-4387-87d0-4e9d22f3c868" />
+          </propertyInstance>
+          <elementDefinition Id="fc1b28e2-34c7-46ca-9eaf-42f905759cc5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="00fcf3fa-b3c4-4e27-b87b-757c16bd2bf6">
+          <propertyInstance Id="88889560-cbd2-4d35-a305-73eccffa91e6" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="2bae468d-2fc5-4829-aba3-3d0f7d925e56" />
+          </propertyInstance>
+          <elementDefinition Id="c5379104-1b0a-4c7b-85a9-6d0e292d05e0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ffc4d377-9e5b-4d99-a264-57b3242777e9">
+          <propertyInstance Id="aeb2311b-a85a-4009-b8ce-8e65e74cc033" name="Parameters">
+            <elementDefinition Id="05b8dd94-aa7d-45e1-abb9-d1a11e3ed3da" />
+          </propertyInstance>
+          <elementDefinition Id="034cc29a-84e7-42e1-82d5-fab9d0aa58d2" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="d185ceaf-269a-4f3c-a4bf-2f9af2d20827">
+      <profileInstance Id="1944fdb0-dc0d-4de4-8251-a87563258f35" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8dd91ec2-9716-4f01-a27b-5bbae310d22e">
+      <profileInstance Id="80da847d-bb9f-4eea-8600-db4037dbc698" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="315a3ad8-1d6b-43f6-97f8-1f53b1f9e81b">
+      <profileInstance Id="005c742c-1a69-49ad-bbb1-598c051d118a" name="CSharpProfile">
+        <elementDefinition Id="5e86ff31-e865-46d3-bd3f-eb3e7a156581" />
+      </profileInstance>
+      <elementDefinition Id="b91f1a0c-083e-4656-bbab-7e02c328e1d4" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="414cd52b-773c-4ef3-9d0e-c3cbb9581c46">
+      <profileInstance Id="ca30f9c8-1fbd-4694-bbf8-b05bcadb1e4d" name="TextTemplateBindings">
+        <elementDefinition Id="54bef252-8e51-4510-81b8-04a742434d35" />
+      </profileInstance>
+      <elementDefinition Id="3b3c5c02-bb2c-4a7e-ba6f-154f50896414" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e7b73f17-550a-46e1-9374-196a6fcc6a3c" name="Uzytkownik" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7385fa82-5001-402a-be3c-8e94a45093e5" />
+        <targetEnds>
+          <association Id="70c814ba-5268-4a82-9e62-223bc8a98790" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a1a179a1-6342-453b-8b7f-c7f064cd447a" LastKnownName="Strona główna" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e56d28ae-c9f4-440d-aca5-bf1952747745" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="abf814bc-0ad7-4881-bfda-7ad8faa56815" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16be48d5-36da-4288-822f-9576f57a3db0" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="557376c4-19b4-428a-b7cf-19aeaf43ca9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aecede7e-7a24-4bb2-a251-b24341fbbc9b" />
+          </association>
+          <association Id="45ed7745-4563-4a05-a24f-75dc94f8aa97" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Logowanie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="27b97984-7298-4e53-9d4b-5cb624d5e5e3" LastKnownName="Logowanie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1847eb09-38bb-4378-abff-dfb31f17f2fa" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8a0e5cb6-dd93-404a-8d03-321a607f0ba4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3ab6368c-250c-4d1a-b9cd-a59c197c2c09" name="Logowanie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6866c2b5-8a84-4101-89be-40677f35c27c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="29f72fbc-4d6a-40bc-baac-377e1578f102" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a1a179a1-6342-453b-8b7f-c7f064cd447a" name="Strona główna" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fa7ab0da-6fa1-4415-9c6d-1f1411ae3fa4" />
+        <subjects>
+          <subsystemMoniker Id="73ed33df-b65f-49f1-b5f9-4928abd3a3ea" LastKnownName="Strona Newerwinter" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="73ed33df-b65f-49f1-b5f9-4928abd3a3ea" name="Strona Newerwinter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="379ef96d-0f1a-42d3-8e3f-fe57bdb00728" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="de3d4d9d-7ea6-47b8-b5d7-05244b904031" name="Forum" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="84a3ccda-4f12-4cd6-8130-6d444b7be28e" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="27b97984-7298-4e53-9d4b-5cb624d5e5e3" name="Logowanie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a257c124-a1bb-4ef6-b2dc-2a7c00499a21" />
+        <suppliersInternal>
+          <dependency Id="cbb2f571-9063-4c42-baf1-80d4489cdec6">
+            <useCaseMoniker Id="a1a179a1-6342-453b-8b7f-c7f064cd447a" LastKnownName="Strona główna" />
+            <elementDefinition Id="4dec7f56-49ab-4212-8c39-435a3bd2fb0f" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="de3d4d9d-7ea6-47b8-b5d7-05244b904031" LastKnownName="Forum" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="559c8454-3a54-4705-9e1e-bc051883fd90" name="Serwer google" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0558f7bd-d225-4a18-9c4c-7318369d4092" />
+        <targetEnds>
+          <association Id="06bd0cc6-dd87-488d-b834-7b74488a11d5" isDerived="false" sourceEndRoleName="Serwer google" targetEndRoleName="Tworzenie metadanych" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d99d402f-5803-4231-876b-f14b4ea276e6" LastKnownName="Tworzenie metadanych" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f728bd1d-9333-4edb-9884-081d36d3ba4f" name="Serwer google" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="092f639d-5f80-45ad-8cb9-38507be759ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="42365398-eab2-43ae-8f39-9ff5acf89ac0" name="Tworzenie metadanych" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="970e7663-cb38-4646-8056-64348a1c79c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="67e76d16-f1c3-48d1-a787-67a8c41638b0" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="d99d402f-5803-4231-876b-f14b4ea276e6" name="Tworzenie metadanych" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4a3e262c-1cb6-4d83-823c-9d1f654ab0cb" />
+        <subjects>
+          <subsystemMoniker Id="73ed33df-b65f-49f1-b5f9-4928abd3a3ea" LastKnownName="Strona Newerwinter" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="b167c9e2-fee8-43b5-baeb-33c83cf12bf1" name="ModelingProject1">
+    <elementDefinition Id="3c17b823-6490-44e3-be3a-e936e509d61c" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram1">
+  <useCaseModelRootMoniker Id="baa45c62-fd11-45fd-9dc0-b08602b78e43" />
+  <nestedChildShapes>
+    <actorShape Id="1f0681a4-1682-4245-9ecb-dcf362454518" absoluteBounds="1.375, 1, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="e7b73f17-550a-46e1-9374-196a6fcc6a3c" LastKnownName="Uzytkownik" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="cd893887-e171-4f4a-95ff-833f9c1f655c" absoluteBounds="6.75, 3.75, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="559c8454-3a54-4705-9e1e-bc051883fd90" LastKnownName="Serwer google" />
+      <relativeChildShapes />
+    </actorShape>
+    <SubsystemShape Id="3945bf41-3f2a-4c89-85d8-93e4d9c663d7" absoluteBounds="5.125, 0.5, 3, 2.5" customColor="White">
+      <subsystemMoniker Id="73ed33df-b65f-49f1-b5f9-4928abd3a3ea" LastKnownName="Strona Newerwinter" />
+      <nestedChildShapes>
+        <useCaseShape Id="8e6f6339-73f1-41ee-8f89-09e961cb656d" absoluteBounds="6.25, 1.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="a1a179a1-6342-453b-8b7f-c7f064cd447a" LastKnownName="Strona główna" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="e7d751b7-0d45-4997-b94b-ad1a658c8228" absoluteBounds="6.875, 2.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="d99d402f-5803-4231-876b-f14b4ea276e6" LastKnownName="Tworzenie metadanych" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(1.875 : 1.26219512195122); (6.25236268303719 : 1.47572500892864)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="70c814ba-5268-4a82-9e62-223bc8a98790" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1f0681a4-1682-4245-9ecb-dcf362454518" />
+        <useCaseShapeMoniker Id="8e6f6339-73f1-41ee-8f89-09e961cb656d" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(7.06818181818182 : 3.75); (7.30744339763334 : 2.87270754201107)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="06bd0cc6-dd87-488d-b834-7b74488a11d5" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="cd893887-e171-4f4a-95ff-833f9c1f655c" />
+        <useCaseShapeMoniker Id="e7d751b7-0d45-4997-b94b-ad1a658c8228" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <SubsystemShape Id="60f034c2-5b9c-4c8b-83b6-e47ae7860914" absoluteBounds="1.25, 1.75, 3.25, 2.625" customColor="White">
+      <subsystemMoniker Id="de3d4d9d-7ea6-47b8-b5d7-05244b904031" LastKnownName="Forum" />
+      <nestedChildShapes>
+        <useCaseShape Id="edc2bfa6-bbda-4a60-842a-308b89f35510" absoluteBounds="1.375, 2.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="27b97984-7298-4e53-9d4b-5cb624d5e5e3" LastKnownName="Logowanie" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(1.675 : 1.5); (1.8252481404895 : 2.2512407024475)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="45ed7745-4563-4a05-a24f-75dc94f8aa97" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1f0681a4-1682-4245-9ecb-dcf362454518" />
+        <useCaseShapeMoniker Id="edc2bfa6-bbda-4a60-842a-308b89f35510" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseDependencyConnector edgePoints="[(2.33758430918737 : 2.40511091093592); (6.28741569081263 : 1.59488908906408)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="cbb2f571-9063-4c42-baf1-80d4489cdec6" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="edc2bfa6-bbda-4a60-842a-308b89f35510" />
+        <useCaseShapeMoniker Id="8e6f6339-73f1-41ee-8f89-09e961cb656d" />
+      </nodes>
+    </useCaseDependencyConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="Converter.Preview"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Converter"
+        mc:Ignorable="d"
+        Title="Preview" Height="300" Width="300">
+    <Grid PreviewDrop="Grid_PreviewDrop">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="232*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnClosePreview" Content="Go back" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Width="75" Height="27" Click="btnClosePreview_Click"/>
+        <Button x:Name="btnSaveFile" Content="Save as..." HorizontalAlignment="Left" Margin="178,11,0,0" VerticalAlignment="Top" Width="75" Height="27" Click="btnSaveFile_Click"/>
+
+    </Grid>
+</Window>

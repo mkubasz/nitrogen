@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-09-15T22:23:36" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-09-15T22:23:36" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2015-09-15T22:23:36" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-09-15T22:23:36" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject2Lib\ModelingProject2Lib.csproj" />
+  <Message Timestamp="2015-09-15T22:23:36" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-09-15T22:23:36" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-09-15T22:23:36" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-09-15T22:23:36" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-09-15T22:23:36" Importance="Medium" Text="ModelingProject2's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'ModelingProject2::AbstractMy' -  (Class), 'ModelingProject2::MyClass' -  (Class), 'ModelingProject2::Class1' -  (Class) " />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Medium" Text="'ModelingProject2::AbstractMy' -  (Class) : success (file replaced) - M:\Projects\nitrogen\ModelingProject2\ModelingProject2Lib\GeneratedCode\AbstractMy.cs" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Medium" Text="'ModelingProject2::MyClass' -  (Class) : success (file replaced) - M:\Projects\nitrogen\ModelingProject2\ModelingProject2Lib\GeneratedCode\MyClass.cs" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Medium" Text="'ModelingProject2::Class1' -  (Class) : success (file created) - M:\Projects\nitrogen\ModelingProject2\ModelingProject2Lib\GeneratedCode\Class1.cs" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject2Lib\ModelingProject2Lib.csproj" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Medium" Text="ModelingProject2's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'ModelingProject2::AbstractMy' -  (Class), 'ModelingProject2::MyClass' -  (Class), 'ModelingProject2::Class1' -  (Class) " />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="'ModelingProject2::AbstractMy' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="'ModelingProject2::MyClass' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="'ModelingProject2::Class1' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="The selection included 2 elements which were not bound to a template." />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="'33d8c071-79de-4e95-9e2a-4257a56328e8' -  (Generalization): no bound template." />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="Diagnostic" Text="'160986da-931c-4903-896a-8e16c87a6a4c' -  (Generalization): no bound template." />
+  <Message Timestamp="2015-09-15T22:23:37" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
