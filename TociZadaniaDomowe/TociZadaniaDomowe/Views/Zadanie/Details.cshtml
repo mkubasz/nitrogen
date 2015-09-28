@@ -1,0 +1,74 @@
+﻿@model Repozytorium.Models.Zadanie
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Zadanie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TematZadania)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TematZadania)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrescZadania)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrescZadania)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RejestratorZadania)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RejestratorZadania)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDodaniaZadania)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDodaniaZadania)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModyfikatorZadania)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModyfikatorZadania)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataModyfikacjiZadania)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataModyfikacjiZadania)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uzytkownik_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uzytkownik_Id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
