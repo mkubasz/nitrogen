@@ -47,18 +47,6 @@
       <HintPath>..\packages\Excel-DNA.Interop.14.0.1\lib\Office.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Spire.Common">
-      <HintPath>..\packages\Spire.XLS.7.8.26\lib\net40\Spire.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Spire.License">
-      <HintPath>..\packages\Spire.XLS.7.8.26\lib\net40\Spire.License.dll</HintPath>
-    </Reference>
-    <Reference Include="Spire.Pdf">
-      <HintPath>..\packages\Spire.XLS.7.8.26\lib\net40\Spire.Pdf.dll</HintPath>
-    </Reference>
-    <Reference Include="Spire.XLS">
-      <HintPath>..\packages\Spire.XLS.7.8.26\lib\net40\Spire.XLS.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />

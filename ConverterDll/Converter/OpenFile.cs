@@ -20,14 +20,6 @@ namespace Converter
 		{
 			try
 			{
-				//Spire.Xls.Workbook wbFromStream = new Workbook();
-				//FileStream fileStream = File.OpenRead(path);
-				//fileStream.Seek(0, SeekOrigin.Begin);
-				//wbFromStream.LoadFromStream(fileStream);
-				//wbFromStream.SaveToFile("From_stream.xls");
-				//fileStream.Dispose();
-				//System.Diagnostics.Process.Start("From_start.xls");
-				
 				_excel = new Excel.Application();
 				worksheet = _worksheet = new Excel.Worksheet();
 				_workbook = _excel.Workbooks.Open(path, _missing, _missing, _missing, _missing, _missing, _missing, _missing,

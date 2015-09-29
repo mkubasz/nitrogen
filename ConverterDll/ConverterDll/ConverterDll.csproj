@@ -34,18 +34,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>obj\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
-    <Reference Include="Spire.Common">
-      <HintPath>..\packages\Spire.XLS.7.8.26\lib\net40\Spire.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Spire.License">
-      <HintPath>..\packages\Spire.XLS.7.8.26\lib\net40\Spire.License.dll</HintPath>
-    </Reference>
-    <Reference Include="Spire.Pdf">
-      <HintPath>..\packages\Spire.XLS.7.8.26\lib\net40\Spire.Pdf.dll</HintPath>
-    </Reference>
-    <Reference Include="Spire.XLS">
-      <HintPath>..\packages\Spire.XLS.7.8.26\lib\net40\Spire.XLS.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,9 +47,6 @@
     <Compile Include="Exception\EnumException.cs" />
     <Compile Include="Exception\ExceptionConvert.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
