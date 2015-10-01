@@ -1,0 +1,69 @@
+﻿.loader .page-progress-bar {
+    margin: 14px 0 0 0 ;
+}
+
+.loader {
+    visibility: hidden;
+}
+.loader.active {
+    visibility: visible;
+}
+
+.brand .title {
+    float: left;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 145%;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin: 2% 0;
+    padding-left: 50px;
+    -webkit-text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    text-transform: initial;
+    text-decoration: none;
+    color: #0081C2;
+}
+span.title {
+    background: url(/content/images/icon.png) no-repeat left center;
+    -moz-background-size: 45px;
+    -o-background-size: 45px;
+    -webkit-background-size: 45px;
+    background-size: 45px;
+}
+
+.page-splash
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    opacity: 0.2;
+    pointer-events: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear;
+    -o-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear;
+}
+.page-splash-message {
+    text-align: center;
+    margin: 10% 0 0 0;
+    font-size: 400%;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    -webkit-text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: monospace;
+    color: #F58A00;
+    padding: 0;
+}
+.page-progress-bar {
+    margin: 10% 30% 0 30%;
+}

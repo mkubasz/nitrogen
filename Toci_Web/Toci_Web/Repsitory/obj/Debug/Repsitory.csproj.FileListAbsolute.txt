@@ -1,0 +1,9 @@
+D:\OneDrive\Documents\nitrogen\Toci_Web\Toci_Web\Repsitory\bin\Debug\Repsitory.dll
+D:\OneDrive\Documents\nitrogen\Toci_Web\Toci_Web\Repsitory\bin\Debug\Repsitory.pdb
+D:\OneDrive\Documents\nitrogen\Toci_Web\Toci_Web\Repsitory\bin\Debug\AutoMapper.dll
+D:\OneDrive\Documents\nitrogen\Toci_Web\Toci_Web\Repsitory\bin\Debug\IRepository.dll
+D:\OneDrive\Documents\nitrogen\Toci_Web\Toci_Web\Repsitory\bin\Debug\IRepository.pdb
+D:\OneDrive\Documents\nitrogen\Toci_Web\Toci_Web\Repsitory\bin\Debug\AutoMapper.xml
+D:\OneDrive\Documents\nitrogen\Toci_Web\Toci_Web\Repsitory\obj\Debug\Repsitory.csprojResolveAssemblyReference.cache
+D:\OneDrive\Documents\nitrogen\Toci_Web\Toci_Web\Repsitory\obj\Debug\Repsitory.dll
+D:\OneDrive\Documents\nitrogen\Toci_Web\Toci_Web\Repsitory\obj\Debug\Repsitory.pdb

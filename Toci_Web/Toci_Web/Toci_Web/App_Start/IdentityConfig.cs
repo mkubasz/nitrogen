@@ -3,7 +3,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-using Toci_Web.Models;
+using Toci_Web_Front.Models;
 
 namespace Toci_Web
 {

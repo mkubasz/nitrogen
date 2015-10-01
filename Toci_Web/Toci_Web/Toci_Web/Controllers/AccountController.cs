@@ -13,9 +13,19 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using Toci_Web.Models;
-using Toci_Web.Providers;
+using SpaStack.NET.Models;
 using Toci_Web.Results;
+using Toci_Web_Front.Models;
+using Triarc.Web.Server.Providers;
+using AddExternalLoginBindingModel = Triarc.Web.Server.ViewModels.Security.AddExternalLoginBindingModel;
+using ChangePasswordBindingModel = Triarc.Web.Server.ViewModels.Security.ChangePasswordBindingModel;
+using ExternalLoginViewModel = Triarc.Web.Server.ViewModels.Security.ExternalLoginViewModel;
+using ManageInfoViewModel = Triarc.Web.Server.ViewModels.Security.ManageInfoViewModel;
+using RegisterExternalBindingModel = Triarc.Web.Server.ViewModels.Security.RegisterExternalBindingModel;
+using RemoveLoginBindingModel = Triarc.Web.Server.ViewModels.Security.RemoveLoginBindingModel;
+using SetPasswordBindingModel = Triarc.Web.Server.ViewModels.Security.SetPasswordBindingModel;
+using UserInfoViewModel = Triarc.Web.Server.ViewModels.Security.UserInfoViewModel;
+using UserLoginInfoViewModel = Triarc.Web.Server.ViewModels.Security.UserLoginInfoViewModel;
 
 namespace Toci_Web.Controllers
 {
@@ -60,7 +70,7 @@ namespace Toci_Web.Controllers
 
             return new UserInfoViewModel
             {
-                Email = User.Identity.GetUserName(),
+                UserName = User.Identity.GetUserName(),
                 HasRegistered = externalLogin == null,
                 LoginProvider = externalLogin != null ? externalLogin.LoginProvider : null
             };
@@ -107,8 +117,9 @@ namespace Toci_Web.Controllers
 
             return new ManageInfoViewModel
             {
+               
                 LocalLoginProvider = LocalLoginProvider,
-                Email = user.UserName,
+                UserName = user.UserName,
                 Logins = logins,
                 ExternalLoginProviders = GetExternalLogins(returnUrl, generateState)
             };
@@ -259,13 +270,13 @@ namespace Toci_Web.Controllers
             {
                 Authentication.SignOut(DefaultAuthenticationTypes.ExternalCookie);
                 
-                 ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(UserManager,
-                    OAuthDefaults.AuthenticationType);
-                ClaimsIdentity cookieIdentity = await user.GenerateUserIdentityAsync(UserManager,
-                    CookieAuthenticationDefaults.AuthenticationType);
+//                 ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(UserManager,
+//                    OAuthDefaults.AuthenticationType);
+//                ClaimsIdentity cookieIdentity = await user.GenerateUserIdentityAsync(UserManager,
+//                    CookieAuthenticationDefaults.AuthenticationType);
 
-                AuthenticationProperties properties = ApplicationOAuthProvider.CreateProperties(user.UserName);
-                Authentication.SignIn(properties, oAuthIdentity, cookieIdentity);
+                //AuthenticationProperties properties = ApplicationOAuthProvider<,>.CreateProperties(user.UserName);
+                //Authentication.SignIn(properties, oAuthIdentity, cookieIdentity);
             }
             else
             {
@@ -328,7 +339,7 @@ namespace Toci_Web.Controllers
                 return BadRequest(ModelState);
             }
 
-            var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
+            var user = new ApplicationUser() { UserName = model.UserName, Email = model.UserName };
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
@@ -357,7 +368,7 @@ namespace Toci_Web.Controllers
                 return InternalServerError();
             }
 
-            var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
+            var user = new ApplicationUser() { UserName = model.UserName, Email = model.UserName };
 
             IdentityResult result = await UserManager.CreateAsync(user);
             if (!result.Succeeded)

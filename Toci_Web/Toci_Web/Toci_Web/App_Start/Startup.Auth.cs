@@ -8,8 +8,9 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using Toci_Web.Providers;
-using Toci_Web.Models;
+
+using Toci_Web_Front.Models;
+using Triarc.Web.Server.Providers;
 
 namespace Toci_Web
 {
@@ -36,7 +37,7 @@ namespace Toci_Web
             OAuthOptions = new OAuthAuthorizationServerOptions
             {
                 TokenEndpointPath = new PathString("/Token"),
-                Provider = new ApplicationOAuthProvider(PublicClientId),
+//                Provider = new ApplicationOAuthProvider<,>(PublicClientId),
                 AuthorizeEndpointPath = new PathString("/api/Account/ExternalLogin"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromDays(14),
                 // In production mode set AllowInsecureHttp = false
