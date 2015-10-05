@@ -1,7 +1,29 @@
-﻿@using Toci_Web_Front.Controllers
+﻿@using Microsoft.AspNet.Identity.Owin
+@using Toci_Web_Front.Controllers
 @{
     ViewBag.Title = "Home Page";
 }
+@{
+    string membersArea;
+    string someController;
+    string someControllerMethod;
+    if (
+        System.Web.HttpContext.Current.User.Identity.IsAuthenticated
+        )
+    {
+        membersArea = "members area";
+        someController = "MainPage";
+        someControllerMethod = "Main";
+    }
+    else
+    {
+        membersArea = "Log in";
+        someController = "Account";
+        someControllerMethod = "Login";
+    }
+    
+}
+
 
 
 <!DOCTYPE html>
@@ -59,10 +81,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">o nas</a>
+                        <a class="page-scroll" href="#about">about us</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">co robimy</a>
+                        <a class="page-scroll" href="#services">what we do</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
@@ -71,7 +93,9 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                       @Html.ActionLink("Log in", "Login", "Account")
+
+                       
+                        @Html.ActionLink(membersArea, someControllerMethod, someController)
                         
                     </li>
                 </ul>
