@@ -1,8 +1,0 @@
-M:\Projects\Toci\training\PraireDog\one\Startup\SQLlib\bin\Debug\SQLlib.dll
-M:\Projects\Toci\training\PraireDog\one\Startup\SQLlib\bin\Debug\SQLlib.pdb
-M:\Projects\Toci\training\PraireDog\one\Startup\SQLlib\bin\Debug\itextsharp.dll
-M:\Projects\Toci\training\PraireDog\one\Startup\SQLlib\bin\Debug\Npgsql.dll
-M:\Projects\Toci\training\PraireDog\one\Startup\SQLlib\bin\Debug\itextsharp.xml
-M:\Projects\Toci\training\PraireDog\one\Startup\SQLlib\bin\Debug\Npgsql.xml
-M:\Projects\Toci\training\PraireDog\one\Startup\SQLlib\obj\Debug\SQLlib.dll
-M:\Projects\Toci\training\PraireDog\one\Startup\SQLlib\obj\Debug\SQLlib.pdb

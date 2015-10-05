@@ -1,5 +1,0 @@
-M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\ConverterDll.dll
-M:\Projects\nitrogen\ConverterDll\ConverterDll\bin\Debug\ConverterDll.pdb
-M:\Projects\nitrogen\ConverterDll\ConverterDll\obj\Debug\ConverterDll.csprojResolveAssemblyReference.cache
-M:\Projects\nitrogen\ConverterDll\ConverterDll\obj\Debug\ConverterDll.dll
-M:\Projects\nitrogen\ConverterDll\ConverterDll\obj\Debug\ConverterDll.pdb
