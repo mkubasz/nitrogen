@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOCI_Shop", "TOCI_Shop\TOCI_Shop.csproj", "{ADFFC34C-ED2C-4DCB-8936-352D8AFE5E41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOCI_Shop.Tests", "TOCI_Shop.Tests\TOCI_Shop.Tests.csproj", "{C7B044E2-0433-4CFE-8D5F-8AE354CB47CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{6FEF9BB8-628A-4B17-B1D8-5A17C0574FEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADFFC34C-ED2C-4DCB-8936-352D8AFE5E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADFFC34C-ED2C-4DCB-8936-352D8AFE5E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADFFC34C-ED2C-4DCB-8936-352D8AFE5E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADFFC34C-ED2C-4DCB-8936-352D8AFE5E41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B044E2-0433-4CFE-8D5F-8AE354CB47CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B044E2-0433-4CFE-8D5F-8AE354CB47CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B044E2-0433-4CFE-8D5F-8AE354CB47CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B044E2-0433-4CFE-8D5F-8AE354CB47CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FEF9BB8-628A-4B17-B1D8-5A17C0574FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEF9BB8-628A-4B17-B1D8-5A17C0574FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEF9BB8-628A-4B17-B1D8-5A17C0574FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEF9BB8-628A-4B17-B1D8-5A17C0574FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
