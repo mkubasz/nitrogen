@@ -8,7 +8,8 @@ namespace Repozytorium.Models
         [Key]
         public int FotoId { get; set; }
         public int FotoSize { get; set; }
-  
+        public string Description { get; set; }
+    
         public string FileName { get; set; }
         public byte[] FotoData { get; set; }
 
