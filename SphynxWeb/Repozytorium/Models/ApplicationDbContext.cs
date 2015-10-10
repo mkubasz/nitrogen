@@ -21,18 +21,19 @@ namespace Repozytorium.Models
         }
 
         public IDbSet<FotoModel> Fotos { get; set; }
-        //public IDbSet<BlogModel> Posts { get; set; }
+        public IDbSet<BlogModel> Posts { get; set; }
 
-        public System.Data.Entity.DbSet<Repozytorium.Models.BlogModel> BlogModels { get; set; }
+        //public System.Data.Entity.DbSet<Repozytorium.Models.BlogModel> BlogModels { get; set; }
 
-        public System.Data.Entity.DbSet<Repozytorium.Models.FotoModel> FotoModels { get; set; }
+       //public System.Data.Entity.DbSet<Repozytorium.Models.FotoModel> FotoModels { get; set; }
 
 
-       // protected override void OnModelCreating(DbModelBuilder modelBuilder)
-       // {
-       //base.OnModelCreating(modelBuilder);
-       //     modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
         
-       // }
+        }
     }
 }

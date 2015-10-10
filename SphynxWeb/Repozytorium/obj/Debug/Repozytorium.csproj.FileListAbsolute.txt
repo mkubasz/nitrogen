@@ -166,3 +166,4 @@ C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Rep
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.dll
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.addDescription.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.repairs.resources
