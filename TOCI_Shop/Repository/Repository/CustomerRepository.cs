@@ -14,12 +14,14 @@ namespace Repository.Repository
         public IEnumerable<CustomerModel> GetCustomersFromRegion()
         {
             // implementation
+            return null; // to change
         }
 
 
         public CustomerModel GetByName(string customerName)
         {
             //implementation
+            return null; // to change
         }
     }
 }
