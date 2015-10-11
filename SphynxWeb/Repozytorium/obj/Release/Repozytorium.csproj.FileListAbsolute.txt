@@ -56,3 +56,4 @@ C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\R
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\Repozytorium.csproj.GenerateResource.Cache
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\Repozytorium.dll
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\Repozytorium.pdb
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\Repozytorium.csprojResolveAssemblyReference.cache
