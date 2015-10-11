@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel", "Parallel\Parallel.csproj", "{F0198D23-4072-46BD-A25A-49F056B6B1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{61F9585B-7671-40C5-BDC8-0FE05643DCCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0198D23-4072-46BD-A25A-49F056B6B1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0198D23-4072-46BD-A25A-49F056B6B1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0198D23-4072-46BD-A25A-49F056B6B1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0198D23-4072-46BD-A25A-49F056B6B1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F9585B-7671-40C5-BDC8-0FE05643DCCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F9585B-7671-40C5-BDC8-0FE05643DCCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F9585B-7671-40C5-BDC8-0FE05643DCCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F9585B-7671-40C5-BDC8-0FE05643DCCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
