@@ -6,8 +6,12 @@ jQuery(document).ready(function() {
 	//this code is for the gmap
 	 var map = new GMaps({
         el: '#map',
-        lat: -12.043333,
-        lng: -77.028333
+        //lat: -12.043333,
+	     //lng: -77.028333
+	     lat: 52.546452,
+	     lng: 19.706769
+	     //http://www.doogal.co.uk/LatLong.php
+
       });
 
 
