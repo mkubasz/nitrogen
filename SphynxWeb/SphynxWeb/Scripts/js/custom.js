@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
                       menu = target;
                   $target = $(target);
                   $('html, body').stop().animate({
-                      'scrollTop': $target.offset().top-15
+                      'scrollTop': $target.offset().top-50
                   }, 500, 'swing', function () {
                       window.location.hash = target;
                       $(document).on("scroll", onScroll);
@@ -58,14 +58,14 @@ jQuery(document).ready(function() {
         var windowScrollPosTop = jQuery(window).scrollTop();
 
         if(windowScrollPosTop >= 150) {
-          jQuery(".header").css({"background": "#B193DD",});
-          jQuery(".top-header img.logo").css({"margin-top": "-40px", "margin-bottom": "0"});
-          jQuery(".navbar-default").css({"margin-top": "-15px",});
+          jQuery(".header").css({"background": "#B193DD"});
+          jQuery(".top-header img.logo").css({"margin-top": "-10px", "margin-bottom": "0"});
+          jQuery(".navbar-default").css({"margin-top": "-15px"});
         }
         else{
-          jQuery(".header").css({"background": "transparent",});
-           jQuery(".top-header img.logo").css({"margin-top": "-12px", "margin-bottom": "25px"});
-           jQuery(".navbar-default").css({"margin-top": "12px", "margin-bottom": "0"});
+          jQuery(".header").css({"background": "transparent"});
+           jQuery(".top-header img.logo").css({"margin-top": "-10px", "margin-bottom": " 0"});
+           jQuery(".navbar-default").css({ "margin-top": "-15px"});
           
         }
      });
