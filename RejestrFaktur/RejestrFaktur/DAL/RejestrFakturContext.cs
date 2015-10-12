@@ -24,7 +24,7 @@ namespace RejestrFaktur.DAL
         DbSet<JednostkaMiary> JednostkiMiar { get; set; }
         DbSet<PlatnoscTyp> PlatnosciTypy { get; set; }
         DbSet<Waluta> Waluty { get; set;}
-        DbSet<StawkaPodatku> StawkiPodatku { get; set}
+        DbSet<StawkaPodatku> StawkiPodatku { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

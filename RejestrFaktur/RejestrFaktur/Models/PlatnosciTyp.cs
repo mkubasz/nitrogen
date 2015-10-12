@@ -14,6 +14,5 @@ namespace RejestrFaktur.Models
         public int id { get; set; }
         public string nazwa { get; set; }
         public string opis { get; set; }
-
     }
 }

@@ -5,9 +5,9 @@ using System.Web;
 
 namespace RejestrFaktur.Models
 {
-    public class JednostkiMiary
+    public class JednostkaMiary
     {
-        public JednostkiMiary()
+        public JednostkaMiary()
         {
         }
 
