@@ -6,8 +6,11 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    color: #42b3e5;
 }
-
+.list-group {
+    
+}
 .slide-image {
     width: 100%;
 }
