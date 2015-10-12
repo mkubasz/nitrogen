@@ -21,6 +21,11 @@ namespace RejestrFaktur.DAL
         DbSet<Firma> Firma { get; set; }
         DbSet<Klient> Klient { get; set; }
         DbSet<Produkt> Produkt { get; set; }
+        DbSet<JednostkaMiary> JednostkiMiar { get; set; }
+        DbSet<PlatnoscTyp> PlatnosciTypy { get; set; }
+        DbSet<Waluta> Waluty { get; set;}
+        DbSet<StawkaPodatku> StawkiPodatku { get; set}
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
