@@ -16,15 +16,15 @@ namespace RejestrFaktur.DAL
 
         }
 
-        DbSet<Faktura> Faktury { get; set; }
-        DbSet<FakturaSzczegoly> FakturySzczegoly { get; set; }
-        DbSet<Firma> Firma { get; set; }
-        DbSet<Klient> Klient { get; set; }
-        DbSet<Produkt> Produkt { get; set; }
-        DbSet<JednostkaMiary> JednostkiMiar { get; set; }
-        DbSet<PlatnoscTyp> PlatnosciTypy { get; set; }
-        DbSet<Waluta> Waluty { get; set;}
-        DbSet<StawkaPodatku> StawkiPodatku { get; set; }
+        public DbSet<Faktura> Faktury { get; set; }
+        public DbSet<FakturaSzczegoly> FakturySzczegoly { get; set; }
+        public DbSet<Firma> Firma { get; set; }
+        public DbSet<Klient> Klient { get; set; }
+        public DbSet<Produkt> Produkt { get; set; }
+        public DbSet<JednostkaMiary> JednostkiMiar {  get; set; }
+        public DbSet<PlatnoscTyp> PlatnosciTypy { get; set; }
+        public DbSet<Waluta> Waluty { get; set;}
+        public DbSet<StawkaPodatku> StawkiPodatku { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

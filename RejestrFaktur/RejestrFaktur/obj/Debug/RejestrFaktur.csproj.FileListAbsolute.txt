@@ -210,3 +210,5 @@ h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFakt
 h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csproj.GenerateResource.Cache
 h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.dll
 h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.pdb
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csprojResolveAssemblyReference.cache
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrations.dodanieKlasSlownikowych.resources
