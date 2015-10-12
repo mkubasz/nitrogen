@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/MGStyl.css")" />
+    <title>@(ViewBag.Title)</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="all">
+            <div id="logo">
+                <h1>@(ViewBag.Title)</h1>
+            </div>
+            <div id="menux">
+                <!--Miejsce na menu główne-->
+                @Html.Partial("~/Views/WartosciSlownikowe/MenuGlowne.cshtml")
+            </div>
+            <div id="lewy">
+                <!--Tutaj będzie renderowana treść strony-->
+                @RenderBody()
+            </div>
+            <div id="prawy">
+                <!-- Miejsce na dodatkowe menu kontekstowe -->
+                @Html.Partial("~/Views/WartosciSlownikowe/DodatkoweTabeleBoczneMenu.cshtml")
+            </div>
+            <div id="stopka">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
