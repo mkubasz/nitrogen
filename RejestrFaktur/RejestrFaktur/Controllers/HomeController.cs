@@ -4,17 +4,17 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using RejestrFaktur.DAL;
+//using RejestrFaktur.DAL;
 
 namespace RejestrFaktur.Controllers
 {
     public class HomeController : Controller
     {
-        private  RejestrFakturContext _db ;
+        //private  RejestrFakturContext _db ;
 
         public HomeController()
         {
-            _db = new RejestrFakturContext();
+            //_db = new RejestrFakturContext();
         }
 
         public ActionResult Index()
