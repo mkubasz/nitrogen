@@ -187,3 +187,5 @@ D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\bin\Microsoft.Owin.Security.M
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\obj\Debug\TOCI_Shop.csprojResolveAssemblyReference.cache
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\obj\Debug\TOCI_Shop.dll
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\obj\Debug\TOCI_Shop.pdb
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\obj\Debug\TOCI_Shop.Migrations.updatedatabase.resources
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\obj\Debug\TOCI_Shop.csproj.GenerateResource.Cache
