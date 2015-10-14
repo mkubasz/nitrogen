@@ -139,6 +139,7 @@ E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrat
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csproj.GenerateResource.Cache
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.dll
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.pdb
+<<<<<<< HEAD
 C:\Users\Maly\Documents\nitrogen\RejestrFaktur\RejestrFaktur\bin\roslyn\csc.exe
 C:\Users\Maly\Documents\nitrogen\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Maly\Documents\nitrogen\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -210,3 +211,78 @@ C:\Users\Maly\Documents\nitrogen\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFa
 C:\Users\Maly\Documents\nitrogen\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csproj.GenerateResource.Cache
 C:\Users\Maly\Documents\nitrogen\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.dll
 C:\Users\Maly\Documents\nitrogen\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.pdb
+=======
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\csc.exe
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.CodeAnalysis.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.CSharp.Core.targets
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.VisualBasic.Core.targets
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\System.Collections.Immutable.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\System.Reflection.Metadata.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\vbc.exe
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\VBCSCompiler.exe
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\roslyn\VBCSCompiler.exe.config
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\RejestrFaktur.dll.config
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\RejestrFaktur.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\RejestrFaktur.pdb
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Antlr3.Runtime.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\EntityFramework.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\EntityFramework.SqlServer.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.AspNet.Identity.Core.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.AspNet.Identity.Owin.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Host.SystemWeb.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Cookies.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Facebook.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Google.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.OAuth.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Twitter.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Web.Infrastructure.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Newtonsoft.Json.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Owin.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.Helpers.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.Mvc.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.Optimization.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.Razor.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.WebPages.Deployment.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.WebPages.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.WebPages.Razor.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\WebGrease.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.Helpers.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.Mvc.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.Optimization.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.Razor.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.WebPages.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.WebPages.Deployment.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\System.Web.WebPages.Razor.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Antlr3.Runtime.pdb
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Newtonsoft.Json.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\EntityFramework.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\EntityFramework.SqlServer.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.AspNet.Identity.Core.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.AspNet.Identity.Owin.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Host.SystemWeb.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Facebook.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Cookies.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.OAuth.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Google.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Twitter.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csprojResolveAssemblyReference.cache
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrations.StartowaMigracja.resources
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csproj.GenerateResource.Cache
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.dll
+h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.pdb
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csprojResolveAssemblyReference.cache
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrations.dodanieKlasSlownikowych.resources
+>>>>>>> 0381aefe91912c77b9ecadcb4daacaab54e2c042
