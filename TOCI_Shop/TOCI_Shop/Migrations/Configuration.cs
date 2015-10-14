@@ -9,7 +9,7 @@ namespace TOCI_Shop.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(TOCI_Shop.Models.ApplicationDbContext context)
