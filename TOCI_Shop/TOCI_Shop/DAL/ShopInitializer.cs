@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Repository.Models;
 
-namespace Repository.DAL
+namespace TOCI_Shop.DAL
 {
     public class ShopInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<ShopContext>
     {

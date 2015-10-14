@@ -1,8 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using Repository.Models;
 
-namespace Repository.DAL
+namespace TOCI_Shop.DAL
 {
     public class ShopContext : DbContext
     {

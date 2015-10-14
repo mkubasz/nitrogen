@@ -184,7 +184,6 @@ D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\bin\Microsoft.Owin.Security.O
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\bin\Microsoft.Owin.Security.Google.xml
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\bin\Microsoft.Owin.Security.Twitter.xml
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\obj\Debug\TOCI_Shop.csprojResolveAssemblyReference.cache
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\obj\Debug\TOCI_Shop.dll
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\obj\Debug\TOCI_Shop.pdb
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\TOCI_Shop\obj\Debug\TOCI_Shop.Migrations.updatedatabase.resources

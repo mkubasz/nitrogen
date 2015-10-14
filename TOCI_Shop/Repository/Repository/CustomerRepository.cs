@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 using Repository.IRepository;
-using Repository.Models;
+using TOCI_Shop.DAL;
 
 namespace Repository.Repository
 {

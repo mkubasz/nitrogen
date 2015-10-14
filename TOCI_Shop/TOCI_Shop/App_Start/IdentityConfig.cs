@@ -10,7 +10,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using TOCI_Shop.Models;
+using TOCI_Shop.DAL;
 
 namespace TOCI_Shop
 {

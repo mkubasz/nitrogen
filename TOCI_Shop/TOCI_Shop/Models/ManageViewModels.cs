@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace TOCI_Shop.Models
+namespace TOCI_Shop.DAL
 {
     public class IndexViewModel
     {

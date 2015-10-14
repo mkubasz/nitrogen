@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Web;
+﻿
 
-namespace Repository.Models
+namespace TOCI_Shop.DAL
 {
     public class Product
     {

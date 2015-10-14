@@ -1,4 +1,5 @@
 ﻿using Repository.Models;
+using TOCI_Shop.DAL;
 
 namespace Repository.IRepository
 {

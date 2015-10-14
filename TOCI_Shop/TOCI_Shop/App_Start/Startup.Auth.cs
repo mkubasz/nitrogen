@@ -5,7 +5,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using TOCI_Shop.Models;
+using TOCI_Shop.DAL;
 
 namespace TOCI_Shop
 {

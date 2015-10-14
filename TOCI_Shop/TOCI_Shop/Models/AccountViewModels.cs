@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace TOCI_Shop.Models
+namespace TOCI_Shop.DAL
 {
     public class ExternalLoginConfirmationViewModel
     {

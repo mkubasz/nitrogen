@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace Repository.Models
+namespace TOCI_Shop.DAL
 {
     public class Customer
     {

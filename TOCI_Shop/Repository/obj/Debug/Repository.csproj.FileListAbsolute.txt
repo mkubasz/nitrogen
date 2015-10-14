@@ -163,3 +163,11 @@ D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\bin\Microsoft.Owin.Security.
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\obj\Debug\Repository.dll
 D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\obj\Debug\Repository.pdb
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\bin\TOCI_Shop.dll
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\bin\System.Web.Http.dll
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\bin\System.Web.Http.WebHost.dll
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\bin\System.Net.Http.Formatting.dll
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\bin\TOCI_Shop.pdb
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\bin\System.Web.Http.xml
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\bin\System.Web.Http.WebHost.xml
+D:\OneDrive\Documents\nitrogen\TOCI_Shop\Repository\bin\System.Net.Http.Formatting.xml
