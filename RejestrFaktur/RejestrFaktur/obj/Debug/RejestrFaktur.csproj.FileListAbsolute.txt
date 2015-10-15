@@ -278,11 +278,14 @@ h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFakt
 h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Google.xml
 h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.Twitter.xml
 h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csprojResolveAssemblyReference.cache
-h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrations.StartowaMigracja.resources
-h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csproj.GenerateResource.Cache
 h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.dll
 h:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.pdb
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csprojResolveAssemblyReference.cache
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrations.dodanieKlasSlownikowych.resources
+<<<<<<< HEAD
 >>>>>>> 0381aefe91912c77b9ecadcb4daacaab54e2c042
+=======
+H:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csprojResolveAssemblyReference.cache
+H:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrations.Start.resources
+H:\szkolenie bartłomiej zapart\practice\rejestrfaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csproj.GenerateResource.Cache
+>>>>>>> a406b46600eaf729315504f964453377a32b2748

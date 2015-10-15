@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.AccessControl;
 using System.Web;
 
 namespace RejestrFaktur.Models
@@ -11,12 +10,10 @@ namespace RejestrFaktur.Models
         public int Id { get; set; }
         public string Numer { get; set; }
         public DateTime DataWystawienia { get; set; }
-        public Klient Klient { get; set; }
-        public Firma Firma { get; set; }
-        public string Wystawiajacy { get; set; }
-        public bool Stan { get; set; } //jeśli false mysle o tym ze zostala anulowana.
+        public DateTime DataSprzedazy { get; set; }
+        public decimal walutaKurs  { get; set; }
+        public DateTime DataZaplaty { get; set; }
 
 
-       
     }
 }
