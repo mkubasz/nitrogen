@@ -6,8 +6,12 @@ jQuery(document).ready(function() {
 	//this code is for the gmap
 	 var map = new GMaps({
         el: '#map',
-        lat: -12.043333,
-        lng: -77.028333
+        //lat: -12.043333,
+	     //lng: -77.028333
+	     lat: 52.546452,
+	     lng: 19.706769
+	     //http://www.doogal.co.uk/LatLong.php
+
       });
 
 
@@ -29,7 +33,7 @@ jQuery(document).ready(function() {
                       menu = target;
                   $target = $(target);
                   $('html, body').stop().animate({
-                      'scrollTop': $target.offset().top+2
+                      'scrollTop': $target.offset().top-50
                   }, 500, 'swing', function () {
                       window.location.hash = target;
                       $(document).on("scroll", onScroll);
@@ -58,14 +62,14 @@ jQuery(document).ready(function() {
         var windowScrollPosTop = jQuery(window).scrollTop();
 
         if(windowScrollPosTop >= 150) {
-          jQuery(".header").css({"background": "#B193DD",});
-          jQuery(".top-header img.logo").css({"margin-top": "-40px", "margin-bottom": "0"});
-          jQuery(".navbar-default").css({"margin-top": "-15px",});
+          jQuery(".header").css({"background": "#B193DD"});
+          jQuery(".top-header img.logo").css({"margin-top": "-10px", "margin-bottom": "0"});
+          jQuery(".navbar-default").css({"margin-top": "-15px"});
         }
         else{
-          jQuery(".header").css({"background": "transparent",});
-           jQuery(".top-header img.logo").css({"margin-top": "-12px", "margin-bottom": "25px"});
-           jQuery(".navbar-default").css({"margin-top": "12px", "margin-bottom": "0"});
+          jQuery(".header").css({"background": "transparent"});
+           jQuery(".top-header img.logo").css({"margin-top": "-10px", "margin-bottom": " 0"});
+           jQuery(".navbar-default").css({ "margin-top": "-15px"});
           
         }
      });
