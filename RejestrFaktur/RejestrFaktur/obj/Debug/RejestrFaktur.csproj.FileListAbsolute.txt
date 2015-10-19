@@ -140,7 +140,6 @@ E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrat
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csproj.GenerateResource.Cache
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.dll
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.pdb
-E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csprojResolveAssemblyReference.cache
 E:\Repo\Repozytorium\RejestrFaktur\RejestrFaktur\bin\roslyn\csc.exe
 E:\Repo\Repozytorium\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 E:\Repo\Repozytorium\RejestrFaktur\RejestrFaktur\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -213,3 +212,4 @@ E:\Repo\Repozytorium\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrati
 E:\Repo\Repozytorium\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.csproj.GenerateResource.Cache
 E:\Repo\Repozytorium\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.dll
 E:\Repo\Repozytorium\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.pdb
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur\obj\Debug\RejestrFaktur.Migrations.poprawkiFakturaiFakturaSzczegoly.resources

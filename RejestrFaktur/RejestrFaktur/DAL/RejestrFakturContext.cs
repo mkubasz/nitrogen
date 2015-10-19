@@ -20,7 +20,7 @@ namespace RejestrFaktur.DAL
         public DbSet<FakturaSzczegoly> FakturySzczegoly { get; set; }
         public DbSet<Firma> Firma { get; set; }
         public DbSet<Klient> Klient { get; set; }
-        public DbSet<Produkt> Produkt { get; set; }
+        public DbSet<Produkt> Produkt {get; set;}
         public DbSet<JednostkaMiary> JednostkiMiar { get; set; }
         public DbSet<PlatnoscTyp> PlatnosciTypy { get; set; }
         public DbSet<Waluta> Waluty { get; set; }

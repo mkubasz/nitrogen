@@ -187,6 +187,10 @@
     <Compile Include="Migrations\201510181352441_klasySlownikowe.Designer.cs">
       <DependentUpon>201510181352441_klasySlownikowe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510191412228_poprawkiFakturaiFakturaSzczegoly.cs" />
+    <Compile Include="Migrations\201510191412228_poprawkiFakturaiFakturaSzczegoly.Designer.cs">
+      <DependentUpon>201510191412228_poprawkiFakturaiFakturaSzczegoly.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FakturaSzczegoly.cs" />
@@ -316,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510181352441_klasySlownikowe.resx">
       <DependentUpon>201510181352441_klasySlownikowe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510191412228_poprawkiFakturaiFakturaSzczegoly.resx">
+      <DependentUpon>201510191412228_poprawkiFakturaiFakturaSzczegoly.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
