@@ -1,40 +1,39 @@
-Ôªønamespace RejestrFaktur.Migrations
+namespace RejestrFaktur.Migrations
 {
-    using DAL;
     using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<RejestrFakturContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<RejestrFaktur.DAL.RejestrFakturContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(RejestrFakturContext context)
+        protected override void Seed(RejestrFaktur.DAL.RejestrFakturContext context)
         {
-
-
             context.JednostkiMiar.AddOrUpdate(new JednostkaMiary { NazwaJednostki = "metr", SymbolJednostki = "m" });
             context.JednostkiMiar.AddOrUpdate(new JednostkaMiary { NazwaJednostki = "kilogram", SymbolJednostki = "kg" });
             context.JednostkiMiar.AddOrUpdate(new JednostkaMiary { NazwaJednostki = "sztuka", SymbolJednostki = "szt" });
             context.JednostkiMiar.AddOrUpdate(new JednostkaMiary { NazwaJednostki = "litr", SymbolJednostki = "l" });
 
-            context.PlatnosciTypy.AddOrUpdate(new PlatnoscTyp { nazwa = "Przelew", opis = "przelew" });
-            context.PlatnosciTypy.AddOrUpdate(new PlatnoscTyp { nazwa = "Zap≈Çata w kasie", opis = "zap≈Çata w kasie" });
-            context.PlatnosciTypy.AddOrUpdate(new PlatnoscTyp { nazwa = "Karta kredytowa", opis = "zap≈Çata kartƒÖ kredytowƒÖ" });
+            context.PlatnosciTypy.AddOrUpdate(new PlatnoscTyp { Nazwa = "Przelew", Opis = "przelew" });
+            context.PlatnosciTypy.AddOrUpdate(new PlatnoscTyp { Nazwa = "Zap≥ata w kasie", Opis = "zap≥ata w kasie" });
+            context.PlatnosciTypy.AddOrUpdate(new PlatnoscTyp { Nazwa = "Karta kredytowa", Opis = "zap≥ata kartπ kredytowπ" });
 
             context.StawkiPodatku.AddOrUpdate(new StawkaPodatku { NazwaStawki = "23%", WysokoscStawki = 23 });
             context.StawkiPodatku.AddOrUpdate(new StawkaPodatku { NazwaStawki = "11%", WysokoscStawki = 11 });
             context.StawkiPodatku.AddOrUpdate(new StawkaPodatku { NazwaStawki = "8%", WysokoscStawki = 8 });
             context.StawkiPodatku.AddOrUpdate(new StawkaPodatku { NazwaStawki = "5%", WysokoscStawki = 5 });
 
-            context.Waluty.AddOrUpdate(new Waluta { Nazwa = "Z≈Çoty", Symbol = "PLN", SciezkaDoIkony = "" });
+            context.Waluty.AddOrUpdate(new Waluta { Nazwa = "Z≥oty", Symbol = "PLN", SciezkaDoIkony = "" });
             context.Waluty.AddOrUpdate(new Waluta { Nazwa = "Euro", Symbol = "EUR", SciezkaDoIkony = "" });
             context.Waluty.AddOrUpdate(new Waluta { Nazwa = "Funt", Symbol = "GBP", SciezkaDoIkony = "" });
+
+
         }
     }
 }

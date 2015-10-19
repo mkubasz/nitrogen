@@ -169,24 +169,32 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JednostkiMiaryController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PlatnosciTypyController.cs" />
+    <Compile Include="Controllers\StawkiPodatkuController.cs" />
+    <Compile Include="Controllers\WalutyController.cs" />
     <Compile Include="Controllers\WartosciSlownikoweController.cs" />
     <Compile Include="DAL\RejestrFakturContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201510141954419_Start.cs" />
-    <Compile Include="Migrations\201510141954419_Start.Designer.cs">
-      <DependentUpon>201510141954419_Start.cs</DependentUpon>
+    <Compile Include="Migrations\201510052036408_StartowaMigracja.cs" />
+    <Compile Include="Migrations\201510052036408_StartowaMigracja.Designer.cs">
+      <DependentUpon>201510052036408_StartowaMigracja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510181352441_klasySlownikowe.cs" />
+    <Compile Include="Migrations\201510181352441_klasySlownikowe.Designer.cs">
+      <DependentUpon>201510181352441_klasySlownikowe.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Faktura.cs" />
     <Compile Include="Models\FakturaSzczegoly.cs" />
     <Compile Include="Models\Firma.cs" />
     <Compile Include="Models\JednostkaMiary.cs" />
     <Compile Include="Models\Klient.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Faktura.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PlatnosciTyp.cs" />
     <Compile Include="Models\Produkt.cs" />
@@ -194,11 +202,20 @@
     <Compile Include="Models\Waluta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="utils\abstrakcyjneKlasy\IOperacjeOpakowanie.cs" />
+    <Compile Include="utils\abstrakcyjneKlasy\IOperacjeOpakowanieFactory.cs" />
+    <Compile Include="utils\abstrakcyjneKlasy\Opakowanie.cs" />
+    <Compile Include="utils\atrybuty\CzytaczAnotacji.cs" />
+    <Compile Include="utils\atrybuty\DodatkoweAtrybuty.cs" />
+    <Compile Include="utils\impl\JednostkiMiaryOperacje.cs" />
+    <Compile Include="utils\impl\OpakowanieJednostkiFactory.cs" />
+    <Compile Include="utils\impl\OpakowaniePlatnoscTypFactory.cs" />
+    <Compile Include="utils\impl\PlatnoscTypOperacje.cs" />
+    <Compile Include="utils\pozostale\Stany.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\MGStyl.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -251,14 +268,36 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\Index.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\szablonWartosciSlownikowe.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\MenuGlowne.cshtml" />
     <Content Include="Views\WartosciSlownikowe\DodatkoweTabeleBoczneMenu.cshtml" />
+    <Content Include="Views\WartosciSlownikowe\Index.cshtml" />
     <Content Include="Views\WartosciSlownikowe\JednostkiMiary.cshtml" />
+    <Content Include="Views\WartosciSlownikowe\MenuGlowne.cshtml" />
     <Content Include="Views\WartosciSlownikowe\StawkiPodatku.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\Waluty.cshtml" />
+    <Content Include="Views\WartosciSlownikowe\szablonWartosciSlownikowe.cshtml" />
+    <Content Include="Views\WartosciSlownikowe\szukajForm.cshtml" />
     <Content Include="Views\WartosciSlownikowe\TypyPlatnosci.cshtml" />
+    <Content Include="Views\WartosciSlownikowe\Waluty.cshtml" />
+    <Content Include="Views\WartosciSlownikowe\edycjaForm.cshtml" />
+    <Content Include="Views\JednostkiMiary\Create.cshtml" />
+    <Content Include="Views\JednostkiMiary\Delete.cshtml" />
+    <Content Include="Views\JednostkiMiary\Details.cshtml" />
+    <Content Include="Views\JednostkiMiary\Edit.cshtml" />
+    <Content Include="Views\JednostkiMiary\Index.cshtml" />
+    <Content Include="Views\Waluty\Create.cshtml" />
+    <Content Include="Views\Waluty\Delete.cshtml" />
+    <Content Include="Views\Waluty\Details.cshtml" />
+    <Content Include="Views\Waluty\Edit.cshtml" />
+    <Content Include="Views\Waluty\Index.cshtml" />
+    <Content Include="Views\StawkiPodatku\Create.cshtml" />
+    <Content Include="Views\StawkiPodatku\Delete.cshtml" />
+    <Content Include="Views\StawkiPodatku\Details.cshtml" />
+    <Content Include="Views\StawkiPodatku\Edit.cshtml" />
+    <Content Include="Views\StawkiPodatku\Index.cshtml" />
+    <Content Include="Views\PlatnosciTypy\Create.cshtml" />
+    <Content Include="Views\PlatnosciTypy\Delete.cshtml" />
+    <Content Include="Views\PlatnosciTypy\Details.cshtml" />
+    <Content Include="Views\PlatnosciTypy\Edit.cshtml" />
+    <Content Include="Views\PlatnosciTypy\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -272,8 +311,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201510141954419_Start.resx">
-      <DependentUpon>201510141954419_Start.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201510052036408_StartowaMigracja.resx">
+      <DependentUpon>201510052036408_StartowaMigracja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510181352441_klasySlownikowe.resx">
+      <DependentUpon>201510181352441_klasySlownikowe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

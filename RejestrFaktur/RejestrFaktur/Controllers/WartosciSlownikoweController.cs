@@ -1,4 +1,8 @@
-﻿using System;
+﻿using RejestrFaktur.DAL;
+using RejestrFaktur.Models;
+using RejestrFaktur.utils;
+using RejestrFaktur.utils.impl;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +12,21 @@ namespace RejestrFaktur.Controllers
 {
     public class WartosciSlownikoweController : Controller
     {
+
+        private RejestrFakturContext context;
+        private Opakowanie<JednostkaMiary> jednostkiMiaryKol;
+        //Opakowanie<PlatnoscTyp> platnosciTypy;
+        //Opakowanie<Waluta> waluty;
+        //Opakowanie<StawkaPodatku> stawkiPodatku;
+
+        public WartosciSlownikoweController()
+        {
+            context = new RejestrFakturContext();
+            jednostkiMiaryKol = new Opakowanie<JednostkaMiary>(context.JednostkiMiar.ToList(), new OpakowanieJednostkiFactory().create());
+        }
+
+        
+
         // GET: WartosciSlownikowe
         public ActionResult Index()
         {
@@ -16,17 +35,29 @@ namespace RejestrFaktur.Controllers
         }
 
         // GET: WartosciSlownikowe
-        public ActionResult JednostkiMiary()
+        public ActionResult JednostkiMiary(int? idx)
         {
             ViewBag.Title = "Jednostki miary";
-            return View();
+            int i = idx ?? default(int);
+            jednostkiMiaryKol.ustawDoEdycji(i);
+            return View(jednostkiMiaryKol);
         }
+
+
+        //[HttpPost]
+        //public ActionResult Edytuj(int? idc)
+        //{
+        //    int i = idc ?? default(int);
+        //    jednostkiMiaryKol.ustawDoEdycji(i);
+        //    return RedirectToAction("JednostkiMiary",i);
+        //}
+
 
         // GET: WartosciSlownikowe
         public ActionResult StawkiPodatku()
         {
             ViewBag.Title = "Stawki podatku";
-            return View();
+            return RedirectToAction("JednostkiMiary");
         }
 
 

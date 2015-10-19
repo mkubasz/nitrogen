@@ -1,0 +1,35 @@
+﻿@model RejestrFaktur.Models.JednostkaMiary
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/WartosciSlownikowe/szablonWartosciSlownikowe.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>JednostkaMiary</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NazwaJednostki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NazwaJednostki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SymbolJednostki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SymbolJednostki)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

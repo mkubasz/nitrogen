@@ -1,8 +1,43 @@
-﻿
+﻿@using RejestrFaktur.Models
+@using RejestrFaktur.utils
+@model Opakowanie<JednostkaMiary>
 @{
     Layout = "~/Views/WartosciSlownikowe/szablonWartosciSlownikowe.cshtml";
 }
 
 <h1>@ViewBag.Title</h1>
-<p>Tutaj możesz edytować dodatkowe ustawienia aplikacji</p>
+<p>View do jednostki miary</p>
+
+@if (Model.StanObiektu == Stany.PRZEGLADANIE)
+{
+    
+  @Html.Partial("~/Views/WartosciSlownikowe/szukajForm.cshtml")
+}
+@if (Model.StanObiektu == Stany.DO_EDYCJI)
+{
+    @Html.Partial("~/Views/WartosciSlownikowe/edycjaForm.cshtml", Model.Edytowany)
+}
+<h1>Lista Jednostek Miary</h1>
+<p>
+    <table>
+        <tr><td>Nazwa jednostki miary</td><td>Symbol jednostki miary</td><td>Operacje</td></tr>
+        @foreach (var jM in Model.Lista)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => jM.NazwaJednostki)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => jM.SymbolJednostki)
+                </td>
+                <td>
+                    @Html.ActionLink("Szczegóły", "JednostkiMiary", new { idx = jM.Id })
+                    | @Html.ActionLink("Edycja", "JednostkiMiary", new { idx = jM.Id })
+                    | @Html.ActionLink("Usuń", "JednostkiMiary", new { idx = jM.Id })
+                </td>
+            </tr>
+        }
+    </table>
+</p>
+
 
