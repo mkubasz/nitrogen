@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using TOCI_Shop.DAL;
+using TOCI_Shop.Models;
 
 namespace TOCI_Shop
 {

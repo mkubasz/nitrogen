@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using TOCI_Shop.DAL;
+using TOCI_Shop.Models;
 
 namespace TOCI_Shop.Controllers
 {

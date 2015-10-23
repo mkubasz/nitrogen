@@ -1,5 +1,7 @@
-﻿using Microsoft.Owin;
+﻿using System.Data.Entity;
+using Microsoft.Owin;
 using Owin;
+using TOCI_Shop.DAL;
 
 [assembly: OwinStartupAttribute(typeof(TOCI_Shop.Startup))]
 namespace TOCI_Shop
@@ -9,6 +11,8 @@ namespace TOCI_Shop
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+           
         }
+        
     }
 }

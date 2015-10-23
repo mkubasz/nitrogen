@@ -180,9 +180,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201510141219335_update-database.cs" />
-    <Compile Include="Migrations\201510141219335_update-database.Designer.cs">
-      <DependentUpon>201510141219335_update-database.cs</DependentUpon>
+    <Compile Include="Migrations\201510231136582_add-migrations.cs" />
+    <Compile Include="Migrations\201510231136582_add-migrations.Designer.cs">
+      <DependentUpon>201510231136582_add-migrations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -191,6 +191,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="MyMiddleware.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -215,7 +216,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -262,8 +265,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201510141219335_update-database.resx">
-      <DependentUpon>201510141219335_update-database.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201510231136582_add-migrations.resx">
+      <DependentUpon>201510231136582_add-migrations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

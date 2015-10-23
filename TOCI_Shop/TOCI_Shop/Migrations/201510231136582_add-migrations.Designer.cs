@@ -7,13 +7,13 @@ namespace TOCI_Shop.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class updatedatabase : IMigrationMetadata
+    public sealed partial class addmigrations : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(updatedatabase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addmigrations));
         
         string IMigrationMetadata.Id
         {
-            get { return "201510141219335_update-database"; }
+            get { return "201510231136582_add-migrations"; }
         }
         
         string IMigrationMetadata.Source

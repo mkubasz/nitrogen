@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using TOCI_Shop.Models;
 
 namespace TOCI_Shop.DAL
 {

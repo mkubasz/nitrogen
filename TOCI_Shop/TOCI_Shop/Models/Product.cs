@@ -1,6 +1,6 @@
 ﻿
 
-namespace TOCI_Shop.DAL
+namespace TOCI_Shop.Models
 {
     public class Product
     {

@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using TOCI_Shop.DAL;
 
 
-namespace TOCI_Shop.DAL
+namespace TOCI_Shop.Models
 {
     public class Customer
     {
