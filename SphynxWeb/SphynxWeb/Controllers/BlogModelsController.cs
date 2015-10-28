@@ -15,7 +15,6 @@ namespace SphynxWeb.Controllers
     public class BlogModelsController : Controller
     {
         private IBlogRepo repo;
-        private ApplicationDbContext db = new ApplicationDbContext();
 
         public BlogModelsController()
         {
@@ -54,7 +53,7 @@ namespace SphynxWeb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PostId,Post,Category,ShowOnStartPage,AddDate")] BlogModel blogModel)
+        public ActionResult Create([Bind(Include = "Post,Name,ShowOnStartPage")] BlogModel blogModel)
         {
             if (ModelState.IsValid)
             {
@@ -117,15 +116,6 @@ namespace SphynxWeb.Controllers
         {
             repo.DeleteBlog(id);
             return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
         }
     }
 }

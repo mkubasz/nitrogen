@@ -19,7 +19,6 @@ namespace SphynxWeb.Tests.repo
             {
                 ShowOnStartPage = true,
                 AddDate = DateTime.Now,
-                Category = "newest",
                 Post = "some text"
             });
         }

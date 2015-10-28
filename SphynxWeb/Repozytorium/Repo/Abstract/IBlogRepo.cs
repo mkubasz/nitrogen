@@ -13,6 +13,5 @@ namespace Repozytorium.Repo.Abstract
         void EditBlog(BlogModel blogModel);
         IQueryable<BlogModel> GetAllBlogs();
         IQueryable<BlogModel> GetStartPageBlogs();
-        IQueryable<BlogModel> GetBlogsByCategory(string category);
     }
 }

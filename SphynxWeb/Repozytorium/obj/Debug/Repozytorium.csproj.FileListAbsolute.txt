@@ -227,6 +227,11 @@ C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Mig
 C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.Cache
 C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.dll
 C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.start.resources
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.addDescription.resources
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.repairs.resources
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028.resources
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.Cache
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Repozytorium.dll.config
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Repozytorium.dll
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Repozytorium.pdb
@@ -279,10 +284,6 @@ C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.start.resources
-C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.addDescription.resources
-C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.repairs.resources
-C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.Cache
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.dll
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
-C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028.resources
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028add_name_property.resources

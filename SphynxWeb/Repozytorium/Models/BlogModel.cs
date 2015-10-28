@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Repozytorium.Models
@@ -8,8 +9,9 @@ namespace Repozytorium.Models
         [Key]
         public int PostId { get; set; }
         [MaxLength(450, ErrorMessage = "Your pust must be max {0} character long"), MinLength(5)] 
+        [DataType(DataType.MultilineText)]
         public string Post { get; set; }
-        public string Category { get; set; }
+        public string Name { get; set; }
         public bool ShowOnStartPage { get; set; }
         public DateTime AddDate { get; set; }
     }

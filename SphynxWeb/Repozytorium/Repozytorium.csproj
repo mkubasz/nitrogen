@@ -179,6 +179,8 @@
     <Compile Include="Migrations\201510281851162_20151028.Designer.cs">
       <DependentUpon>201510281851162_20151028.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510281917371_20151028-add_name_property\.cs" />
+    <Compile Include="Migrations\201510281917371_20151028-add_name_property\.Designer.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -251,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510281851162_20151028.resx">
       <DependentUpon>201510281851162_20151028.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510281917371_20151028-add_name_property\.resx">
+      <DependentUpon>.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

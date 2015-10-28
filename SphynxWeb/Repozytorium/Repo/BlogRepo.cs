@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using Repozytorium.Models;
@@ -24,6 +25,7 @@ namespace Repozytorium.Repo
 
         public void AddBlog(BlogModel blogModel)
         {
+            blogModel.AddDate = DateTime.Now;
             _dbContext.Posts.Add(blogModel);
             _dbContext.SaveChanges();
         }
@@ -42,11 +44,6 @@ namespace Repozytorium.Repo
         public IQueryable<BlogModel> GetStartPageBlogs()
         {
             return _dbContext.Posts.Where(post => post.ShowOnStartPage);
-        }
-
-        public IQueryable<BlogModel> GetBlogsByCategory(string category)
-        {
-            return _dbContext.Posts.Where(post => post.Category == category);
         }
 
         public BlogModel GetBlogById(int? id)
