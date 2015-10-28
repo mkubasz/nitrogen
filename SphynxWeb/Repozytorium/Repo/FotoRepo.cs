@@ -44,6 +44,7 @@ namespace Repozytorium.Repo
         public void AddFoto(FotoModel foto)
         {
             db.Fotos.Add(foto);
+            db.SaveChanges();
         }
     }
 }

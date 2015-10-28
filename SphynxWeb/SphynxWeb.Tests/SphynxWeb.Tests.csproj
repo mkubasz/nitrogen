@@ -85,6 +85,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="repo\BlogRepoTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -93,6 +94,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Repozytorium\Repozytorium.csproj">
+      <Project>{024733a7-a705-4d56-9cc1-ed0a22b970ec}</Project>
+      <Name>Repozytorium</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SphynxWeb\SphynxWeb.csproj">
       <Project>{D5264A7B-0BB1-4FEE-9DFE-00A917CE2360}</Project>
       <Name>SphynxWeb</Name>
