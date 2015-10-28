@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Repozytorium.Models.BlogModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+Aktualnosci z partiala
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Post)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShowOnStartPage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Post)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShowOnStartPage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PostId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PostId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PostId })
+        </td>
+    </tr>
+}
+
+</table>

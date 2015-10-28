@@ -10,16 +10,16 @@ namespace Repozytorium.Repo
     {
         private ApplicationDbContext _dbContext = new ApplicationDbContext();
 
-        public bool DeleteBlog(int id)
+        public BlogModel DeleteBlog(int? id)
         {
             BlogModel blogModel = _dbContext.Posts.Find(id);
             if (blogModel != null)
             {
                 _dbContext.Posts.Remove(blogModel);
                 _dbContext.SaveChanges();
-                return true;
+                return blogModel;
             }
-            return false;
+            return null;
         }
 
         public void AddBlog(BlogModel blogModel)
@@ -31,9 +31,10 @@ namespace Repozytorium.Repo
         public void EditBlog(BlogModel blogModel)
         {
             _dbContext.Entry(blogModel).State = EntityState.Modified;
+            _dbContext.SaveChanges();
         }
 
-        public IQueryable GetAllBlogs()
+        public IQueryable<BlogModel> GetAllBlogs()
         {
             return _dbContext.Posts;
         }
@@ -48,9 +49,15 @@ namespace Repozytorium.Repo
             return _dbContext.Posts.Where(post => post.Category == category);
         }
 
-        public BlogModel GetBlogById(int id)
+        public BlogModel GetBlogById(int? id)
         {
             return _dbContext.Posts.Find(id);
+        }
+
+
+        public void SaveChange()
+        {
+            _dbContext.SaveChanges();
         }
     }
 }

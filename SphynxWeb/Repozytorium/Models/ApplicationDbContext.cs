@@ -35,5 +35,7 @@ namespace Repozytorium.Models
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
         
         }
+
+        /*public DbSet<BlogModel> BlogModels { get; set; }*/
     }
 }

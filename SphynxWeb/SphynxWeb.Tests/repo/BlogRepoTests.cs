@@ -22,8 +22,6 @@ namespace SphynxWeb.Tests.repo
                 Category = "newest",
                 Post = "some text"
             });
-
-            BlogModel blog = blogRepo.Blogs.FirstOrDefault(x => x.PostId == 1);
         }
          
     }
