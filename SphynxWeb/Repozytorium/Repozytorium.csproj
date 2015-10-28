@@ -185,6 +185,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\BlogModel.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\FotoModel.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ManageViewModels.cs" />

@@ -9,12 +9,13 @@ using Repozytorium.Models;
 
 namespace SphynxWeb.Controllers
 {
-    public class HomeController : Controller
+    public class ContactController : Controller
     {
-        public ActionResult Index()
+        /*public ActionResult Kontakt()
         {
-            return View();
-        }
+
+            return PartialView();
+        }*/
 
         [HttpPost, ActionName("Kontakt")]
         public ActionResult Kontaktp(ContactModel emailForm)
@@ -64,7 +65,7 @@ namespace SphynxWeb.Controllers
 
         public ActionResult Sent(string message)
         {
-            return PartialView("Sent", (object)message);
+            return View("Sent", (object)message);
         }
     }
 }

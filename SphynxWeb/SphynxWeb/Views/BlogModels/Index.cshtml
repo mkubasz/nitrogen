@@ -2,28 +2,51 @@
 
 @{
     ViewBag.Title = "Index";
+    Styles.Render("~/Content/css");
 }
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <h1>Aktualności</h1>
+    </div>
+</div>
+@foreach (var item in Model)
+{
+    <div class="container">
+        <div class="row">
 
-Aktualnosci z partiala
-<table class="table">
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.AddDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Post)
-        </td>
-        
-        @*   <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PostId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PostId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PostId })
-        </td>*@
-    </tr>
-}
+            <div class="col-xs-4 col-sm-4 col-md-4"> @Html.DisplayFor(modelItem => item.AddDate)</div>
 
-</table>
+            <div class="col-xs-8 col-sm-8 col-md-8"> @Html.DisplayFor(modelItem => item.Name)</div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">@Html.DisplayFor(modelItem => item.Post)</div>
+            </div>
+        </div>
+        </div>
+
+        }
+
+
+
+        @*<table class="table">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AddDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Post)
+                        </td>
+
+                        @*   <td>
+                                @Html.ActionLink("Edit", "Edit", new { id=item.PostId }) |
+                                @Html.ActionLink("Details", "Details", new { id=item.PostId }) |
+                                @Html.ActionLink("Delete", "Delete", new { id=item.PostId })
+                            </td>
+                    </tr>
+                }
+
+            </table>*@
