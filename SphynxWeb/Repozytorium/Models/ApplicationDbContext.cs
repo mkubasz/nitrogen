@@ -8,7 +8,7 @@ namespace Repozytorium.Models
 
 
     //public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
-    public class ApplicationDbContext : IdentityDbContext
+   public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext()
             : base("DefaultConnection")

@@ -14,54 +14,78 @@ namespace SphynxWeb.Controllers
     public class GalleryController : Controller
     {
         //private ApplicationDbContext db = new ApplicationDbContext();
-        FotoRepo repo = new FotoRepo();
+        readonly FotoRepo _repo = new FotoRepo();
         // GET: Gallery
         public ActionResult Index()
         {
-            var fotos = repo.GetAllFotos();
-           // return System.Web.UI.WebControls.View(db.FotoModels.ToList());
+            var fotos = _repo.GetAllFotos();
             return View(fotos);
-
             //templatka do projektu galerii  http://startbootstrap.com/template-overviews/3-col-portfolio/
+
         }
 
-        //// GET: Gallery/Details/5
-        //public ActionResult Details(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    FotoModel fotoModel = db.FotoModels.Find(id);
-        //    if (fotoModel == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(fotoModel);
-        //}
+        public ActionResult Index2()
+        {
+            var fotosList = _repo.GetAllFotos();
+            var viewFotos = _repo.DisplayFotoModelViews(fotosList);
+            return View(viewFotos);
+        }
 
-        //// GET: Gallery/Create
-        //public ActionResult Create()
-        //{
-        //    return View();
-        //}
+        // GET: Gallery/Details/5
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            FotoModel fotoModel = _repo.GetFotoById((int) id);
 
-        //// POST: Gallery/Create
-        //// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        //// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+
+
+            if (fotoModel == null)
+            {
+                return HttpNotFound();
+            }
+            return View(fotoModel);
+        }
+
+        // GET: Gallery/Create
+      //  [Authorize]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        //POST: Gallery/Create
+        //To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         //[HttpPost]
         //[ValidateAntiForgeryToken]
         //public ActionResult Create([Bind(Include = "FotoId,FotoSize,Description,FileName,FotoData,FotoMiniatureData")] FotoModel fotoModel)
         //{
         //    if (ModelState.IsValid)
         //    {
-        //        db.FotoModels.Add(fotoModel);
-        //        db.SaveChanges();
+        //        repo.AddFoto(fotoModel);
+        //        //  db.FotoModels.Add(fotoModel);
+        //        //  db.SaveChanges();
+        //        //  repo.Save
         //        return RedirectToAction("Index");
         //    }
 
         //    return View(fotoModel);
         //}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(FotoModel fotoModel)
+        {
+            HttpPostedFileBase file = Request.Files["ImageData"];
+            int i = _repo.UploadImageInDataBase(file, fotoModel);
+            if (i == 1)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(fotoModel);
+        }
 
         //// GET: Gallery/Edit/5
         //public ActionResult Edit(int? id)
@@ -70,7 +94,7 @@ namespace SphynxWeb.Controllers
         //    {
         //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
         //    }
-        //    FotoModel fotoModel = db.FotoModels.Find(id);
+        //    FotoModel fotoModel = repo.GetFotoById((int) id);
         //    if (fotoModel == null)
         //    {
         //        return HttpNotFound();
@@ -78,47 +102,58 @@ namespace SphynxWeb.Controllers
         //    return View(fotoModel);
         //}
 
-        //// POST: Gallery/Edit/5
-        //// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        //// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        ////// POST: Gallery/Edit/5
+        ////// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        ////// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         //[HttpPost]
         //[ValidateAntiForgeryToken]
         //public ActionResult Edit([Bind(Include = "FotoId,FotoSize,Description,FileName,FotoData,FotoMiniatureData")] FotoModel fotoModel)
         //{
         //    if (ModelState.IsValid)
         //    {
-        //        db.Entry(fotoModel).State = EntityState.Modified;
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
+        //        try
+        //        {
+        //            repo.EditFotoModel(fotoModel);
+
+        //        }
+        //        catch 
+        //        {
+        //            ViewBag.Error = true;
+        //            return View(fotoModel);
+        //        }
+
+        //     //   db.SaveChanges();
+        //     //   return RedirectToAction("Index");
         //    }
+        //    ViewBag.Error = false;
         //    return View(fotoModel);
         //}
 
-        //// GET: Gallery/Delete/5
-        //public ActionResult Delete(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    FotoModel fotoModel = db.FotoModels.Find(id);
-        //    if (fotoModel == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(fotoModel);
-        //}
+        // GET: Gallery/Delete/5
+        public ActionResult Delete(int?id , bool? error)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            FotoModel fotoModel = _repo.GetFotoById((int) id);
+            if (fotoModel == null)
+            {
+                return HttpNotFound();
+            }
+           // if (error != null)
+               // ViewBag.Blad = true;
+            return View(fotoModel);
+        }
 
-        //// POST: Gallery/Delete/5
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult DeleteConfirmed(int id)
-        //{
-        //    FotoModel fotoModel = db.FotoModels.Find(id);
-        //    db.FotoModels.Remove(fotoModel);
-        //    db.SaveChanges();
-        //    return RedirectToAction("Index");
-        //}
+        // POST: Gallery/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            _repo.DeleteFoto(id);
+            return RedirectToAction("Index");
+        }
 
         //protected override void Dispose(bool disposing)
         //{
