@@ -13,7 +13,7 @@ namespace Repozytorium.Models
         public string Post { get; set; }
         public string Name { get; set; }
         public bool ShowOnStartPage { get; set; }
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime AddDate { get; set; }
     }
 }

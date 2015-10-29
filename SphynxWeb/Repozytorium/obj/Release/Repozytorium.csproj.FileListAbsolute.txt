@@ -57,3 +57,5 @@ C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\R
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\Repozytorium.dll
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\Repozytorium.pdb
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\Repozytorium.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\Repozytorium.Migrations._20151028.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Release\Repozytorium.Migrations._20151028add_name_property.resources

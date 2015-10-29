@@ -5,7 +5,13 @@
 }
 
 <h2>Delete</h2>
-
+@*@if (ViewBag.error == true)
+{
+    <div class="alert alert-danger" role="alert">
+        Wystąpił błąd podczas usuwania.<br />
+        Spróbuj ponownie.
+    </div>*@
+}
 <h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>FotoModel</h4>
@@ -57,7 +63,7 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <input type="submit" value="Delete" class="btn btn-default" onclick="return confirm('Do you really want delete this foto?')"/> |
             @Html.ActionLink("Back to List", "Index")
         </div>
     }
