@@ -126,88 +126,12 @@
 <section class="service text-center" id="service">
     <div class="container">
         <div class="row">
-            <h2>AKTUALNOŚCI</h2>
-            <h4>Under construction</h4>
-
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-8 col-sm-8">
+                <h2>AKTUALNOŚCi W BUDOWIE</h2> 
                 
-                @*<div class="single-service">
-                    <div class="single-service-img">*@
-                    @*<div class="service-img">*@
-                        <img class="heart img-responsive" src="~/Content/img/service1.png" alt="">
-                        @*<img class="heart img-responsive" src="~/Content/img/service1.png" alt="">*@
-                    </div>
-                    @*</div>
+                @*@Html.Action("Index", "BlogModels")*@
 
-                    <h3>Heart problem</h3>*@
-
-                @*</div>*@
-            @*</div>*@
-
-            <div class="col-md-3 col-sm-6">
-
-                @*<div class="single-service">
-            <div class="single-service-img">*@
-                @*<div class="service-img">*@
-                <img class="heart img-responsive" src="~/Content/img/service1.png" alt="">
-                @*<img class="heart img-responsive" src="~/Content/img/service1.png" alt="">*@
             </div>
-            @*</div>
-
-        <h3>Heart problem</h3>*@
-
-            @*</div>*@
-            @*</div>*@
-
-            <div class="col-md-3 col-sm-6">
-
-                @*<div class="single-service">
-            <div class="single-service-img">*@
-                @*<div class="service-img">*@
-                <img class="heart img-responsive" src="~/Content/img/service1.png" alt="">
-                @*<img class="heart img-responsive" src="~/Content/img/service1.png" alt="">*@
-            </div>
-            @*</div>
-
-        <h3>Heart problem</h3>*@
-
-            @*</div>*@
-            @*</div>*@
-
-            @*<div class="col-md-3 col-sm-6">
-                <div class="single-service">
-                    <div class="single-service-img">
-                        <div class="service-img">
-                            <img class="brain img-responsive" src="~/Content/img/service2.png" alt="">
-                        </div>
-                    </div>
-                    <h3>brain problem</h3>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="single-service">
-                    <div class="single-service-img">
-                        <div class="service-img">
-                            <img class="knee img-responsive" src="~/Content/img/service3.png" alt="">
-                        </div>
-                    </div>
-
-                    <h3>knee problem</h3>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="single-service">
-                    <div class="single-service-img">
-                        <div class="service-img">
-                            <img class="bone img-responsive" src="~/Content/img/service4.png" alt="">
-                        </div>
-                    </div>
-
-                    <h3>human bones problem</h3>
-                </div>
-            </div>*@
         </div>
     </div>
 </section><!-- end of service section -->
@@ -306,37 +230,5 @@
     </div>
 </section><!-- end of map section -->
 <!-- contact section starts here -->
-<section class="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-caption clearfix">
-                <div class="contact-heading text-center">
-                    <h2>Kontakt</h2>
-                </div>
+@Html.Partial("Kontakt")
 
-                <div class="col-md-5 contact-info text-left">
-                    <h3>Infromacje kontaktowe:</h3>
-                    <div class="info-detail">
-                        <ul><li><i class="fa fa-map-marker"></i><span>Adres:</span> Płock</li></ul>
-                        <ul><li><i class="fa fa-phone"></i><span>Telefon:</span> 692 792 967</li></ul>
-                        <ul><li><i class="fa fa-envelope"></i><span>Email:</span> marcin.mazurowski@o2.pl</li></ul>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-md-offset-1 contact-form">
-                    <h3>Wyślij nam wiadomość</h3>
-
-                    <form class="form">
-                        <input class="name" type="text" placeholder="Imię i Nazwisko">
-                        <input class="email" type="email" placeholder="Email">
-                        <input class="phone" type="text" placeholder="Nr telefonu">
-                        <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
-                        <input class="submit-btn" type="submit" value="WYŚLIJ">
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section><!-- end of contact section -->

@@ -167,7 +167,6 @@ C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Rep
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.addDescription.resources
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.repairs.resources
-C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csprojResolveAssemblyReference.cache
 C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Repozytorium.dll.config
 C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Repozytorium.dll
 C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Repozytorium.pdb
@@ -287,3 +286,5 @@ C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.dll
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028add_name_property.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028add_name_property.resources
