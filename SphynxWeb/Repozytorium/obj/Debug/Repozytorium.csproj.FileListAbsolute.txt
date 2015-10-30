@@ -288,3 +288,4 @@ C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytor
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028add_name_property.resources
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028.resources
 C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028add_name_property.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csprojResolveAssemblyReference.cache

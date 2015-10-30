@@ -1,7 +1,10 @@
-﻿
-
-
-
+﻿@{
+    AjaxOptions ajaxOpts = new AjaxOptions()
+    {
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "ogloszenia"
+    };
+}
 
 <section class="slider" id="home">
     <div class="container-fluid">
@@ -127,9 +130,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-sm-8">
-                <h2>AKTUALNOŚCi W BUDOWIE</h2>
+                <h2>Aktualności</h2>
                 @Html.Action("Index", "BlogModels")
-
                 @*@Html.Action("Index", "BlogModels")*@
 
             </div>
@@ -232,4 +234,3 @@
 </section><!-- end of map section -->
 <!-- contact section starts here -->
 @Html.Partial("Kontakt")
-

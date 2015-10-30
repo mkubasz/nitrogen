@@ -219,3 +219,5 @@ C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\SphynxWeb.Tests\bin\Debug\Micros
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\SphynxWeb.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\SphynxWeb.Tests\obj\Debug\SphynxWeb.Tests.dll
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\SphynxWeb.Tests\obj\Debug\SphynxWeb.Tests.pdb
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\SphynxWeb.Tests\bin\Debug\PagedList.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\SphynxWeb.Tests\bin\Debug\PagedList.xml

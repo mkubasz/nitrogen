@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
+﻿using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
+using PagedList;
 using Repozytorium.Models;
 using Repozytorium.Repo;
 using Repozytorium.Repo.Abstract;
@@ -22,9 +18,22 @@ namespace SphynxWeb.Controllers
         }
 
         // GET: BlogModels
-        public ActionResult Index()
+        //public ActionResult Index()
+        //{
+        //    return PartialView(repo.GetAllBlogs().ToList());
+        //}
+  
+
+
+
+        public ActionResult Index(int? pNumber)
         {
-            return PartialView(repo.GetAllBlogs().ToList());
+            int pageNumber = pNumber ?? 1;
+            int pageSize = 2;
+            var aktualnosci = repo.GetAllBlogs();
+         
+            //return PartialView(repo.GetAllBlogs().ToList());
+            return PartialView(aktualnosci.ToList().ToPagedList(pageNumber, pageSize));
         }
 
         // GET: BlogModels/Details/5
@@ -117,5 +126,10 @@ namespace SphynxWeb.Controllers
             repo.DeleteBlog(id);
             return RedirectToAction("Index");
         }
+
+        public ActionResult GetDetails(int? id)
+        {
+            return Content(repo.GetBlogById(id).Post);
+        } 
     }
 }

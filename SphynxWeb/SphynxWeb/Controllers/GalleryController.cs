@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
 using Repozytorium.Models;
 using Repozytorium.Repo;
 
@@ -16,11 +17,14 @@ namespace SphynxWeb.Controllers
         //private ApplicationDbContext db = new ApplicationDbContext();
         readonly FotoRepo _repo = new FotoRepo();
         // GET: Gallery
-        public ActionResult Index()
+        public ActionResult Index(int? pageNumber)
         {
+            int pNumber= pageNumber??1;
+            int pSize = 2;
             var fotos = _repo.GetAllFotos();
-            return View(fotos);
-            //templatka do projektu galerii  http://startbootstrap.com/template-overviews/3-col-portfolio/
+            var viewFotos = _repo.DisplayFotoModelViews(fotos);
+            return View(viewFotos.ToPagedList(pNumber, pSize));
+            
 
         }
 

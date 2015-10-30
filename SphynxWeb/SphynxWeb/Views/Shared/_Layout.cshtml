@@ -47,7 +47,8 @@
                                     <li><a class="menu" href="#home">Home</a></li>
                                     <li><a class="menu" href="#about">O NAS</a></li>
                                     <li><a class="menu" href="#service">Aktualności </a></li>
-                                    <li><a class="menu" href="#team">Galeria</a></li>
+                                    @*<li><a class="menu" href="@Html.ActionLink("Galeria","Index","Gallery")>Galeria</a></li>*@
+                                    <li class="menu"> @Html.ActionLink("Galeria","Index","Gallery")</li>
                                     <li><a class="menu" href="#contact">Kontakt</a></li>
                                 </ul>
                             </div><!-- /navbar-collapse -->

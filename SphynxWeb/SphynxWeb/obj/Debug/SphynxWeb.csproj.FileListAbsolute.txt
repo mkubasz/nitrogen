@@ -283,3 +283,7 @@ C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\SphynxWeb\bin\Microsoft.Owin.Sec
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\SphynxWeb\obj\Debug\SphynxWeb.csprojResolveAssemblyReference.cache
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\SphynxWeb\obj\Debug\SphynxWeb.dll
 C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\SphynxWeb\obj\Debug\SphynxWeb.pdb
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\SphynxWeb\bin\PagedList.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\SphynxWeb\bin\PagedList.Mvc.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\SphynxWeb\bin\PagedList.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\SphynxWeb\bin\PagedList.Mvc.xml

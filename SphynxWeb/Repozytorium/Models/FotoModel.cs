@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Web;
 
 namespace Repozytorium.Models
@@ -8,8 +9,9 @@ namespace Repozytorium.Models
         [Key]
         public int FotoId { get; set; }
         public int FotoSize { get; set; }
+        [DisplayName("Opis")]
         public string Description { get; set; }
-    
+         [DisplayName("Nazwa")]
         public string FileName { get; set; }
         public byte[] FotoData { get; set; }
 
