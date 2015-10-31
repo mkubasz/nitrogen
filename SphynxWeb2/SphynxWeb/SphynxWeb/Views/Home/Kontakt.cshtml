@@ -1,0 +1,100 @@
+﻿@model SphynxWeb.Models.ContactModel
+
+
+@{
+    AjaxOptions ajaxOpts = new AjaxOptions()
+    {
+        InsertionMode = InsertionMode.Replace,
+        HttpMethod = "post",
+        UpdateTargetId = "wiadomosc",
+        Url = Url.Action("Kontakt","Home")
+    };
+}
+
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-caption clearfix">
+                <div class="contact-heading text-center">
+                    <h2>Kontakt</h2>
+                </div>
+
+                <div class="col-md-5 contact-info text-left">
+                    <h3>Infromacje kontaktowe:</h3>
+                    <div class="info-detail">
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i><span>Adres:</span> Płock</li>
+                        </ul>
+                        <ul>
+                            <li><i class="fa fa-phone"></i><span>Telefon:</span> 692 792 967</li>
+                        </ul>
+                        <ul>
+                            <li><i class="fa fa-envelope"></i><span>Email:</span> marcin.mazurowski@o2.pl</li>
+                        </ul>
+                    </div>
+                    <ul>
+                        
+                        <li id="wiadomosc"></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-md-6 col-md-offset-1 contact-form">
+                    <h3>Wyślij nam wiadomość</h3>
+
+                    @*<form class="form">
+                        <input class="name" type="text" placeholder="Imię i Nazwisko">
+                        <input class="email" type="email" placeholder="Email">
+                        <input class="phone" type="text" placeholder="Nr telefonu">
+                        <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+                        <input class="submit-btn" type="submit" value="WYŚLIJ">
+                    </form>*@
+                    @using (Ajax.BeginForm(ajaxOpts))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form">
+
+                            @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.FromName, new {htmlAttributes = new {@class = "name", PlaceHolder = "Nazwa..."}})
+                                @Html.ValidationMessageFor(model => model.FromName, "", new {@class = "text-danger"})
+                            </div>
+
+
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.FromEmail, new {htmlAttributes = new {@class = "email", PlaceHolder = "Email..."}})
+                                @Html.ValidationMessageFor(model => model.FromEmail, "", new {@class = "text-danger"})
+                            </div>
+
+
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.PhoneNumber, new {htmlAttributes = new {@class = "phone", PlaceHolder = "Telefon..."}})
+                                @Html.ValidationMessageFor(model => model.PhoneNumber, "", new {@class = "text-danger"})
+                                
+                            </div>
+
+
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Message, new {htmlAttributes = new {@class = "message", PlaceHolder = "Wiadomość..."}})
+                                @Html.ValidationMessageFor(model => model.Message, "", new {@class = "text-danger"})
+                                
+                                                                 
+                            </div>
+                           
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Wyślij wiadomość" class="submit-btn" />
+                                </div>
+                            </div>
+                    }
+                </div>
+                @*<div id="wiadomosc">
+
+                </div>*@
+
+            </div>
+        </div>
+    </div>
+</section><!-- end of contact section -->

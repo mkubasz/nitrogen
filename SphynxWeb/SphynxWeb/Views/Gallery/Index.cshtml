@@ -1,20 +1,39 @@
 ﻿@using PagedList.Mvc
+@using Microsoft.AspNet.Identity
 @model PagedList.IPagedList<Repozytorium.Models.ViewModel.FotoModelView>  
 @{
     Layout = "~/Views/Shared/_Layout2.cshtml";
 }
+<style>
+    a:hover, a:focus {
+        color: blue;
+    }
+</style>
+
+
+
 <div class="container">
 <!-- Page Header -->
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">
-            Page Heading
-            <small>Secondary Text</small>
-        </h1>
+    <div class="row">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Galeria naszych Pociech
+                @*<small>Secondary Text</small>*@
+            </h1>
+        </div>
     </div>
-</div>
 <!-- /.row -->
-<!-- Projects Row -->
+    <!-- Projects Row -->
+    @if (Request.IsAuthenticated)
+    {
+
+        <h4>@Html.ActionLink("Dodaj zdjęcia", "Create", "Gallery")</h4>
+    }
 @for (var i = 0; i < Model.Count; i+=3)
 {
     int k = (Model.Count < i + 3) ? Model.Count : i + 3;

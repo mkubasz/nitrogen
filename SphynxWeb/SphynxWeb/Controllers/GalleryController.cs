@@ -27,7 +27,7 @@ namespace SphynxWeb.Controllers
             
 
         }
-
+            [Authorize]
         public ActionResult Index2()
         {
             var fotosList = _repo.GetAllFotos();
@@ -36,6 +36,7 @@ namespace SphynxWeb.Controllers
         }
 
         // GET: Gallery/Details/5
+            [Authorize]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -55,6 +56,7 @@ namespace SphynxWeb.Controllers
 
         // GET: Gallery/Create
       //  [Authorize]
+            [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -78,6 +80,7 @@ namespace SphynxWeb.Controllers
 
         //    return View(fotoModel);
         //}
+            [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(FotoModel fotoModel)
@@ -134,6 +137,7 @@ namespace SphynxWeb.Controllers
         //}
 
         // GET: Gallery/Delete/5
+            [Authorize]
         public ActionResult Delete(int?id , bool? error)
         {
             if (id == null)
@@ -151,6 +155,7 @@ namespace SphynxWeb.Controllers
         }
 
         // POST: Gallery/Delete/5
+            [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

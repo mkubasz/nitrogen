@@ -1,5 +1,6 @@
 ﻿@*@model IEnumerable<Repozytorium.Models.BlogModel>*@
 @using PagedList.Mvc
+
 @model PagedList.IPagedList<Repozytorium.Models.BlogModel> 
 <link href="/Content/css/1-col-portfolio.css" rel="stylesheet">
 @{
@@ -9,43 +10,44 @@
 
 }
 <div id="pagination">
-    @foreach (var item in Model)
+   
+        @foreach (var item in Model)
     {
-        <div class="row">
+            <div class="row">
 
-            <div class="col-md-12">
-                <h1>
-                    @Html.DisplayFor(modelItem => item.AddDate) -
-                    @Html.DisplayFor(modelItem => item.Name)
-                </h1>
+                <div class="col-md-12">
+                    <h1>
+                        @Html.DisplayFor(modelItem => item.AddDate) -
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </h1>
 
-                <div id="cos">
-                    <h4 id=@item.PostId.ToString()>
-                        @* @Html.DisplayFor(modelItem => item.Post)*@
-                        @item.Post.Split('\n')[0]...
-                        <br>
-                        @Ajax.ActionLink("Czytaj wiecej", "GetDetails", new RouteValueDictionary(new { id = item.PostId }), new AjaxOptions()
-                            {
-                                InsertionMode = InsertionMode.Replace,
-                                UpdateTargetId = item.PostId.ToString()
-                            })
-                    </h4>
+                    <div id="cos">
+                        <h4 id=@item.PostId.ToString()>
+                            @* @Html.DisplayFor(modelItem => item.Post)*@
+                            @item.Post.Split('\n')[0]...
+                            <br>
+                            @Ajax.ActionLink("Czytaj wiecej", "GetDetails", new RouteValueDictionary(new {id = item.PostId}), new AjaxOptions()
+                        {
+                            InsertionMode = InsertionMode.Replace,
+                            UpdateTargetId = item.PostId.ToString()
+                        })
+                        </h4>
 
 
+                    </div>
+
+                    @*<a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*@
                 </div>
-
-                @*<a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>*@
             </div>
-        </div>
     }
-    <ul class="pagination">
-        <li>
-            @*@Html.PagedListPager(Model, page => Url.Action("Index", new RouteValueDictionary(new { pNumber = page })))*@
+        <ul class="pagination">
+            <li>
+                @*@Html.PagedListPager(Model, page => Url.Action("Index", new RouteValueDictionary(new { pNumber = page })))*@
 
-            @Html.PagedListPager(Model, page => Url.Action("Index", "BlogModels", new RouteValueDictionary(new { pNumber = page })), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() { InsertionMode = InsertionMode.Replace, UpdateTargetId = "pagination" }))
-        </li>
+                @Html.PagedListPager(Model, page => Url.Action("Index", "BlogModels", new RouteValueDictionary(new {pNumber = page})), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() {InsertionMode = InsertionMode.Replace, UpdateTargetId = "pagination"}))
+            </li>
 
-    </ul>
+        </ul>
     </div>
 
 

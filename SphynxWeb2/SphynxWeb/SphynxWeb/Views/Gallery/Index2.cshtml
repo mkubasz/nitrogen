@@ -1,0 +1,30 @@
+﻿@model List<SphynxWeb.Models.ViewModel.FotoModelView>
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2 style="padding-top: 50px">Galeria</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var item in Model)
+{ <div class="col-md-4 portfolio-item">
+        <a href="#">
+            <img class="img-responsive" src="@item.FotoMiniatureData" alt="">
+        </a>
+        <h3>
+            @Html.DisplayFor(modelItem => item.FileName)
+        </h3>
+        <h4>
+            @Html.DisplayFor(modelItem => item.Description)
+        </h4>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = item.FotoId }) |<br />
+            @Html.ActionLink("Details", "Details", new { id = item.FotoId }) |<br />
+            @Html.ActionLink("Delete", "Delete", new { id = item.FotoId })<br />
+        </p>
+    </div>
+}

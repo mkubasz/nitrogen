@@ -35,7 +35,7 @@ namespace SphynxWeb.Controllers
             //return PartialView(repo.GetAllBlogs().ToList());
             return PartialView(aktualnosci.ToList().ToPagedList(pageNumber, pageSize));
         }
-
+        [Authorize]
         // GET: BlogModels/Details/5
         public ActionResult Details(int? id)
         {
@@ -52,6 +52,7 @@ namespace SphynxWeb.Controllers
         }
 
         // GET: BlogModels/Create
+            [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -61,6 +62,7 @@ namespace SphynxWeb.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Name, Post,ShowOnStartPage")] BlogModel blogModel)
         {
@@ -74,6 +76,7 @@ namespace SphynxWeb.Controllers
         }
 
         // GET: BlogModels/Edit/5
+            [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -92,6 +95,7 @@ namespace SphynxWeb.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "PostId,Post,Category,ShowOnStartPage,AddDate")] BlogModel blogModel)
         {
@@ -104,6 +108,7 @@ namespace SphynxWeb.Controllers
         }
 
         // GET: BlogModels/Delete/5
+            [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -119,6 +124,7 @@ namespace SphynxWeb.Controllers
         }
 
         // POST: BlogModels/Delete/5
+            [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

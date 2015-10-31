@@ -1,0 +1,58 @@
+﻿@model SphynxWeb.Models.FotoModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FotoModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FotoSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FotoSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FileName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FileName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FotoData)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FotoData)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FotoMiniatureData)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FotoMiniatureData)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FotoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

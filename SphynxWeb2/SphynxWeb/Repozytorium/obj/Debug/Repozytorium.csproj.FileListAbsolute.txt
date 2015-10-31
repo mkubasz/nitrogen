@@ -1,0 +1,291 @@
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Repozytorium.dll.config
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Repozytorium.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Repozytorium.pdb
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\EntityFramework.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Web.Infrastructure.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Owin.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.Helpers.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.Mvc.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.Optimization.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.Razor.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.WebPages.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\WebGrease.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.pdb
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.Helpers.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.Mvc.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.Optimization.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.Razor.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.WebPages.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\EntityFramework.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.dll
+c:\users\user\documents\visual studio 2013\Projects\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Repozytorium.dll.config
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Repozytorium.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Repozytorium.pdb
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\EntityFramework.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Owin.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.Helpers.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.Mvc.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.Optimization.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.Razor.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.WebPages.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\WebGrease.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.pdb
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.Helpers.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.Mvc.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.Optimization.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.Razor.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.WebPages.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\EntityFramework.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.dll
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.start.resources
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.Cache
+C:\Users\user\Documents\repoGITHUB\SphynxWeb\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Repozytorium.dll.config
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Repozytorium.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Repozytorium.pdb
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\EntityFramework.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Owin.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Helpers.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Mvc.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Optimization.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Razor.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\WebGrease.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.pdb
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Helpers.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Mvc.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Optimization.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Razor.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\EntityFramework.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.start.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.Cache
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.dll
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.addDescription.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.repairs.resources
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Repozytorium.dll.config
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Repozytorium.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Repozytorium.pdb
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\EntityFramework.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Owin.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.Helpers.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.Mvc.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.Optimization.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.Razor.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.WebPages.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\WebGrease.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.pdb
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.Helpers.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.Mvc.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.Optimization.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.Razor.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.WebPages.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\EntityFramework.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csprojResolveAssemblyReference.cache
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.start.resources
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.addDescription.resources
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.repairs.resources
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.Cache
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.dll
+C:\Users\Tomasz\Desktop\kiciak\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.start.resources
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.addDescription.resources
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations.repairs.resources
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028.resources
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csproj.GenerateResource.Cache
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Repozytorium.dll.config
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Repozytorium.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Repozytorium.pdb
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\EntityFramework.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Owin.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Helpers.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Mvc.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Optimization.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Razor.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\WebGrease.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Antlr3.Runtime.pdb
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Newtonsoft.Json.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Helpers.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Mvc.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Optimization.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.Razor.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Deployment.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\System.Web.WebPages.Razor.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\EntityFramework.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\EntityFramework.SqlServer.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.dll
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.pdb
+C:\Users\PatrykDev\Documents\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028add_name_property.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.Migrations._20151028add_name_property.resources
+C:\Users\user\Documents\repoGITHUB\nitrogen\SphynxWeb\Repozytorium\obj\Debug\Repozytorium.csprojResolveAssemblyReference.cache
