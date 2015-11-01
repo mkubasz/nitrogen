@@ -1,5 +1,6 @@
 jQuery(document).ready(function() {
 
+    window.addEventListener("hashchange", function() { scrollBy(0, -50) })
 
     $('#carouselHacked').carousel();
 
@@ -33,8 +34,8 @@ jQuery(document).ready(function() {
                 menu = target;
             $target = $(target);
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top -99
-            }, 500, 'swing', function() {
+                'scrollTop': $target.offset().top
+            }, 0, 'swing', function() {
                 window.location.hash = target;
                 $(document).on("scroll", onScroll);
             });
@@ -74,7 +75,7 @@ jQuery(document).ready(function() {
     jQuery(window).scroll(function () {
         var windowScrollPosTop = jQuery(window).scrollTop();
 
-        if (windowScrollPosTop >= 150) {
+        /*if (windowScrollPosTop >= 150) {
             jQuery(".header").css({ "background": "#B193DD", });
             jQuery(".top-header img.logo").css({ "margin-top": "-20px", "margin-bottom": "-5px" });
             jQuery(".navbar-default").css({ "margin-top": "-15px", });
@@ -84,9 +85,10 @@ jQuery(document).ready(function() {
             jQuery(".top-header img.logo").css({ "margin-top": "-15px", "margin-bottom": "0px" });
             jQuery(".navbar-default").css({ "margin-top": "12px", "margin-bottom": "0" });
 
-        }
-
-
+        }*/
+       /* jQuery(".header").css({ "background": "transparent", });
+            jQuery(".top-header img.logo").css({ "margin-top": "-15px", "margin-bottom": "0px" });
+            jQuery(".navbar-default").css({ "margin-top": "0x", "margin-bottom": "120" });*/
     });
 
 
