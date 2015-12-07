@@ -1,6 +1,8 @@
 ﻿using RejestrFaktur.utils;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -8,12 +10,10 @@ namespace RejestrFaktur.Models
 {
     public partial class PlatnoscTyp
     {
-        public PlatnoscTyp()
-        {
-        }
-
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [DodatkoweAtrybuty("Nazwa sposobu płatności",StanAtr.WLICZAC,Dodatkowy = "nazwa")]
+        [Required]
         public string Nazwa { get; set; }
         [DodatkoweAtrybuty("Opis sposobu płatności",Stan =StanAtr.WLICZAC,Dodatkowy ="opis")]
         public string Opis { get; set; }

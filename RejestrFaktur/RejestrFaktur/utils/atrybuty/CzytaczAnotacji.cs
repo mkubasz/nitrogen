@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Web;
 
-namespace RejestrFaktur.utils.pozostale
+namespace RejestrFaktur.utils
 {
     //klasa do przetwarzania atrybutów z klasy DodatkoweAtrybuty
     public class CzytaczAnotacji

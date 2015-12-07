@@ -10,6 +10,9 @@ namespace RejestrFaktur.utils
         PRZEGLADANIE,
         DO_EDYCJI,
         DO_USUNIECIA,
-        SZCZEGOLY
+        SZCZEGOLY,
+        NOWY,
+        ZAPISZ,
+        USUN
     }
 }

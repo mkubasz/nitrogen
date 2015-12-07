@@ -1,0 +1,25 @@
+﻿@using RejestrFaktur.Models
+@model JednostkaMiary
+
+
+<div>
+    @Html.ValidationSummary(true, "")
+    @Html.HiddenFor(model => model.Id)
+</div>
+
+
+<div>
+    @Html.LabelFor(model => model.NazwaJednostki)
+    <div>
+        @Html.EditorFor(model => model.NazwaJednostki)
+        @Html.ValidationMessageFor(model => model.NazwaJednostki)
+    </div>
+</div>
+
+<div>
+    @Html.LabelFor(model => model.SymbolJednostki)
+    <div>
+        @Html.EditorFor(model => model.SymbolJednostki)
+        @Html.ValidationMessageFor(model => model.SymbolJednostki)
+    </div>
+</div>

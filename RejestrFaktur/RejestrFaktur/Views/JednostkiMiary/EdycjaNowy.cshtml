@@ -1,0 +1,26 @@
+﻿@using RejestrFaktur.Models
+@using RejestrFaktur.utils
+@model ObiektDoWidoku<JednostkaMiary>
+@{
+    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+}
+
+<h1>@ViewBag.Tytul</h1>
+
+    @using (Html.BeginForm("EdycjaNowy", "JednostkiMiary", FormMethod.Post))
+    {
+        <div>
+            
+            @Html.EditorFor(model => model.Edytowany)
+            @Html.HiddenFor(model => model.StanObiektu)
+            <div>
+                <div>
+                    <input type="submit" value="Zapisz" />
+                </div>
+            </div>
+        </div>
+    }
+    <div>
+        @Html.ActionLink("Zamknij okienko edycji", "Index")
+    </div>
+

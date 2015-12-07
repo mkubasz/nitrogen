@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
-using RejestrFaktur.utils.pozostale;
 using RejestrFaktur.utils;
 using RejestrFaktur.Models;
 using System.Collections.Generic;
@@ -16,7 +15,7 @@ namespace RejestrFaktur.Tests.Models
         public void TestJednostkiMiary()
         {
             JednostkaMiary jm1 = new JednostkaMiary { Id = 1, NazwaJednostki = "metr", SymbolJednostki = "m" };
-            List<string> listaStr = CzytaczAnotacji.WypiszWszystkieAtrubutyNazwa(StanAtr.WLICZAC,jm1);
+            List<string> listaStr = CzytaczAnotacji.WypiszWszystkieAtrubutyNazwa(StanAtr.WLICZAC, jm1);
             Assert.AreEqual(listaStr.Count, 1);
             Assert.AreEqual(listaStr[0], "Nazwa jednostki miary");
 
@@ -25,11 +24,5 @@ namespace RejestrFaktur.Tests.Models
             Assert.AreEqual(listaDA[0].Dodatkowy, "nazwa");
 
         }
-        [TestMethod]
-        public void TestPlatnoscTyp()
-        {
-            Assert.IsTrue(true);
-        }
-
     }
 }

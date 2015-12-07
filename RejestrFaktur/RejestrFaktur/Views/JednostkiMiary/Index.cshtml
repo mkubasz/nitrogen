@@ -1,40 +1,14 @@
-﻿@model IEnumerable<RejestrFaktur.Models.JednostkaMiary>
-
+﻿@using RejestrFaktur.Models
+@using RejestrFaktur.utils
+@model ObiektDoWidoku<JednostkaMiary>
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/WartosciSlownikowe/szablonWartosciSlownikowe.cshtml";
+    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.NazwaJednostki)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SymbolJednostki)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NazwaJednostki)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SymbolJednostki)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
+@if (Model.StanObiektu == Stany.PRZEGLADANIE)
+{
+    
 }
 
-</table>
+<h1>Lista jednostek Miary</h1>
+@Html.Partial("~/Views/JednostkiMiary/ListaWartosciForm.cshtml",Model.Lista)

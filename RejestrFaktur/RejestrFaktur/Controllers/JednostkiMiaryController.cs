@@ -1,128 +1,120 @@
-﻿using System;
+﻿using RejestrFaktur.DAL;
+using RejestrFaktur.Models;
+using RejestrFaktur.utils;
+using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using RejestrFaktur.DAL;
-using RejestrFaktur.Models;
 
 namespace RejestrFaktur.Controllers
 {
     public class JednostkiMiaryController : Controller
     {
-        private RejestrFakturContext db = new RejestrFakturContext();
 
-        // GET: JednostkiMiary
-        public ActionResult Index()
+        private RejestrFakturContext dbcontext;
+        private Opakowanie<JednostkaMiary> opakJednostkiMiar;
+        //private ObslugaKolekcja<JednostkaMiary> obsluga;
+        private ObslugaJednostkiMiary obslugaJM;
+        private ObslugaDelegaty<int, Stany> obslugaDelegaty;
+
+
+        public JednostkiMiaryController()
         {
-            return View(db.JednostkiMiar.ToList());
+            dbcontext = new RejestrFakturContext();
+            opakJednostkiMiar = new Opakowanie<JednostkaMiary>(new JednostkiMiaryOperacje(), dbcontext);
+            obslugaJM = new ObslugaJednostkiMiary(opakJednostkiMiar);
+            obslugaDelegaty = new ObslugaDelegaty<int, Stany>();
+
+            obslugaDelegaty.delegaty += obslugaJM.DoEdycji;
+            obslugaDelegaty.delegaty += obslugaJM.DoPodgladu;
+            obslugaDelegaty.delegaty += obslugaJM.DoUsuniencia;
+            obslugaDelegaty.delegaty += obslugaJM.Nowy;
+
+            //obsluga = new KolejkaObslugiJM(opakJednostkiMiar);
         }
 
-        // GET: JednostkiMiary/Details/5
-        public ActionResult Details(int? id)
+        private ObiektDoWidoku<JednostkaMiary> Wypelnij(int? id, Stany? stan)
         {
-            if (id == null)
+            int idOb = id ?? 0;
+            Stany stanOb = stan ?? default(Stany);
+            //obsluga.Obsluz(idOb, stanOb);
+            obslugaDelegaty.Obsluz(idOb, stanOb);
+            return opakJednostkiMiar.ObiektDoWidoku;
+
+        }
+
+        public ActionResult Index(int? id, Stany? stan)
+        {
+            ViewBag.Tytul = "Jednostki miary";
+            return View(Wypelnij(id,stan));
+
+        }
+
+        public ActionResult EdycjaNowy(int? id,Stany? stan)
+        {
+            ViewBag.Tytul = "Jednostki miary - edycja dodawanie";
+            return View(Wypelnij(id, stan));
+        }
+
+        public ActionResult Szczegoly(int? id, Stany? stan)
+        {
+            ViewBag.Tytul = "Jednostki miary - szczegóły";
+            return View(Wypelnij(id, stan));
+        }
+
+
+        public ActionResult DoUsuniencia(int? id, Stany? stan)
+        {
+            ViewBag.Tytul = "Jednostki miary - szczegóły";
+            return View(Wypelnij(id, stan));
+        }
+
+
+        [ActionName("EdycjaNowy"),AcceptVerbs("Post")]
+        public ActionResult Zapisz([Bind(Prefix = "Edytowany", Include = "Id,NazwaJednostki,SymbolJednostki")]JednostkaMiary jM,
+                             [Bind(Include = "StanObiektu")]Stany StanObiektu)
+        {
+
+            if (ModelState.IsValid)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                if (opakJednostkiMiar.ZapiszObiekt(jM, StanObiektu))
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
             }
-            JednostkaMiary jednostkaMiary = db.JednostkiMiar.Find(id);
-            if (jednostkaMiary == null)
+            else
             {
-                return HttpNotFound();
+                opakJednostkiMiar.ObiektDoWidoku.Edytowany = jM;
+                opakJednostkiMiar.ObiektDoWidoku.StanObiektu = StanObiektu;
+                return View(opakJednostkiMiar.ObiektDoWidoku);
             }
-            return View(jednostkaMiary);
+
         }
 
-        // GET: JednostkiMiary/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: JednostkiMiary/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,NazwaJednostki,SymbolJednostki")] JednostkaMiary jednostkaMiary)
+        public ActionResult Usun([Bind(Prefix = "Edytowany", Include = "Id,NazwaJednostki,SymbolJednostki")]JednostkaMiary jM)
         {
             if (ModelState.IsValid)
             {
-                db.JednostkiMiar.Add(jednostkaMiary);
-                db.SaveChanges();
-                
+                if (opakJednostkiMiar.UsunObiekt(jM))
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
             }
-
-            return View(jednostkaMiary);
-        }
-
-        // GET: JednostkiMiary/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
+            else
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            JednostkaMiary jednostkaMiary = db.JednostkiMiar.Find(id);
-            if (jednostkaMiary == null)
-            {
-                return HttpNotFound();
-            }
-            return View(jednostkaMiary);
-        }
-
-        // POST: JednostkiMiary/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,NazwaJednostki,SymbolJednostki")] JednostkaMiary jednostkaMiary)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(jednostkaMiary).State = EntityState.Modified;
-                db.SaveChanges();
                 return RedirectToAction("Index");
-            }
-            return View(jednostkaMiary);
-        }
-
-        // GET: JednostkiMiary/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            JednostkaMiary jednostkaMiary = db.JednostkiMiar.Find(id);
-            if (jednostkaMiary == null)
-            {
-                return HttpNotFound();
-            }
-            return View(jednostkaMiary);
-        }
-
-        // POST: JednostkiMiary/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            JednostkaMiary jednostkaMiary = db.JednostkiMiar.Find(id);
-            db.JednostkiMiar.Remove(jednostkaMiary);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
+            }    
         }
     }
 }

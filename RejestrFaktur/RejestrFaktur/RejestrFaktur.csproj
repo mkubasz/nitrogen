@@ -171,10 +171,6 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JednostkiMiaryController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\PlatnosciTypyController.cs" />
-    <Compile Include="Controllers\StawkiPodatkuController.cs" />
-    <Compile Include="Controllers\WalutyController.cs" />
-    <Compile Include="Controllers\WartosciSlownikoweController.cs" />
     <Compile Include="DAL\RejestrFakturContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -191,6 +187,14 @@
     <Compile Include="Migrations\201510191412228_poprawkiFakturaiFakturaSzczegoly.Designer.cs">
       <DependentUpon>201510191412228_poprawkiFakturaiFakturaSzczegoly.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511161827080_Poprawki.cs" />
+    <Compile Include="Migrations\201511161827080_Poprawki.Designer.cs">
+      <DependentUpon>201511161827080_Poprawki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511231949313_PoprawkiJednostkiMiar.cs" />
+    <Compile Include="Migrations\201511231949313_PoprawkiJednostkiMiar.Designer.cs">
+      <DependentUpon>201511231949313_PoprawkiJednostkiMiar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FakturaSzczegoly.cs" />
@@ -206,15 +210,16 @@
     <Compile Include="Models\Waluta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="utils\abstrakcyjneKlasy\IOperacjeOpakowanie.cs" />
-    <Compile Include="utils\abstrakcyjneKlasy\IOperacjeOpakowanieFactory.cs" />
-    <Compile Include="utils\abstrakcyjneKlasy\Opakowanie.cs" />
+    <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IOperacje.cs" />
+    <Compile Include="utils\AbstrKlasyInterfejsyGenerics\ObiektDoWidoku.cs" />
+    <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IOperacjeOpakowanie.cs" />
+    <Compile Include="utils\AbstrKlasyInterfejsyGenerics\ObslugaDelegaty.cs" />
+    <Compile Include="utils\AbstrKlasyInterfejsyGenerics\Opakowanie.cs" />
     <Compile Include="utils\atrybuty\CzytaczAnotacji.cs" />
     <Compile Include="utils\atrybuty\DodatkoweAtrybuty.cs" />
-    <Compile Include="utils\impl\JednostkiMiaryOperacje.cs" />
-    <Compile Include="utils\impl\OpakowanieJednostkiFactory.cs" />
-    <Compile Include="utils\impl\OpakowaniePlatnoscTypFactory.cs" />
-    <Compile Include="utils\impl\PlatnoscTypOperacje.cs" />
+    <Compile Include="utils\impl\JednostkiMiary\JednostkiMiaryOperacje.cs" />
+    <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IDoWidokow.cs" />
+    <Compile Include="utils\impl\JednostkiMiary\ObslugaJednostkiMiary.cs" />
     <Compile Include="utils\pozostale\Stany.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -238,7 +243,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -272,39 +279,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\DodatkoweTabeleBoczneMenu.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\Index.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\JednostkiMiary.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\MenuGlowne.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\StawkiPodatku.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\szablonWartosciSlownikowe.cshtml" />
+    <Content Include="Views\Wspolne\DodatkoweTabeleBoczneMenu.cshtml" />
+    <Content Include="Views\Wspolne\MenuGlowne.cshtml" />
+    <Content Include="Views\Wspolne\szablonWartosciSlownikowe.cshtml" />
     <Content Include="Views\WartosciSlownikowe\szukajForm.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\TypyPlatnosci.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\Waluty.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\edycjaForm.cshtml" />
-    <Content Include="Views\JednostkiMiary\Create.cshtml" />
-    <Content Include="Views\JednostkiMiary\Delete.cshtml" />
-    <Content Include="Views\JednostkiMiary\Details.cshtml" />
-    <Content Include="Views\JednostkiMiary\Edit.cshtml" />
     <Content Include="Views\JednostkiMiary\Index.cshtml" />
-    <Content Include="Views\Waluty\Create.cshtml" />
-    <Content Include="Views\Waluty\Delete.cshtml" />
-    <Content Include="Views\Waluty\Details.cshtml" />
-    <Content Include="Views\Waluty\Edit.cshtml" />
-    <Content Include="Views\Waluty\Index.cshtml" />
-    <Content Include="Views\StawkiPodatku\Create.cshtml" />
-    <Content Include="Views\StawkiPodatku\Delete.cshtml" />
-    <Content Include="Views\StawkiPodatku\Details.cshtml" />
-    <Content Include="Views\StawkiPodatku\Edit.cshtml" />
-    <Content Include="Views\StawkiPodatku\Index.cshtml" />
-    <Content Include="Views\PlatnosciTypy\Create.cshtml" />
-    <Content Include="Views\PlatnosciTypy\Delete.cshtml" />
-    <Content Include="Views\PlatnosciTypy\Details.cshtml" />
-    <Content Include="Views\PlatnosciTypy\Edit.cshtml" />
-    <Content Include="Views\PlatnosciTypy\Index.cshtml" />
+    <Content Include="Views\JednostkiMiary\SzczegolyForm.cshtml" />
+    <Content Include="Views\JednostkiMiary\ListaWartosciForm.cshtml" />
+    <Content Include="Views\JednostkiMiary\EdycjaNowy.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\JednostkaMiary.cshtml" />
+    <Content Include="Views\JednostkiMiary\Szczegoly.cshtml" />
+    <Content Include="Views\JednostkiMiary\DoUsuniencia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="utils\helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -323,6 +312,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510191412228_poprawkiFakturaiFakturaSzczegoly.resx">
       <DependentUpon>201510191412228_poprawkiFakturaiFakturaSzczegoly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511161827080_Poprawki.resx">
+      <DependentUpon>201511161827080_Poprawki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511231949313_PoprawkiJednostkiMiar.resx">
+      <DependentUpon>201511231949313_PoprawkiJednostkiMiar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

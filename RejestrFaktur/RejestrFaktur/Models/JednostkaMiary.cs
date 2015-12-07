@@ -1,6 +1,9 @@
 ﻿using RejestrFaktur.utils;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -12,9 +15,18 @@ namespace RejestrFaktur.Models
         {
         }
 
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
         [DodatkoweAtrybuty("Nazwa jednostki miary", StanAtr.WLICZAC,Dodatkowy = "nazwa")]
+        [Required(ErrorMessage = "Musisz podać nazwę jednostki miary")]
+        [StringLength(65, ErrorMessage = "Nazwa jednostki miary jest za długa, maks. długość 65 znaków")]
+        [DisplayName("Nazwa jednostki")]
         public string NazwaJednostki { get; set; }
+
+        [Required(ErrorMessage = "Musisz podać symbol jednostki miary")]
+        [StringLength(3, ErrorMessage = "Nazwa symbolu jednostki miary jest za długa, maks. długość 3 znaki")]
+        [DisplayName("Symbol jednostki")]
         public string SymbolJednostki { get; set; }
 
         public override bool Equals(object obj)
@@ -34,10 +46,18 @@ namespace RejestrFaktur.Models
 
         public override int GetHashCode()
         {
+
             int hash = 13;
-            hash = (hash * 7) + Id.GetHashCode();
-            hash = (hash * 7) + NazwaJednostki.GetHashCode();
-            hash = (hash * 7) + SymbolJednostki.GetHashCode();
+            try
+            {
+                hash = (hash * 7) + (Id.GetHashCode());
+                hash = (hash * 7) + NazwaJednostki.GetHashCode();
+                hash = (hash * 7) + SymbolJednostki.GetHashCode();
+            }
+            catch
+            {
+                hash = 0;
+            }
             return hash;
         }
     }
