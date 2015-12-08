@@ -1,0 +1,14 @@
+﻿@using RejestrFaktur.Models
+@using RejestrFaktur.utils
+@model ObiektDoWidoku<StawkaPodatku>
+@{
+    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+}
+
+@if (Model.StanObiektu == Stany.PRZEGLADANIE)
+{
+    
+}
+
+<h1>Lista Stawek Podatku</h1>
+@Html.Partial("~/Views/StawkiPodatku/ListaWartosciForm.cshtml",Model.Lista)

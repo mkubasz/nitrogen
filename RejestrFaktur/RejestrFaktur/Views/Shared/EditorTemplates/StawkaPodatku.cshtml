@@ -1,0 +1,25 @@
+﻿@using RejestrFaktur.Models
+@model StawkaPodatku
+
+
+<div>
+    @Html.ValidationSummary(true, "")
+    @Html.HiddenFor(model => model.Id)
+</div>
+
+
+<div>
+    @Html.LabelFor(model => model.NazwaStawki)
+    <div>
+        @Html.EditorFor(model => model.NazwaStawki)
+        @Html.ValidationMessageFor(model => model.NazwaStawki)
+    </div>
+</div>
+
+<div>
+    @Html.LabelFor(model => model.WysokoscStawki)
+    <div>
+        @Html.EditorFor(model => model.WysokoscStawki)
+        @Html.ValidationMessageFor(model => model.WysokoscStawki)
+    </div>
+</div>

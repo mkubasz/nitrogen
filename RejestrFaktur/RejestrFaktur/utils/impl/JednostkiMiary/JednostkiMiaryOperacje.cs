@@ -11,8 +11,6 @@ namespace RejestrFaktur.utils
     public class JednostkiMiaryOperacje : IOperacje<JednostkaMiary>
     {
 
-        
-
         public bool Ustaw(ObiektDoWidoku<JednostkaMiary> obiektDW, Stany stan, int id)
         {
             JednostkaMiary jm = ZnajdzPoId(obiektDW.Lista, id);

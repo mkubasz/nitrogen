@@ -1,0 +1,34 @@
+﻿@using RejestrFaktur.Models
+@using RejestrFaktur.utils
+@model IEnumerable<StawkaPodatku>
+
+
+<div>@Html.ActionLink("Utwórz nowy", "EdycjaNowy", new { id = 0, stan = Stany.NOWY })</div>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NazwaStawki)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WysokoscStawki)
+        </th>
+        <th>Dostępne operacje</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NazwaStawki)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WysokoscStawki)
+            </td>
+            <td>
+                @Html.ActionLink("Edytuj", "EdycjaNowy", new { id = item.Id, stan = Stany.DO_EDYCJI }) |
+                @Html.ActionLink("Szczegóły", "Szczegoly", new { id = item.Id, stan = Stany.SZCZEGOLY}) |
+                @Html.ActionLink("Usuń", "DoUsuniencia", new { id = item.Id, stan = Stany.DO_USUNIECIA })
+            </td>
+        </tr>
+    }
+</table>

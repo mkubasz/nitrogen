@@ -14,8 +14,7 @@ namespace RejestrFaktur.utils
         {
             this.opak = opak;
         }
-
-        
+   
         public void DoUsuniencia(int i, Stany stan)
         {
             if (stan == Stany.DO_USUNIECIA) opak.UstawDoUsuniecia(i);

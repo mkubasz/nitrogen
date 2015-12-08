@@ -171,6 +171,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JednostkiMiaryController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StawkiPodatkuController.cs" />
     <Compile Include="DAL\RejestrFakturContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -195,6 +196,10 @@
     <Compile Include="Migrations\201511231949313_PoprawkiJednostkiMiar.Designer.cs">
       <DependentUpon>201511231949313_PoprawkiJednostkiMiar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512082246154_poprawkiStawkaPodatku.cs" />
+    <Compile Include="Migrations\201512082246154_poprawkiStawkaPodatku.Designer.cs">
+      <DependentUpon>201512082246154_poprawkiStawkaPodatku.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FakturaSzczegoly.cs" />
@@ -217,9 +222,12 @@
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\Opakowanie.cs" />
     <Compile Include="utils\atrybuty\CzytaczAnotacji.cs" />
     <Compile Include="utils\atrybuty\DodatkoweAtrybuty.cs" />
+    <Compile Include="utils\helpers\MyExtensions.cs" />
     <Compile Include="utils\impl\JednostkiMiary\JednostkiMiaryOperacje.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IDoWidokow.cs" />
     <Compile Include="utils\impl\JednostkiMiary\ObslugaJednostkiMiary.cs" />
+    <Compile Include="utils\impl\StawkiPodatku\ObslugaStawkiPodatku.cs" />
+    <Compile Include="utils\impl\StawkiPodatku\StawkiPodatkuOperacje.cs" />
     <Compile Include="utils\pozostale\Stany.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -290,10 +298,16 @@
     <Content Include="Views\Shared\EditorTemplates\JednostkaMiary.cshtml" />
     <Content Include="Views\JednostkiMiary\Szczegoly.cshtml" />
     <Content Include="Views\JednostkiMiary\DoUsuniencia.cshtml" />
+    <Content Include="Views\StawkiPodatku\DoUsuniencia.cshtml" />
+    <Content Include="Views\StawkiPodatku\EdycjaNowy.cshtml" />
+    <Content Include="Views\StawkiPodatku\Index.cshtml" />
+    <Content Include="Views\StawkiPodatku\ListaWartosciForm.cshtml" />
+    <Content Include="Views\StawkiPodatku\Szczegoly.cshtml" />
+    <Content Include="Views\StawkiPodatku\SzczegolyForm.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\StawkaPodatku.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="utils\helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -318,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511231949313_PoprawkiJednostkiMiar.resx">
       <DependentUpon>201511231949313_PoprawkiJednostkiMiar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512082246154_poprawkiStawkaPodatku.resx">
+      <DependentUpon>201512082246154_poprawkiStawkaPodatku.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

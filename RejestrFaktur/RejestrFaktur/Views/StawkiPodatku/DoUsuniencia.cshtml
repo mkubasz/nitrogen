@@ -1,0 +1,25 @@
+﻿@using RejestrFaktur.Models
+@using RejestrFaktur.utils
+@model ObiektDoWidoku<StawkaPodatku>
+@{
+    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+}
+
+<h1>Czy chcesz usunąć poniższy wpis z bazy danych?</h1>
+
+
+@Html.Partial("~/Views/StawkiPodatku/SzczegolyForm.cshtml", Model.Edytowany)
+
+@using (Html.BeginForm("Usun", "StawkiPodatku", FormMethod.Post))
+    {
+
+        <div>
+            @Html.HiddenFor(model=> model.Edytowany.Id)
+            @Html.HiddenFor(model=> model.Edytowany.NazwaStawki)
+            @Html.HiddenFor(model=> model.Edytowany.WysokoscStawki)
+            <input type="submit" value="Usuń" />
+        </div>
+    }
+
+@Html.ActionLink("Powrót do listy obiektów", "Index")
+

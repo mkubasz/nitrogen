@@ -1,0 +1,14 @@
+﻿@using RejestrFaktur.Models
+@using RejestrFaktur.utils
+@model ObiektDoWidoku<StawkaPodatku>
+@{
+    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+}
+<h1>Szczegóły wybranego obiektu</h1>
+
+
+@Html.Partial("~/Views/StawkiPodatku/SzczegolyForm.cshtml", Model.Edytowany)
+
+
+@Html.ActionLink("Powrót do listy obiektów", "Index")
+
