@@ -1,6 +1,7 @@
 ﻿using RejestrFaktur.utils;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -8,14 +9,20 @@ using System.Web;
 
 namespace RejestrFaktur.Models
 {
-    public partial class PlatnoscTyp
+    public partial class PlatnoscTyp:IHasID
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [DodatkoweAtrybuty("Nazwa sposobu płatności",StanAtr.WLICZAC,Dodatkowy = "nazwa")]
-        [Required]
+        [Required(ErrorMessage = "Musisz podać nazwę sposobu płatności")]
+        [StringLength(55, ErrorMessage = "Nazwa płatności jest za długa, maks. długość 55 znaków")]
+        [DisplayName("Nazwa płatności")]
         public string Nazwa { get; set; }
+
+
         [DodatkoweAtrybuty("Opis sposobu płatności",Stan =StanAtr.WLICZAC,Dodatkowy ="opis")]
+        [StringLength(128, ErrorMessage = "Nazwa opisu płatności jest za długa, maks. długość 128 znaków")]
+        [DisplayName("Opis płatności")]
         public string Opis { get; set; }
 
         public override bool Equals(object obj)

@@ -10,7 +10,7 @@ namespace RejestrFaktur.utils
 {
     public interface IOperacjeOpakowanie<T>
     {
-        //podstawowe operacje wykonywane na danych
+        /**Podstawowe operacje wykonywane na danych**/
 
         bool UstawDoEdycji(int id);
         bool UstawDoPodgladu(int id);

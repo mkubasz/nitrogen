@@ -11,7 +11,9 @@ namespace RejestrFaktur.utils
 {
     public class Opakowanie<T>:IOperacjeOpakowanie<T> where T: new()
     {
-        
+        /**
+           Generyczne klasa, na której wykonywane są wszystkie operacje w kontrolerach.
+        **/
         private IOperacje<T> _ipostawoweOperacje;
         private RejestrFakturContext _dbcontext;
         private ObiektDoWidoku<T> _obiektDoWidoku;

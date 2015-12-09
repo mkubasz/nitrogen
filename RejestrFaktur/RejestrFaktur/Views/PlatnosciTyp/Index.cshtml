@@ -1,0 +1,14 @@
+﻿@using RejestrFaktur.Models
+@using RejestrFaktur.utils
+@model ObiektDoWidoku<PlatnoscTyp>
+@{
+    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+}
+
+@if (Model.StanObiektu == Stany.PRZEGLADANIE)
+{
+    
+}
+
+<h1>Lista jednostek Miary</h1>
+@Html.Partial("~/Views/PlatnoscTyp/ListaWartosciForm.cshtml",Model.Lista)

@@ -171,7 +171,9 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JednostkiMiaryController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PlatnosciTypController.cs" />
     <Compile Include="Controllers\StawkiPodatkuController.cs" />
+    <Compile Include="Controllers\WalutaController.cs" />
     <Compile Include="DAL\RejestrFakturContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -200,6 +202,10 @@
     <Compile Include="Migrations\201512082246154_poprawkiStawkaPodatku.Designer.cs">
       <DependentUpon>201512082246154_poprawkiStawkaPodatku.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512092231361_PlatnoscTyp_WalutaPoprawki.cs" />
+    <Compile Include="Migrations\201512092231361_PlatnoscTyp_WalutaPoprawki.Designer.cs">
+      <DependentUpon>201512092231361_PlatnoscTyp_WalutaPoprawki.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FakturaSzczegoly.cs" />
@@ -215,6 +221,8 @@
     <Compile Include="Models\Waluta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="utils\AbstrKlasyInterfejsyGenerics\GeneryczneOperacje.cs" />
+    <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IHasId.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IOperacje.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\ObiektDoWidoku.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IOperacjeOpakowanie.cs" />
@@ -223,11 +231,11 @@
     <Compile Include="utils\atrybuty\CzytaczAnotacji.cs" />
     <Compile Include="utils\atrybuty\DodatkoweAtrybuty.cs" />
     <Compile Include="utils\helpers\MyExtensions.cs" />
-    <Compile Include="utils\impl\JednostkiMiary\JednostkiMiaryOperacje.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IDoWidokow.cs" />
-    <Compile Include="utils\impl\JednostkiMiary\ObslugaJednostkiMiary.cs" />
-    <Compile Include="utils\impl\StawkiPodatku\ObslugaStawkiPodatku.cs" />
+    <Compile Include="utils\impl\JednostkiMiary\JednostkiMiaryOperacje.cs" />
+    <Compile Include="utils\impl\PlatnoscTyp\PlatnoscTypOperacje.cs" />
     <Compile Include="utils\impl\StawkiPodatku\StawkiPodatkuOperacje.cs" />
+    <Compile Include="utils\impl\Waluta\WalutaOperacje.cs" />
     <Compile Include="utils\pozostale\Stany.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -305,9 +313,11 @@
     <Content Include="Views\StawkiPodatku\Szczegoly.cshtml" />
     <Content Include="Views\StawkiPodatku\SzczegolyForm.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\StawkaPodatku.cshtml" />
+    <Content Include="Views\PlatnosciTyp\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Waluta\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -335,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512082246154_poprawkiStawkaPodatku.resx">
       <DependentUpon>201512082246154_poprawkiStawkaPodatku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512092231361_PlatnoscTyp_WalutaPoprawki.resx">
+      <DependentUpon>201512092231361_PlatnoscTyp_WalutaPoprawki.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

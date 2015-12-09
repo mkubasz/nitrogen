@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Extensions;
 
 namespace RejestrFaktur.Controllers
 {
@@ -14,20 +15,18 @@ namespace RejestrFaktur.Controllers
     {
         private RejestrFakturContext dbcontext;
         private Opakowanie<StawkaPodatku> opakStawkiPodatku;
-        private ObslugaStawkiPodatku obslugaSP;
         private ObslugaDelegaty<int, Stany> obslugaDelegaty;
-        public StawkiPodatkuController()
 
+        public StawkiPodatkuController()
         {
             dbcontext = new RejestrFakturContext();
             opakStawkiPodatku = new Opakowanie<StawkaPodatku>(new StawkiPodatkuOperacje(), dbcontext);
-            obslugaSP = new ObslugaStawkiPodatku(opakStawkiPodatku);
             obslugaDelegaty = new ObslugaDelegaty<int, Stany>();
 
-            obslugaDelegaty.delegaty += obslugaSP.DoEdycji;
-            obslugaDelegaty.delegaty += obslugaSP.DoPodgladu;
-            obslugaDelegaty.delegaty += obslugaSP.DoUsuniencia;
-            obslugaDelegaty.delegaty += obslugaSP.Nowy;
+            obslugaDelegaty.delegaty +=opakStawkiPodatku.DoEdycji;
+            obslugaDelegaty.delegaty +=opakStawkiPodatku.DoPodgladu;
+            obslugaDelegaty.delegaty +=opakStawkiPodatku.DoUsuniencia;
+            obslugaDelegaty.delegaty +=opakStawkiPodatku.Nowy;
         }
 
         private ObiektDoWidoku<StawkaPodatku> Wypelnij(int? id, Stany? stan)
@@ -36,8 +35,8 @@ namespace RejestrFaktur.Controllers
             Stany stanOb = stan ?? default(Stany);
             obslugaDelegaty.Obsluz(idOb, stanOb);
             return opakStawkiPodatku.ObiektDoWidoku;
-
         }
+
 
         public ActionResult Index(int? id, Stany? stan)
         {

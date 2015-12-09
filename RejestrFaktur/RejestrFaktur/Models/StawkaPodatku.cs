@@ -9,7 +9,7 @@ using System.Web;
 
 namespace RejestrFaktur.Models
 {
-    public class StawkaPodatku
+    public class StawkaPodatku:IHasID
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

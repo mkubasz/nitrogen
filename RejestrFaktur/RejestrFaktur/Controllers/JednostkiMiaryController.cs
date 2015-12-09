@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Extensions;
 
 namespace RejestrFaktur.Controllers
 {
@@ -15,8 +16,6 @@ namespace RejestrFaktur.Controllers
 
         private RejestrFakturContext dbcontext;
         private Opakowanie<JednostkaMiary> opakJednostkiMiar;
-        //private ObslugaKolekcja<JednostkaMiary> obsluga;
-        private ObslugaJednostkiMiary obslugaJM;
         private ObslugaDelegaty<int, Stany> obslugaDelegaty;
 
 
@@ -24,15 +23,13 @@ namespace RejestrFaktur.Controllers
         {
             dbcontext = new RejestrFakturContext();
             opakJednostkiMiar = new Opakowanie<JednostkaMiary>(new JednostkiMiaryOperacje(), dbcontext);
-            obslugaJM = new ObslugaJednostkiMiary(opakJednostkiMiar);
             obslugaDelegaty = new ObslugaDelegaty<int, Stany>();
 
-            obslugaDelegaty.delegaty += obslugaJM.DoEdycji;
-            obslugaDelegaty.delegaty += obslugaJM.DoPodgladu;
-            obslugaDelegaty.delegaty += obslugaJM.DoUsuniencia;
-            obslugaDelegaty.delegaty += obslugaJM.Nowy;
+            obslugaDelegaty.delegaty += opakJednostkiMiar.DoEdycji;
+            obslugaDelegaty.delegaty += opakJednostkiMiar.DoPodgladu;
+            obslugaDelegaty.delegaty += opakJednostkiMiar.DoUsuniencia;
+            obslugaDelegaty.delegaty += opakJednostkiMiar.Nowy;
 
-            //obsluga = new KolejkaObslugiJM(opakJednostkiMiar);
         }
 
         private ObiektDoWidoku<JednostkaMiary> Wypelnij(int? id, Stany? stan)

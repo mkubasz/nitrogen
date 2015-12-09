@@ -9,7 +9,7 @@ using System.Web;
 
 namespace RejestrFaktur.Models
 {
-    public class JednostkaMiary
+    public class JednostkaMiary:IHasID
     {
         public JednostkaMiary()
         {
