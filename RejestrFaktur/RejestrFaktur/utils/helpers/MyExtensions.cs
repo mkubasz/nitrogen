@@ -9,11 +9,24 @@ namespace Extensions
 {
     public static class MyExtensions
     {
-        public static string ListaAtrubuty(this HtmlHelper html)
+        public static MvcHtmlString ListaAtrybuty(this HtmlHelper html,string nazwa,Object obj)
         {
-            return "Cośtam";
+            string s="";
+            List<DodatkoweAtrybuty> listaDodAtr = CzytaczAnotacji.WypiszWszystkieAtrybuty(StanAtr.WLICZAC, obj);
+            
+            if (listaDodAtr.Any())
+            {
+                s += "<select name =\"" + nazwa + "\">";
+                foreach (var  dodAtr in listaDodAtr)
+                {
+                    s += "<option value =\"" + dodAtr.Dodatkowy + "\">" +dodAtr.Nazwa+ "</option>";
+                }
+                s += "</select>";
+            }
+            return  MvcHtmlString.Create(s);
         }
 
+        //---- 
         public static void DoUsuniencia<T>(this Opakowanie<T> opak, int i, Stany stan) where T : new()
         {
                 if (stan == Stany.DO_USUNIECIA) opak.UstawDoUsuniecia(i);

@@ -173,6 +173,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PlatnosciTypController.cs" />
     <Compile Include="Controllers\StawkiPodatkuController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\WalutaController.cs" />
     <Compile Include="DAL\RejestrFakturContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -215,13 +216,14 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Faktura.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\PlatnosciTyp.cs" />
+    <Compile Include="Models\PlatnoscTyp.cs" />
     <Compile Include="Models\Produkt.cs" />
     <Compile Include="Models\StawkaPodatku.cs" />
     <Compile Include="Models\Waluta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\GeneryczneOperacje.cs" />
+    <Compile Include="utils\AbstrKlasyInterfejsyGenerics\GenerycznyController.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IHasId.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IOperacje.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\ObiektDoWidoku.cs" />
@@ -314,10 +316,23 @@
     <Content Include="Views\StawkiPodatku\SzczegolyForm.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\StawkaPodatku.cshtml" />
     <Content Include="Views\PlatnosciTyp\Index.cshtml" />
+    <Content Include="Views\PlatnosciTyp\Szczegoly.cshtml" />
+    <Content Include="Views\PlatnosciTyp\SzczegolyForm.cshtml" />
+    <Content Include="Views\PlatnosciTyp\ListaWartosciForm.cshtml" />
+    <Content Include="Views\PlatnosciTyp\EdycjaNowy.cshtml" />
+    <Content Include="Views\PlatnosciTyp\DoUsuniencia.cshtml" />
+    <Content Include="Views\Waluta\SzczegolyForm.cshtml" />
+    <Content Include="Views\Waluta\DoUsuniencia.cshtml" />
+    <Content Include="Views\Waluta\EdycjaNowy.cshtml" />
+    <Content Include="Views\Waluta\Index.cshtml" />
+    <Content Include="Views\Waluta\ListaWartosciForm.cshtml" />
+    <Content Include="Views\Waluta\Szczegoly.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\PlatnoscTyp.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Waluta.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Waluta\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

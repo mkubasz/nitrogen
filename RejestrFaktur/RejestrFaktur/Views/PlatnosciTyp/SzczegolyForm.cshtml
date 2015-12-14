@@ -1,0 +1,15 @@
+﻿@model RejestrFaktur.Models.PlatnoscTyp
+@using RejestrFaktur.utils
+    <div>
+        <div>
+            @(Html.LabelFor(model => model.Id)): <strong>@Html.DisplayFor(model => model.Id)</strong>
+        </div>
+
+        <div>
+            @(Html.LabelFor(model => model.Nazwa)): <strong>@Html.DisplayFor(model => model.Nazwa)</strong>
+        </div>
+
+        <div>
+            @(Html.LabelFor(model => model.Opis)): <strong>@Html.DisplayFor(model => model.Opis)</strong>
+        </div>
+    </div>

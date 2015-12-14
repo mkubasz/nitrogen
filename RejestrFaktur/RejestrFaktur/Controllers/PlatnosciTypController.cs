@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using RejestrFaktur.DAL;
@@ -10,28 +11,65 @@ using Extensions;
 
 namespace RejestrFaktur.Controllers
 {
-    public class PlatnosciTypController : Controller
+    public class PlatnosciTypController :GenerycznyController<PlatnoscTyp>
     {
-        private RejestrFakturContext dbcontext;
-        private Opakowanie<PlatnoscTyp> opakPlatnoscTyp;
-        private ObslugaDelegaty<int, Stany> obslugaDelegaty;
-        
+
         public PlatnosciTypController()
         {
             dbcontext = new RejestrFakturContext();
-            opakPlatnoscTyp = new Opakowanie<PlatnoscTyp>(new PlatnoscTypOperacje(), dbcontext);
+            opakowanie = new Opakowanie<PlatnoscTyp>(new PlatnoscTypOperacje(), dbcontext);
             obslugaDelegaty = new ObslugaDelegaty<int, Stany>();
 
-            obslugaDelegaty.delegaty += opakPlatnoscTyp.DoEdycji;
-            obslugaDelegaty.delegaty += opakPlatnoscTyp.DoPodgladu;
-            obslugaDelegaty.delegaty += opakPlatnoscTyp.DoUsuniencia;
-            obslugaDelegaty.delegaty += opakPlatnoscTyp.Nowy;
+            obslugaDelegaty.delegaty += opakowanie.DoEdycji;
+            obslugaDelegaty.delegaty += opakowanie.DoPodgladu;
+            obslugaDelegaty.delegaty += opakowanie.DoUsuniencia;
+            obslugaDelegaty.delegaty += opakowanie.Nowy;
         }
-        
-        // GET: PlatnosciTyp
-        public ActionResult Index()
+
+
+        [ActionName("EdycjaNowy"), AcceptVerbs("Post")]
+        public override ActionResult Zapisz([Bind(Prefix = "Edytowany", Include = "Id,Nazwa,Opis")]PlatnoscTyp t, [Bind(Include = "StanObiektu")]Stany StanObiektu)
         {
-            return View();
+            {
+
+                if (ModelState.IsValid)
+                {
+                    if (opakowanie.ZapiszObiekt(t, StanObiektu))
+                    {
+                        return RedirectToAction("Index");
+                    }
+                    else
+                    {
+                        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                    }
+                }
+                else
+                {
+                    opakowanie.ObiektDoWidoku.Edytowany = t;
+                    opakowanie.ObiektDoWidoku.StanObiektu = StanObiektu;
+                    return View(opakowanie.ObiektDoWidoku);
+                }
+            }
+        }
+
+        [HttpPost]
+        public override ActionResult Usun([Bind(Prefix = "Edytowany", Include = "Id,Nazwa,Opis")]PlatnoscTyp t)
+        {
+            if (ModelState.IsValid)
+            {
+                if (opakowanie.UsunObiekt(t))
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                }
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
         }
     }
 }

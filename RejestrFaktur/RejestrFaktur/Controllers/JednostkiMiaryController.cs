@@ -11,72 +11,31 @@ using Extensions;
 
 namespace RejestrFaktur.Controllers
 {
-    public class JednostkiMiaryController : Controller
+    public class JednostkiMiaryController : GenerycznyController<JednostkaMiary>
     {
-
-        private RejestrFakturContext dbcontext;
-        private Opakowanie<JednostkaMiary> opakJednostkiMiar;
-        private ObslugaDelegaty<int, Stany> obslugaDelegaty;
 
 
         public JednostkiMiaryController()
         {
             dbcontext = new RejestrFakturContext();
-            opakJednostkiMiar = new Opakowanie<JednostkaMiary>(new JednostkiMiaryOperacje(), dbcontext);
+            opakowanie = new Opakowanie<JednostkaMiary>(new JednostkiMiaryOperacje(), dbcontext);
             obslugaDelegaty = new ObslugaDelegaty<int, Stany>();
 
-            obslugaDelegaty.delegaty += opakJednostkiMiar.DoEdycji;
-            obslugaDelegaty.delegaty += opakJednostkiMiar.DoPodgladu;
-            obslugaDelegaty.delegaty += opakJednostkiMiar.DoUsuniencia;
-            obslugaDelegaty.delegaty += opakJednostkiMiar.Nowy;
+            obslugaDelegaty.delegaty += opakowanie.DoEdycji;
+            obslugaDelegaty.delegaty += opakowanie.DoPodgladu;
+            obslugaDelegaty.delegaty += opakowanie.DoUsuniencia;
+            obslugaDelegaty.delegaty += opakowanie.Nowy;
 
         }
 
-        private ObiektDoWidoku<JednostkaMiary> Wypelnij(int? id, Stany? stan)
-        {
-            int idOb = id ?? 0;
-            Stany stanOb = stan ?? default(Stany);
-            //obsluga.Obsluz(idOb, stanOb);
-            obslugaDelegaty.Obsluz(idOb, stanOb);
-            return opakJednostkiMiar.ObiektDoWidoku;
-
-        }
-
-        public ActionResult Index(int? id, Stany? stan)
-        {
-            ViewBag.Tytul = "Jednostki miary";
-            return View(Wypelnij(id,stan));
-
-        }
-
-        public ActionResult EdycjaNowy(int? id,Stany? stan)
-        {
-            ViewBag.Tytul = "Jednostki miary - edycja dodawanie";
-            return View(Wypelnij(id, stan));
-        }
-
-        public ActionResult Szczegoly(int? id, Stany? stan)
-        {
-            ViewBag.Tytul = "Jednostki miary - szczegóły";
-            return View(Wypelnij(id, stan));
-        }
-
-
-        public ActionResult DoUsuniencia(int? id, Stany? stan)
-        {
-            ViewBag.Tytul = "Jednostki miary - szczegóły";
-            return View(Wypelnij(id, stan));
-        }
-
-
-        [ActionName("EdycjaNowy"),AcceptVerbs("Post")]
-        public ActionResult Zapisz([Bind(Prefix = "Edytowany", Include = "Id,NazwaJednostki,SymbolJednostki")]JednostkaMiary jM,
+        [ActionName("EdycjaNowy"), AcceptVerbs("Post")]
+        public override ActionResult Zapisz([Bind(Prefix = "Edytowany", Include = "Id,NazwaJednostki,SymbolJednostki")]JednostkaMiary t,
                              [Bind(Include = "StanObiektu")]Stany StanObiektu)
         {
 
             if (ModelState.IsValid)
             {
-                if (opakJednostkiMiar.ZapiszObiekt(jM, StanObiektu))
+                if (opakowanie.ZapiszObiekt(t, StanObiektu))
                 {
                     return RedirectToAction("Index");
                 }
@@ -87,19 +46,18 @@ namespace RejestrFaktur.Controllers
             }
             else
             {
-                opakJednostkiMiar.ObiektDoWidoku.Edytowany = jM;
-                opakJednostkiMiar.ObiektDoWidoku.StanObiektu = StanObiektu;
-                return View(opakJednostkiMiar.ObiektDoWidoku);
+                opakowanie.ObiektDoWidoku.Edytowany = t;
+                opakowanie.ObiektDoWidoku.StanObiektu = StanObiektu;
+                return View(opakowanie.ObiektDoWidoku);
             }
-
         }
 
         [HttpPost]
-        public ActionResult Usun([Bind(Prefix = "Edytowany", Include = "Id,NazwaJednostki,SymbolJednostki")]JednostkaMiary jM)
+        public override ActionResult Usun([Bind(Prefix = "Edytowany", Include = "Id,NazwaJednostki,SymbolJednostki")]JednostkaMiary t)
         {
             if (ModelState.IsValid)
             {
-                if (opakJednostkiMiar.UsunObiekt(jM))
+                if (opakowanie.UsunObiekt(t))
                 {
                     return RedirectToAction("Index");
                 }
@@ -111,7 +69,7 @@ namespace RejestrFaktur.Controllers
             else
             {
                 return RedirectToAction("Index");
-            }    
+            }
         }
     }
 }

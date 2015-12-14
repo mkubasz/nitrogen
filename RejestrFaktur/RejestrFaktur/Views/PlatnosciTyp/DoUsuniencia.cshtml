@@ -1,0 +1,25 @@
+﻿@using RejestrFaktur.Models
+@using RejestrFaktur.utils
+@model ObiektDoWidoku<PlatnoscTyp>
+@{
+    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+}
+
+<h1>Czy chcesz usunąć poniższy wpis z bazy danych?</h1>
+
+
+@Html.Partial("~/Views/PlatnosciTyp/SzczegolyForm.cshtml", Model.Edytowany)
+
+@using (Html.BeginForm("Usun", "PlatnosciTyp", FormMethod.Post))
+    {
+
+        <div>
+            @Html.HiddenFor(model=> model.Edytowany.Id)
+            @Html.HiddenFor(model=> model.Edytowany.Nazwa)
+            @Html.HiddenFor(model=> model.Edytowany.Opis)
+            <input type="submit" value="Usuń" />
+        </div>
+    }
+
+@Html.ActionLink("Powrót do listy obiektów", "Index")
+

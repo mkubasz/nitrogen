@@ -11,7 +11,22 @@ namespace RejestrFaktur.utils
     {
         public override bool Edytuj(PlatnoscTyp t, RejestrFakturContext dbcontext)
         {
-            throw new NotImplementedException();
+            bool wart = false;
+            try
+            {
+                PlatnoscTyp temp = dbcontext.PlatnosciTypy.Find(t.Id);
+                if (temp != null)
+                {
+                    temp.Nazwa = t.Nazwa;
+                    temp.Opis = t.Opis;
+                    dbcontext.SaveChanges();
+                    wart = true;
+                }
+            }
+            catch
+            {
+            }
+            return wart;
         }
     }
 }

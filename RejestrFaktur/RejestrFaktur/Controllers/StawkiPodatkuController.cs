@@ -11,68 +11,31 @@ using Extensions;
 
 namespace RejestrFaktur.Controllers
 {
-    public class StawkiPodatkuController : Controller
+    public class StawkiPodatkuController : GenerycznyController<StawkaPodatku>
     {
-        private RejestrFakturContext dbcontext;
-        private Opakowanie<StawkaPodatku> opakStawkiPodatku;
-        private ObslugaDelegaty<int, Stany> obslugaDelegaty;
 
         public StawkiPodatkuController()
         {
             dbcontext = new RejestrFakturContext();
-            opakStawkiPodatku = new Opakowanie<StawkaPodatku>(new StawkiPodatkuOperacje(), dbcontext);
+            opakowanie = new Opakowanie<StawkaPodatku>(new StawkiPodatkuOperacje(), dbcontext);
             obslugaDelegaty = new ObslugaDelegaty<int, Stany>();
 
-            obslugaDelegaty.delegaty +=opakStawkiPodatku.DoEdycji;
-            obslugaDelegaty.delegaty +=opakStawkiPodatku.DoPodgladu;
-            obslugaDelegaty.delegaty +=opakStawkiPodatku.DoUsuniencia;
-            obslugaDelegaty.delegaty +=opakStawkiPodatku.Nowy;
+            obslugaDelegaty.delegaty +=opakowanie.DoEdycji;
+            obslugaDelegaty.delegaty +=opakowanie.DoPodgladu;
+            obslugaDelegaty.delegaty += opakowanie.DoUsuniencia;
+            obslugaDelegaty.delegaty += opakowanie.Nowy;
         }
 
-        private ObiektDoWidoku<StawkaPodatku> Wypelnij(int? id, Stany? stan)
-        {
-            int idOb = id ?? 0;
-            Stany stanOb = stan ?? default(Stany);
-            obslugaDelegaty.Obsluz(idOb, stanOb);
-            return opakStawkiPodatku.ObiektDoWidoku;
-        }
-
-
-        public ActionResult Index(int? id, Stany? stan)
-        {
-            ViewBag.Tytul = "Stawki podatku";
-            return View(Wypelnij(id, stan));
-
-        }
-
-        public ActionResult EdycjaNowy(int? id, Stany? stan)
-        {
-            ViewBag.Tytul = "Stawki podatku - edycja dodawanie";
-            return View(Wypelnij(id, stan));
-        }
-
-        public ActionResult Szczegoly(int? id, Stany? stan)
-        {
-            ViewBag.Tytul = "Stawki podatku - szczegóły";
-            return View(Wypelnij(id, stan));
-        }
-
-
-        public ActionResult DoUsuniencia(int? id, Stany? stan)
-        {
-            ViewBag.Tytul = "Stawki podatku - szczegóły";
-            return View(Wypelnij(id, stan));
-        }
 
 
         [ActionName("EdycjaNowy"), AcceptVerbs("Post")]
-        public ActionResult Zapisz([Bind(Prefix = "Edytowany", Include = "Id,NazwaStawki, WysokoscStawki")]StawkaPodatku sP,
+        public override ActionResult Zapisz([Bind(Prefix = "Edytowany", Include = "Id,NazwaStawki, WysokoscStawki")]StawkaPodatku sP,
                              [Bind(Include = "StanObiektu")]Stany StanObiektu)
         {
 
             if (ModelState.IsValid)
             {
-                if (opakStawkiPodatku.ZapiszObiekt(sP, StanObiektu))
+                if (opakowanie.ZapiszObiekt(sP, StanObiektu))
                 {
                     return RedirectToAction("Index");
                 }
@@ -83,19 +46,19 @@ namespace RejestrFaktur.Controllers
             }
             else
             {
-                opakStawkiPodatku.ObiektDoWidoku.Edytowany = sP;
-                opakStawkiPodatku.ObiektDoWidoku.StanObiektu = StanObiektu;
-                return View(opakStawkiPodatku.ObiektDoWidoku);
+                opakowanie.ObiektDoWidoku.Edytowany = sP;
+                opakowanie.ObiektDoWidoku.StanObiektu = StanObiektu;
+                return View(opakowanie.ObiektDoWidoku);
             }
 
         }
 
         [HttpPost]
-        public ActionResult Usun([Bind(Prefix = "Edytowany", Include = "Id,NazwaStawki, WysokoscStawki")]StawkaPodatku sP)
+        public override ActionResult Usun([Bind(Prefix = "Edytowany", Include = "Id,NazwaStawki, WysokoscStawki")]StawkaPodatku sP)
         {
             if (ModelState.IsValid)
             {
-                if (opakStawkiPodatku.UsunObiekt(sP))
+                if (opakowanie.UsunObiekt(sP))
                 {
                     return RedirectToAction("Index");
                 }

@@ -11,7 +11,23 @@ namespace RejestrFaktur.utils
     {
         public override bool Edytuj(Waluta t, RejestrFakturContext dbcontext)
         {
-            throw new NotImplementedException();
+            bool wart = false;
+            try
+            {
+                Waluta temp = dbcontext.Waluty.Find(t.Id);
+                if (temp != null)
+                {
+                    temp.Nazwa = t.Nazwa;
+                    temp.Symbol = t.Symbol;
+                    temp.SciezkaDoIkony = t.SciezkaDoIkony;
+                    dbcontext.SaveChanges();
+                    wart = true;
+                }
+            }
+            catch
+            {
+            }
+            return wart;
         }
     }
 }

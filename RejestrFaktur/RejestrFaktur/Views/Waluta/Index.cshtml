@@ -1,6 +1,6 @@
 ﻿@using RejestrFaktur.Models
 @using RejestrFaktur.utils
-@model ObiektDoWidoku<PlatnoscTyp>
+@model ObiektDoWidoku<Waluta>
 @{
     Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
 }
@@ -11,4 +11,4 @@
 }
 
 <h1>Lista jednostek Miary</h1>
-@Html.Partial("~/Views/PlatnosciTyp/ListaWartosciForm.cshtml", Model.Lista)
+@Html.Partial("~/Views/Waluta/ListaWartosciForm.cshtml",Model.Lista)

@@ -13,7 +13,7 @@ namespace RejestrFaktur.Models
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [DodatkoweAtrybuty("Nazwa stawki", StanAtr.WLICZAC)]
+        [DodatkoweAtrybuty("Nazwa stawki", StanAtr.WLICZAC,Dodatkowy = "nazwa")]
         [Required(ErrorMessage = "Musisz podać nazwę stawki podatku")]
         [StringLength(120, ErrorMessage = "Nazwa stawki podatku jest za długa, maks. długość 120 znaków")]
         [DisplayName("Nazwa stawki")]

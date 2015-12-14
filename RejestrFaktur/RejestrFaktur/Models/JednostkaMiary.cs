@@ -11,9 +11,6 @@ namespace RejestrFaktur.Models
 {
     public class JednostkaMiary:IHasID
     {
-        public JednostkaMiary()
-        {
-        }
 
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

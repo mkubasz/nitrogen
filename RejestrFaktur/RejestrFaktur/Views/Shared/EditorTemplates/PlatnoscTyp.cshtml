@@ -1,0 +1,26 @@
+﻿@model RejestrFaktur.Models.PlatnoscTyp
+
+
+
+<div>
+    @Html.ValidationSummary(true, "")
+    @Html.HiddenFor(model => model.Id)
+</div>
+
+
+<div>
+    @Html.LabelFor(model => model.Nazwa)
+    <div>
+        @Html.EditorFor(model => model.Nazwa)
+        @Html.ValidationMessageFor(model => model.Nazwa)
+    </div>
+</div>
+
+<div>
+    @Html.LabelFor(model => model.Opis)
+    <div>
+        @Html.EditorFor(model => model.Opis)
+        @Html.ValidationMessageFor(model => model.Opis)
+    </div>
+</div>
+

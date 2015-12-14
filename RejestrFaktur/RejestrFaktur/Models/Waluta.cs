@@ -14,19 +14,19 @@ namespace RejestrFaktur.Models
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [DodatkoweAtrybuty("Nazwa waluty", StanAtr.WLICZAC)]
+        [DodatkoweAtrybuty("Nazwa waluty", StanAtr.WLICZAC, Dodatkowy = "nazwa")]
         [Required(ErrorMessage = "Musisz podać nazwę waluty")]
         [StringLength(65, ErrorMessage = "Nazwa waluty jest za długa, maks. długość 65 znaków")]
         [DisplayName("Nazwa waluty")]
         public string Nazwa { get; set; }
 
-        [DodatkoweAtrybuty("Symbol waluty", StanAtr.WLICZAC)]
+        [DodatkoweAtrybuty("Symbol waluty", StanAtr.WLICZAC, Dodatkowy = "symbol")]
         [Required(ErrorMessage = "Musisz podać symbol waluty")]
         [StringLength(3, ErrorMessage = "Symbol waluty maks. 3 znaki")]
         [DisplayName("Symbol waluty")]
         public string Symbol { get; set; }
 
-
+        [DisplayName("Ikona")]
         public string SciezkaDoIkony { get; set; }
 
 
@@ -51,7 +51,7 @@ namespace RejestrFaktur.Models
             int hash = 13;
             try
             {
-                hash = (hash * 7) + (Id.GetHashCode());
+                hash = (hash * 7) + Id.GetHashCode();
                 hash = (hash * 7) + Nazwa.GetHashCode();
                 hash = (hash * 7) + Symbol.GetHashCode();
                 hash = (hash * 7) + SciezkaDoIkony.GetHashCode();
@@ -62,7 +62,5 @@ namespace RejestrFaktur.Models
             }
             return hash;
         }
-
-
     }
 }
