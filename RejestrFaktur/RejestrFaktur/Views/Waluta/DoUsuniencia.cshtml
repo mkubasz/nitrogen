@@ -1,26 +1,23 @@
 ﻿@using RejestrFaktur.Models
-@using RejestrFaktur.utils
-@model ObiektDoWidoku<Waluta>
+@model RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics.ObiektDoWidoku<Waluta>
 @{
-    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+    Layout = "~/Views/Shared/_templateBootstrap.cshtml";
 }
+<h3>Czy chcesz usunąć poniższy wpis z bazy danych?</h3>
+<div class="well">
+    @Html.Partial("~/Views/Waluta/SzczegolyForm.cshtml", Model.Edytowany)
 
-<h1>Czy chcesz usunąć poniższy wpis z bazy danych?</h1>
-
-
-@Html.Partial("~/Views/Waluta/SzczegolyForm.cshtml", Model.Edytowany)
-
-@using (Html.BeginForm("Usun", "Waluta", FormMethod.Post))
+    @using (Html.BeginForm("Usun", "JednostkiMiary", FormMethod.Post))
     {
 
-        <div>
-            @Html.HiddenFor(model=> model.Edytowany.Id)
-            @Html.HiddenFor(model=> model.Edytowany.Nazwa)
-            @Html.HiddenFor(model=> model.Edytowany.Symbol)
+        <div class="input-group">
+            @Html.HiddenFor(model => model.Edytowany.Id)
+            @Html.HiddenFor(model => model.Edytowany.Nazwa)
+            @Html.HiddenFor(model => model.Edytowany.Symbol)
             @Html.HiddenFor(model => model.Edytowany.SciezkaDoIkony)
-            <input type="submit" value="Usuń" />
+            @Html.ActionLink("Powrót do listy obiektów", "Index", null, new { @class = "btn btn-sm btn-warning" })
+            <input type="submit" value="Usuń" class="btn btn-sm btn-danger " />
         </div>
     }
-
-@Html.ActionLink("Powrót do listy obiektów", "Index")
+</div>
 

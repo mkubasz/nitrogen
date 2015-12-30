@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using RejestrFaktur.DAL;
+﻿using RejestrFaktur.DAL;
 using RejestrFaktur.Models;
-using RejestrFaktur.utils;
-using Extensions;
 using System.Web.Mvc;
 using System.Net;
+using RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics;
+using RejestrFaktur.utils.HelpersExtensions;
+using RejestrFaktur.utils.impl.Waluta;
+using RejestrFaktur.utils.pozostale;
 
 namespace RejestrFaktur.Controllers
 {

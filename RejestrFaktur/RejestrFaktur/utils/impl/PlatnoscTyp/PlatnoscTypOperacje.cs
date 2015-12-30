@@ -1,20 +1,16 @@
-﻿using RejestrFaktur.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using RejestrFaktur.DAL;
+﻿using RejestrFaktur.DAL;
+using RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.impl.PlatnoscTyp
 {
-    public class PlatnoscTypOperacje : GeneryczneOperacje<PlatnoscTyp>
+    public class PlatnoscTypOperacje : GeneryczneOperacje<Models.PlatnoscTyp>
     {
-        public override bool Edytuj(PlatnoscTyp t, RejestrFakturContext dbcontext)
+        public override bool Edytuj(Models.PlatnoscTyp t, RejestrFakturContext dbcontext)
         {
             bool wart = false;
             try
             {
-                PlatnoscTyp temp = dbcontext.PlatnosciTypy.Find(t.Id);
+                Models.PlatnoscTyp temp = dbcontext.PlatnosciTypy.Find(t.Id);
                 if (temp != null)
                 {
                     temp.Nazwa = t.Nazwa;

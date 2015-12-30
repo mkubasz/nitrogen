@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
+using RejestrFaktur.utils.pozostale;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics
 {
-    public class ObiektDoWidoku<T> : IDoWidokow<T>
+    public class ObiektDoWidoku<T> : IDoWidokow<T> where T:class,new()
     {
         private IEnumerable<T> _lista;
         private T _edytowany;
@@ -14,7 +12,7 @@ namespace RejestrFaktur.utils
         public ObiektDoWidoku()
         {
             _lista = new List<T>();
-            _edytowany = default(T);
+            _edytowany = new T();
             _stanObiektu = Stany.PRZEGLADANIE;
         }
 

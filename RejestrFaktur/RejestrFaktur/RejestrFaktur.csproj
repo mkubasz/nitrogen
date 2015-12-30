@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -45,7 +45,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -173,7 +173,6 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PlatnosciTypController.cs" />
     <Compile Include="Controllers\StawkiPodatkuController.cs" />
-    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\WalutaController.cs" />
     <Compile Include="DAL\RejestrFakturContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -230,14 +229,17 @@
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IOperacjeOpakowanie.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\ObslugaDelegaty.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\Opakowanie.cs" />
-    <Compile Include="utils\atrybuty\CzytaczAnotacji.cs" />
-    <Compile Include="utils\atrybuty\DodatkoweAtrybuty.cs" />
-    <Compile Include="utils\helpers\MyExtensions.cs" />
+    <Compile Include="utils\Atrybuty\CzytaczAnotacji.cs" />
+    <Compile Include="utils\Atrybuty\DodatkoweAtrybuty.cs" />
+    <Compile Include="utils\HelpersExtensions\Helpers.cs" />
+    <Compile Include="utils\HelpersExtensions\HelpersUtils.cs" />
+    <Compile Include="utils\HelpersExtensions\MyExtensions.cs" />
     <Compile Include="utils\AbstrKlasyInterfejsyGenerics\IDoWidokow.cs" />
     <Compile Include="utils\impl\JednostkiMiary\JednostkiMiaryOperacje.cs" />
     <Compile Include="utils\impl\PlatnoscTyp\PlatnoscTypOperacje.cs" />
     <Compile Include="utils\impl\StawkiPodatku\StawkiPodatkuOperacje.cs" />
     <Compile Include="utils\impl\Waluta\WalutaOperacje.cs" />
+    <Compile Include="utils\pozostale\Stale.cs" />
     <Compile Include="utils\pozostale\Stany.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -249,6 +251,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="App_Code\Helpery.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -273,7 +276,6 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -297,10 +299,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Wspolne\DodatkoweTabeleBoczneMenu.cshtml" />
-    <Content Include="Views\Wspolne\MenuGlowne.cshtml" />
-    <Content Include="Views\Wspolne\szablonWartosciSlownikowe.cshtml" />
-    <Content Include="Views\WartosciSlownikowe\szukajForm.cshtml" />
     <Content Include="Views\JednostkiMiary\Index.cshtml" />
     <Content Include="Views\JednostkiMiary\SzczegolyForm.cshtml" />
     <Content Include="Views\JednostkiMiary\ListaWartosciForm.cshtml" />
@@ -329,7 +327,14 @@
     <Content Include="Views\Waluta\Szczegoly.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\PlatnoscTyp.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Waluta.cshtml" />
-    <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\JednostkiMiary\SzukajForm.cshtml" />
+    <Content Include="Views\PlatnosciTyp\SzukajForm.cshtml" />
+    <Content Include="Views\StawkiPodatku\SzukajForm.cshtml" />
+    <Content Include="Views\Waluta\SzukajForm.cshtml" />
+    <Content Include="Views\Shared\_templateBootstrap.cshtml" />
+    <Content Include="Views\Shared\menuGlowneBootstrap.cshtml" />
+    <Content Include="Views\Shared\menuDodatkoweBootstrap.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -398,7 +403,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

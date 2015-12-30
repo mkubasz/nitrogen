@@ -1,24 +1,22 @@
 ﻿@model RejestrFaktur.Models.StawkaPodatku
 
 
-<div>
-    @Html.ValidationSummary(true, "")
+<div class="form-group">
+    @Helpery.OpakujBlad(@Html.ValidationSummary(true, ""))
     @Html.HiddenFor(model => model.Id)
 </div>
 
 
-<div>
+<div class="form-group">
     @Html.LabelFor(model => model.NazwaStawki)
-    <div>
-        @Html.EditorFor(model => model.NazwaStawki)
-        @Html.ValidationMessageFor(model => model.NazwaStawki)
-    </div>
+    @Html.EditorFor(model => model.NazwaStawki)
+    @Helpery.OpakujBlad(@Html.ValidationMessageFor(model => model.NazwaStawki))
 </div>
 
-<div>
+<div class="form-group">
     @Html.LabelFor(model => model.WysokoscStawki)
-    <div>
-        @Html.EditorFor(model => model.WysokoscStawki)
-        @Html.ValidationMessageFor(model => model.WysokoscStawki)
-    </div>
+    @Html.EditorFor(model => model.WysokoscStawki)
+    @Helpery.OpakujBlad(@Html.ValidationMessageFor(model => model.WysokoscStawki))
 </div>
+
+

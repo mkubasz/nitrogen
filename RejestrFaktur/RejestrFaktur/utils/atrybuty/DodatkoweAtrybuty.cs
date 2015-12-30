@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.atrybuty
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = false)]
     public class DodatkoweAtrybuty : Attribute

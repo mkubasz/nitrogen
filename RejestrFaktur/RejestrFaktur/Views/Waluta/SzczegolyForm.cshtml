@@ -1,19 +1,20 @@
 ﻿@model RejestrFaktur.Models.Waluta
-@using RejestrFaktur.utils
-    <div>
-        <div>
-            @(Html.LabelFor(model => model.Id)): <strong>@Html.DisplayFor(model => model.Id)</strong>
-        </div>
+<div class="input-group">
+    <span class="input-group-addon">@(Html.LabelFor(model => model.Id)):</span>
+    <strong class="form-control">@Html.DisplayFor(model => model.Id)</strong>
+</div>
 
-        <div>
-            @(Html.LabelFor(model => model.Nazwa)): <strong>@Html.DisplayFor(model => model.Nazwa)</strong>
-        </div>
+<div class="input-group">
+    <span class="input-group-addon">@(Html.LabelFor(model => model.Nazwa)):</span>
+    <strong class="form-control">@Html.DisplayFor(model => model.Nazwa)</strong>
+</div>
 
-        <div>
-            @(Html.LabelFor(model => model.Symbol)): <strong>@Html.DisplayFor(model => model.Symbol)</strong>
-        </div>
+<div class="input-group">
+    <span class="input-group-addon">@(Html.LabelFor(model => model.Symbol)):</span>
+    <strong class="form-control">@Html.DisplayFor(model => model.Symbol)</strong>
+</div>
 
-        <div>
-            @(Html.LabelFor(model => model.SciezkaDoIkony)): <strong>@Html.DisplayFor(model => model.SciezkaDoIkony)</strong>
-        </div>
-    </div>
+<div class="input-group">
+    <span class="input-group-addon">@(Html.LabelFor(model => model.SciezkaDoIkony)):</span>
+    <strong class="form-control">@Html.DisplayFor(model => model.SciezkaDoIkony)</strong>
+</div>

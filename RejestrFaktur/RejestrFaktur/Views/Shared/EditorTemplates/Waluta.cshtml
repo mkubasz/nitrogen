@@ -1,31 +1,25 @@
 ﻿@model RejestrFaktur.Models.Waluta
 
-<div>
-    @Html.ValidationSummary(true, "")
+<div class="form-group">
+    @Helpery.OpakujBlad(@Html.ValidationSummary(true, ""))
     @Html.HiddenFor(model => model.Id)
 </div>
 
 
-<div>
+<div class="form-group">
     @Html.LabelFor(model => model.Nazwa)
-    <div>
-        @Html.EditorFor(model => model.Nazwa)
-        @Html.ValidationMessageFor(model => model.Nazwa)
-    </div>
+    @Html.EditorFor(model => model.Nazwa)
+    @Helpery.OpakujBlad(@Html.ValidationMessageFor(model => model.Nazwa))
 </div>
 
-<div>
+<div class="form-group">
     @Html.LabelFor(model => model.Symbol)
-    <div>
-        @Html.EditorFor(model => model.Symbol)
-        @Html.ValidationMessageFor(model => model.Symbol)
-    </div>
+    @Html.EditorFor(model => model.Symbol)
+    @Helpery.OpakujBlad(@Html.ValidationMessageFor(model => model.Symbol))
 </div>
 
-<div>
+<div class="form-group">
     @Html.LabelFor(model => model.SciezkaDoIkony)
-    <div>
-        @Html.EditorFor(model => model.SciezkaDoIkony)
-        @Html.ValidationMessageFor(model => model.SciezkaDoIkony)
-    </div>
+    @Html.EditorFor(model => model.SciezkaDoIkony)
+    @Helpery.OpakujBlad(@Html.ValidationMessageFor(model => model.SciezkaDoIkony))
 </div>

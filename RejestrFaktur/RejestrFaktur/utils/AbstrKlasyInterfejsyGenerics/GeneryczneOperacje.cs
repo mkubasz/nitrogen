@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using RejestrFaktur.DAL;
 using System.Data.Entity;
+using System.Linq;
+using System.Reflection;
+using RejestrFaktur.DAL;
+using RejestrFaktur.utils.atrybuty;
+using RejestrFaktur.utils.HelpersExtensions;
+using RejestrFaktur.utils.pozostale;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics
 {
     public abstract class GeneryczneOperacje<T> : IOperacje<T> where T : class, IHasID,  new()
     {
@@ -14,8 +17,7 @@ namespace RejestrFaktur.utils
           IOperacje. Zrobiona po to żeby nie przepisywać tych metod, które nie różnią się dla różnych 
           klas T.
         **/
-
-
+        
         public virtual int Dodaj(T t, RejestrFakturContext dbcontext)
         {
             try
@@ -39,18 +41,15 @@ namespace RejestrFaktur.utils
         public virtual bool Ustaw(ObiektDoWidoku<T> obiektDW, Stany stan, int id)
         {
             T t = ZnajdzPoId(obiektDW.Lista, id);
-            if (!(t == null))
+            if (t != null)
             {
                 obiektDW.Edytowany = t;
                 obiektDW.StanObiektu = stan;
                 return true;
             }
-            else
-            {
-                obiektDW.Edytowany = default(T);
+                obiektDW.Edytowany = new T();
                 obiektDW.StanObiektu = Stany.PRZEGLADANIE;
                 return false;
-            }
         }
 
 
@@ -65,7 +64,7 @@ namespace RejestrFaktur.utils
         public virtual void UstawPoczatkowe(ObiektDoWidoku<T> obiektDW, IEnumerable<T> lista)
         {
             obiektDW.StanObiektu = Stany.PRZEGLADANIE;
-            obiektDW.Edytowany = default(T);
+            obiektDW.Edytowany = new T();
             obiektDW.Lista = lista;
         }
 
@@ -98,6 +97,30 @@ namespace RejestrFaktur.utils
             {
                 return false;
             }
+        }
+
+        public virtual List<T> Wyszukaj(IEnumerable<T> kolekcjaOb,string attributeName, string szukanyTxt)
+        {
+            Type type = new T().GetType();
+            List<T> lista;
+            if (attributeName == Stale.WSZYSTKIE)
+            {
+              lista = (from tT in kolekcjaOb
+                        from prop in type.GetProperties()
+                        where prop.GetValue(tT).HasText(szukanyTxt) 
+                        select tT).Distinct().ToList();
+            }
+            else
+            {
+               lista = (from tT in kolekcjaOb
+                          from prop in type.GetProperties()
+                          from atr in prop.GetCustomAttributes<DodatkoweAtrybuty>()
+                          where
+                          atr.Stan == StanAtr.WLICZAC && atr.Dodatkowy == attributeName
+                          where prop.GetValue(tT).HasText(szukanyTxt)
+                          select tT).ToList();
+            }
+            return lista;
         }
 
         public virtual T ZnajdzPoId(IEnumerable<T> kolekcjaOb, int id)

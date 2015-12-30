@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using RejestrFaktur.DAL;
+using RejestrFaktur.utils.pozostale;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics
 {
 
-    public abstract class GenerycznyController<T> : Controller where T :new()
+    public abstract class GenerycznyController<T> : Controller where T :class,new()
     {
         protected RejestrFakturContext dbcontext;
         protected Opakowanie<T> opakowanie;

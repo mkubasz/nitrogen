@@ -1,26 +1,21 @@
 ﻿@model RejestrFaktur.Models.PlatnoscTyp
 
-
-
-<div>
-    @Html.ValidationSummary(true, "")
+<div class="form-group">
+    @Helpery.OpakujBlad(@Html.ValidationSummary(true, ""))
     @Html.HiddenFor(model => model.Id)
 </div>
 
 
-<div>
+<div class="form-group">
     @Html.LabelFor(model => model.Nazwa)
-    <div>
-        @Html.EditorFor(model => model.Nazwa)
-        @Html.ValidationMessageFor(model => model.Nazwa)
-    </div>
+    @Html.EditorFor(model => model.Nazwa)
+    @Helpery.OpakujBlad(@Html.ValidationMessageFor(model => model.Nazwa))
+
 </div>
 
-<div>
+<div class="form-group">
     @Html.LabelFor(model => model.Opis)
-    <div>
-        @Html.EditorFor(model => model.Opis)
-        @Html.ValidationMessageFor(model => model.Opis)
-    </div>
-</div>
+    @Html.EditorFor(model => model.Opis)
+    @Helpery.OpakujBlad(@Html.ValidationMessageFor(model => model.Opis))
 
+</div>

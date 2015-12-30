@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using RejestrFaktur.DAL;
-using RejestrFaktur.Models;
+﻿using RejestrFaktur.DAL;
+using RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.impl.Waluta
 {
-    public class WalutaOperacje : GeneryczneOperacje<Waluta>
+    public class WalutaOperacje : GeneryczneOperacje<Models.Waluta>
     {
-        public override bool Edytuj(Waluta t, RejestrFakturContext dbcontext)
+        public override bool Edytuj(Models.Waluta t, RejestrFakturContext dbcontext)
         {
             bool wart = false;
             try
             {
-                Waluta temp = dbcontext.Waluty.Find(t.Id);
+                Models.Waluta temp = dbcontext.Waluty.Find(t.Id);
                 if (temp != null)
                 {
                     temp.Nazwa = t.Nazwa;

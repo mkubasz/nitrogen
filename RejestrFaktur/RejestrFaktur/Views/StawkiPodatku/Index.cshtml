@@ -1,14 +1,8 @@
 ﻿@using RejestrFaktur.Models
-@using RejestrFaktur.utils
-@model ObiektDoWidoku<StawkaPodatku>
+@model RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics.ObiektDoWidoku<StawkaPodatku>
 @{
-    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+    Layout = "~/Views/Shared/_templateBootstrap.cshtml";
 }
 
-@if (Model.StanObiektu == Stany.PRZEGLADANIE)
-{
-    
-}
-
-<h1>Lista Stawek Podatku</h1>
+@Html.Partial("~/Views/StawkiPodatku/SzukajForm.cshtml", Model.Edytowany)
 @Html.Partial("~/Views/StawkiPodatku/ListaWartosciForm.cshtml",Model.Lista)

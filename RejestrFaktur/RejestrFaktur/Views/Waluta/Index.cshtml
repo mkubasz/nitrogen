@@ -1,14 +1,7 @@
 ﻿@using RejestrFaktur.Models
-@using RejestrFaktur.utils
-@model ObiektDoWidoku<Waluta>
+@model RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics.ObiektDoWidoku<Waluta>
 @{
-    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+    Layout = "~/Views/Shared/_templateBootstrap.cshtml";
 }
-
-@if (Model.StanObiektu == Stany.PRZEGLADANIE)
-{
-    
-}
-
-<h1>Lista jednostek Miary</h1>
+@Html.Partial("~/Views/Waluta/SzukajForm.cshtml", Model.Edytowany)
 @Html.Partial("~/Views/Waluta/ListaWartosciForm.cshtml",Model.Lista)

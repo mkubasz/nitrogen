@@ -1,14 +1,14 @@
 ﻿@using RejestrFaktur.Models
-@using RejestrFaktur.utils
-@model ObiektDoWidoku<JednostkaMiary>
+@model RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics.ObiektDoWidoku<JednostkaMiary>
 @{
-    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+    Layout = "~/Views/Shared/_templateBootstrap.cshtml";
 }
-<h1>Szczegóły wybranego obiektu</h1>
+<h3>Szczegóły wybranego obiektu</h3>
+<div class="well">
+    @Html.Partial("~/Views/JednostkiMiary/SzczegolyForm.cshtml", Model.Edytowany)
+    <div class="input-group">@Html.ActionLink("Zamknij okienko szczegółów", "Index",null, new { @class = "btn btn-sm btn-warning" })</div>  
+</div>
 
-
-@Html.Partial("~/Views/JednostkiMiary/SzczegolyForm.cshtml", Model.Edytowany)
-
-
-@Html.ActionLink("Powrót do listy obiektów", "Index")
+<h3>Lista jednostek Miary</h3>
+@Html.Partial("~/Views/JednostkiMiary/ListaWartosciForm.cshtml", Model.Lista)
 

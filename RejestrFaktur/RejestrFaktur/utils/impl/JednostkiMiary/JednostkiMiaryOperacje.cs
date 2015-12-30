@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using RejestrFaktur.DAL;
+﻿using RejestrFaktur.DAL;
 using RejestrFaktur.Models;
+using RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.impl.JednostkiMiary
 {
     public class JednostkiMiaryOperacje: GeneryczneOperacje<JednostkaMiary>
     {
@@ -26,9 +23,9 @@ namespace RejestrFaktur.utils
             }
             catch
             {
+                // ignored
             }
             return wart;
         }
-
     }
 }

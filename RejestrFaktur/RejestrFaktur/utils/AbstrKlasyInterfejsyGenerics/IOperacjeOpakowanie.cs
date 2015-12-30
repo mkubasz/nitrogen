@@ -1,12 +1,6 @@
-﻿using RejestrFaktur.DAL;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RejestrFaktur.utils.pozostale;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics
 {
     public interface IOperacjeOpakowanie<T>
     {

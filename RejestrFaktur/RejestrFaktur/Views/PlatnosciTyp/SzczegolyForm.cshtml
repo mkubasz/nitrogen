@@ -1,15 +1,15 @@
 ﻿@model RejestrFaktur.Models.PlatnoscTyp
-@using RejestrFaktur.utils
-    <div>
-        <div>
-            @(Html.LabelFor(model => model.Id)): <strong>@Html.DisplayFor(model => model.Id)</strong>
-        </div>
+<div class="input-group">
+    <span class="input-group-addon">@(Html.LabelFor(model => model.Id)):</span>
+    <strong class="form-control">@Html.DisplayFor(model => model.Id)</strong>
+</div>
 
-        <div>
-            @(Html.LabelFor(model => model.Nazwa)): <strong>@Html.DisplayFor(model => model.Nazwa)</strong>
-        </div>
+<div class="input-group">
+    <span class="input-group-addon">@(Html.LabelFor(model => model.Nazwa)):</span>
+    <strong class="form-control">@Html.DisplayFor(model => model.Nazwa)</strong>
+</div>
 
-        <div>
-            @(Html.LabelFor(model => model.Opis)): <strong>@Html.DisplayFor(model => model.Opis)</strong>
-        </div>
-    </div>
+<div class="input-group">
+    <span class="input-group-addon">@(Html.LabelFor(model => model.Opis)):</span>
+    <strong class="form-control">@Html.DisplayFor(model => model.Opis)</strong>
+</div>

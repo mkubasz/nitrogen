@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
+using RejestrFaktur.utils.pozostale;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics
 {
     public interface IDoWidokow<T>
     {

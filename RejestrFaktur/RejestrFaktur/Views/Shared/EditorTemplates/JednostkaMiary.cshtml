@@ -1,24 +1,20 @@
 ﻿@model RejestrFaktur.Models.JednostkaMiary
 
 
-<div>
-    @Html.ValidationSummary(true, "")
+<div class="form-group">
+    @Helpery.OpakujBlad(@Html.ValidationSummary(true, ""))
     @Html.HiddenFor(model => model.Id)
 </div>
 
 
-<div>
+<div class="form-group">
     @Html.LabelFor(model => model.NazwaJednostki)
-    <div>
-        @Html.EditorFor(model => model.NazwaJednostki)
-        @Html.ValidationMessageFor(model => model.NazwaJednostki)
-    </div>
+    @Html.EditorFor(model => model.NazwaJednostki, new { htmlAttributes = new { @class = "form-control" }})
+    @Helpery.OpakujBlad(@Html.ValidationMessageFor(model => model.NazwaJednostki))
 </div>
 
-<div>
+<div class="form-group">
     @Html.LabelFor(model => model.SymbolJednostki)
-    <div>
-        @Html.EditorFor(model => model.SymbolJednostki)
-        @Html.ValidationMessageFor(model => model.SymbolJednostki)
-    </div>
+    @Html.EditorFor(model => model.SymbolJednostki,new { htmlAttributes = new { @class = "form-control" }})
+    @Helpery.OpakujBlad(@Html.ValidationMessageFor(model => model.SymbolJednostki))
 </div>

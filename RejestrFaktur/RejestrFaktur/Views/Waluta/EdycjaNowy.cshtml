@@ -1,26 +1,19 @@
 ﻿@using RejestrFaktur.Models
-@using RejestrFaktur.utils
-@model ObiektDoWidoku<Waluta>
+@model RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics.ObiektDoWidoku<Waluta>
 @{
-    Layout = "~/Views/Wspolne/szablonWartosciSlownikowe.cshtml";
+    Layout = "~/Views/Shared/_templateBootstrap.cshtml";
 }
-
-<h1>@ViewBag.Tytul</h1>
-
-    @using (Html.BeginForm("EdycjaNowy", "Waluta", FormMethod.Post))
+<h3>Edycja/dodawanie nowego obiektu</h3>
+<div class="well">
+    @using (Html.BeginForm("EdycjaNowy", "Waluta", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
     {
-        <div>
-            
-            @Html.EditorFor(model => model.Edytowany)
-            @Html.HiddenFor(model => model.StanObiektu)
-            <div>
-                <div>
-                    <input type="submit" value="Zapisz" />
-                </div>
-            </div>
+        @Html.EditorFor(model => model.Edytowany)
+        @Html.HiddenFor(model => model.StanObiektu)
+        <div class="form-group">
+            @Html.ActionLink("Zamknij okienko edycji", "Index", null, new { @class = "btn btn-sm btn-warning" })
+            <input type="submit" value="Zapisz" class="btn btn-sm btn-success" />
         </div>
     }
-    <div>
-        @Html.ActionLink("Zamknij okienko edycji", "Index")
-    </div>
+</div>
+
 

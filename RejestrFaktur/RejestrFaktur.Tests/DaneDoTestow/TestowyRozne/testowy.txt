@@ -1,0 +1,2 @@
+﻿Uwaga!!! TestowyKatalog nie usuwać
+Plik do testowania

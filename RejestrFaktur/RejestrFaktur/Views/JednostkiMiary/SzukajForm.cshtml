@@ -1,0 +1,19 @@
+﻿@using RejestrFaktur.utils.HelpersExtensions
+@model RejestrFaktur.Models.JednostkaMiary
+<h3>Wyszukiwanie</h3>
+<div class="well">
+    <form>
+        <div class="form-group">
+            <label for="SzukajTxtID">Szukaj:</label>
+            <input type="text" class="form-control" name="tekstWyszukiwania" id="SzukajTxtID" />
+        </div>
+        <div class="form-group">
+            <div class="btn-group">
+                @Html.ListaAtrybuty("lista", Model, new { @class = "btn btn-default" })
+                <input type="button" value="szukaj" name="Szukaj" class="btn btn-default" />
+            </div>
+        </div>
+    </form>
+</div>
+
+

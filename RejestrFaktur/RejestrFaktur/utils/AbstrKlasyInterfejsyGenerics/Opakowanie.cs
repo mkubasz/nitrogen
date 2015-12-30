@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using RejestrFaktur.Models;
-using RejestrFaktur.utils;
-using System.Data.Entity;
-using RejestrFaktur.DAL;
+﻿using RejestrFaktur.DAL;
+using RejestrFaktur.utils.pozostale;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics
 {
-    public class Opakowanie<T>:IOperacjeOpakowanie<T> where T: new()
+    public class Opakowanie<T>:IOperacjeOpakowanie<T> where T: class,new()
     {
         /**
            Generyczne klasa, na której wykonywane są wszystkie operacje w kontrolerach.

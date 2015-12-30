@@ -2,59 +2,37 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Web;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.atrybuty
 {
     //klasa do przetwarzania atrybutów z klasy DodatkoweAtrybuty
     public class CzytaczAnotacji
     {
-        public static List<string> WypiszWszystkieAtrubutyNazwa(StanAtr stan,object obj)
+        public static List<string> WypiszWszystkieAtrybutyNazwa(StanAtr stan,object obj)
         {
-            Type type = obj.GetType();
-            List<string> lista = new List<string>();
-            PropertyInfo[] properties = type.GetProperties();
-            foreach (PropertyInfo p in properties)
+            if (obj != null)
             {
-                IEnumerable<DodatkoweAtrybuty> listaAtr = p.GetCustomAttributes<DodatkoweAtrybuty>();
-
-                foreach (DodatkoweAtrybuty dA in listaAtr)
-                {
-                    if (dA.Stan.Equals(stan))
-                    {
-                        lista.Add(dA.Nazwa);
-                    }
-                }
-
+                Type type = obj.GetType();
+                PropertyInfo[] properties = type.GetProperties();
+                return (from p in properties from dA in p.GetCustomAttributes<DodatkoweAtrybuty>() where dA.Stan.Equals(stan) select dA.Nazwa).ToList();
             }
-            return lista;
+            return null;
         }
 
         public static List<DodatkoweAtrybuty> WypiszWszystkieAtrybuty(StanAtr stan, object obj)
         {
-            Type type = obj.GetType();
-            List<DodatkoweAtrybuty> lista = new List<DodatkoweAtrybuty>();
-            PropertyInfo[] properties = type.GetProperties();
-            foreach (PropertyInfo p in properties)
+            if (obj != null)
             {
-                IEnumerable<DodatkoweAtrybuty> listaAtr = p.GetCustomAttributes<DodatkoweAtrybuty>();
+                Type type = obj.GetType();
+                PropertyInfo[] properties = type.GetProperties();
 
-                foreach (DodatkoweAtrybuty dA in listaAtr)
-                {
-                    if (dA.Stan.Equals(stan))
-                    {
-                        lista.Add(dA);
-                    }
-                }
+                return (from p in properties
+                        from dA in p.GetCustomAttributes<DodatkoweAtrybuty>()
+                        where dA.Stan.Equals(stan)
+                        select dA).ToList();
 
             }
-            return lista;
-        }
-
-
-        public static string TypNazwa(object obj)
-        {
-            return obj.GetType().ToString();
+            return null;
         }
     }
 }

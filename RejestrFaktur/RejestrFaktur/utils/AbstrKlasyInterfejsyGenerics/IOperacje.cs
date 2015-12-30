@@ -1,13 +1,10 @@
-﻿using RejestrFaktur.DAL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using RejestrFaktur.DAL;
+using RejestrFaktur.utils.pozostale;
 
-namespace RejestrFaktur.utils
+namespace RejestrFaktur.utils.AbstrKlasyInterfejsyGenerics
 {
-    public interface IOperacje<T>
+    public interface IOperacje<T> where T:class,new()
     {
         /**Interfejs zawiera operacje, które są wstrzykiwane do klasy Opakowanie.
         Operacje te mają pomóc w wykonaniu operacji określonych w interfejsie 
@@ -22,5 +19,6 @@ namespace RejestrFaktur.utils
         bool Edytuj(T t, RejestrFakturContext dbcontext);
         int  Dodaj(T t, RejestrFakturContext dbcontext);
         bool Usun(T t, RejestrFakturContext dbcontext);
+        List<T> Wyszukaj(IEnumerable<T> kolekcjaOb,string attributeName, string szukanyTxt);
     }
 }

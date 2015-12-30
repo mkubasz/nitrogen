@@ -123,6 +123,12 @@ E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\roslyn\System.
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\roslyn\vbc.exe
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\roslyn\VBCSCompiler.exe
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\DaneDoTestow\TestowyFolder\testowy.txt
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\DaneDoTestow\TestowyRozne\chs.jpg
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\DaneDoTestow\TestowyRozne\eur.jpg
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\DaneDoTestow\TestowyRozne\gb.jpg
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\DaneDoTestow\TestowyRozne\testowy.txt
+E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\DaneDoTestow\TestowyRozne\usa.jpg
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\RejestrFaktur.Tests.dll.config
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\RejestrFaktur.Tests.dll
 E:\Repo\RejestrFaktur\RejestrFaktur\RejestrFaktur.Tests\bin\Debug\RejestrFaktur.Tests.pdb
